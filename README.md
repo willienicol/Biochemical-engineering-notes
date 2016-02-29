@@ -1,3 +1,4 @@
-# Biochemical-engineering-notes
+# Biochemical Reaction Engineering
 
-My textbook on biochemical reaction engineering
+## Chapter 4
+* [Part 1](https://nbviewer.jupyter.org/github/willienicol/Biochemical-engineering-notes/blob/master/Chapter%204/Chapter%204%20Part%201.ipynb)
