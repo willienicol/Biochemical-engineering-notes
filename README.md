@@ -13,6 +13,7 @@
 
 ## Chapter 6
 * [Part 1](https://nbviewer.jupyter.org/github/willienicol/Biochemical-engineering-notes/blob/master/Chapter%206/Chapter%206%20Part%201.ipynb)
+* [DE basics](https://nbviewer.jupyter.org/github/willienicol/Biochemical-engineering-notes/blob/master/Chapter%206/DE%20basics.ipynb)
 
 You can run the python code remotely by using the binder. This will be much slower than running the notebook server on your computer.
 
