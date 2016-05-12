@@ -1,5 +1,11 @@
 # Biochemical Engineering (CBI 310)
 
+## Chapter 1&2
+* [Chapter 1&2](https://nbviewer.jupyter.org/github/willienicol/Biochemical-engineering-notes/blob/master/Chapter%201%2B2/Chapter%201%2B%202.ipynb)
+
+## Chapter 3
+* [Chapter 3](https://nbviewer.jupyter.org/github/willienicol/Biochemical-engineering-notes/blob/master/Chapter%203/Chapter%203.ipynb)
+
 ## Chapter 4
 * [Part 1](https://nbviewer.jupyter.org/github/willienicol/Biochemical-engineering-notes/blob/master/Chapter%204/Chapter%204%20Part%201.ipynb)
 * [Part 2](https://nbviewer.jupyter.org/github/willienicol/Biochemical-engineering-notes/blob/master/Chapter%204/Chapter%204%20Part%202.ipynb)
