@@ -1,5 +1,14 @@
 # Biochemical Engineering (CBI 310)
 
+* [1.Introduction and bio basics](https://nbviewer.jupyter.org/github/willienicol/Biochemical-engineering-notes/blob/master/Introduction%20and%20bio%20background/Intro%20and%20bio%20background.ipynb)
+
+
+
+
+
+
+# CBI from 2016 (Will be removed soon)
+
 ## Chapter 1&2
 * [Chapter 1&2](https://nbviewer.jupyter.org/github/willienicol/Biochemical-engineering-notes/blob/master/Chapter%201_2/Chapter%201_%202.ipynb)
 
