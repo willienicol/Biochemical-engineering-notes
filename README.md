@@ -2,18 +2,13 @@
 
 * [1.Introduction and bio basics](https://nbviewer.jupyter.org/github/willienicol/Biochemical-engineering-notes/blob/master/Introduction%20and%20bio%20background/Intro%20and%20bio%20background.ipynb)
 
+* [2.Basic biochemistry](https://nbviewer.jupyter.org/github/willienicol/Biochemical-engineering-notes/blob/master/2%20Basic%20biochemistry/Basic%20Biochemistry.ipynb) 
 
 
 
 
 
 # CBI from 2016 (Will be removed soon)
-
-## Chapter 1&2
-* [Chapter 1&2](https://nbviewer.jupyter.org/github/willienicol/Biochemical-engineering-notes/blob/master/Chapter%201_2/Chapter%201_%202.ipynb)
-
-## Chapter 3
-* [Chapter 3](https://nbviewer.jupyter.org/github/willienicol/Biochemical-engineering-notes/blob/master/Chapter%203/Chapter%203.ipynb)
 
 ## Chapter 4
 * [Part 1](https://nbviewer.jupyter.org/github/willienicol/Biochemical-engineering-notes/blob/master/Chapter%204/Chapter%204%20Part%201.ipynb)
