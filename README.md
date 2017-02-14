@@ -4,34 +4,17 @@
 
 * [2.Basic biochemistry](https://nbviewer.jupyter.org/github/willienicol/Biochemical-engineering-notes/blob/master/2%20Basic%20biochemistry/Basic%20Biochemistry.ipynb) 
 
+## Chapter 3
+
+* [3.1.Defining rates and yields and balancing equations](https://nbviewer.jupyter.org/github/willienicol/Biochemical-engineering-notes/blob/master/3%20Stoichiometry%20without%20internal%20reactions/Defining%20rates%20and%20yields%20and%20balancing%20equations.ipynb)
 
 
 
+## Tutorials
 
-# CBI from 2016 (Will be removed soon)
+* [Getting started with Jupyter Notebooks](https://nbviewer.jupyter.org/github/willienicol/Biochemical-engineering-notes/blob/master/Tutorials/Getting%20started%20with%20Jupyter%20Notebooks.ipynb)
 
-## Chapter 4
-* [Part 1](https://nbviewer.jupyter.org/github/willienicol/Biochemical-engineering-notes/blob/master/Chapter%204/Chapter%204%20Part%201.ipynb)
-* [Part 2](https://nbviewer.jupyter.org/github/willienicol/Biochemical-engineering-notes/blob/master/Chapter%204/Chapter%204%20Part%202.ipynb)
-* [Part 3](https://nbviewer.jupyter.org/github/willienicol/Biochemical-engineering-notes/blob/master/Chapter%204/Chapter%204%20Part%203.ipynb)
-* [Part 4](https://nbviewer.jupyter.org/github/willienicol/Biochemical-engineering-notes/blob/master/Chapter%204/Chapter%204%20Part%204.ipynb)
-
-## Chapter 5
-* [Part 1](https://nbviewer.jupyter.org/github/willienicol/Biochemical-engineering-notes/blob/master/Chapter%205/Chapter%205%20Part%201.ipynb)
-* [Part 2](https://nbviewer.jupyter.org/github/willienicol/Biochemical-engineering-notes/blob/master/Chapter%205/Chapter%205%20Part%202.ipynb)
-* [Part 3](https://nbviewer.jupyter.org/github/willienicol/Biochemical-engineering-notes/blob/master/Chapter%205/Chapter%205%20Part%203.ipynb)
-
-## Chapter 6
-* [Part 1](https://nbviewer.jupyter.org/github/willienicol/Biochemical-engineering-notes/blob/master/Chapter%206/Chapter%206%20Part%201.ipynb)
-* [Part 2](https://nbviewer.jupyter.org/github/willienicol/Biochemical-engineering-notes/blob/master/Chapter%206/Chapter%206%20Part%202.ipynb)
-* [Part 3](https://nbviewer.jupyter.org/github/willienicol/Biochemical-engineering-notes/blob/master/Chapter%206/Chapter%206%20Part%203.ipynb)
-* [Part 4](https://nbviewer.jupyter.org/github/willienicol/Biochemical-engineering-notes/blob/master/Chapter%206/Chapter%206%20Part%204.ipynb)
-* [DE basics](https://nbviewer.jupyter.org/github/willienicol/Biochemical-engineering-notes/blob/master/Chapter%206/DE%20basics.ipynb)
-
-## Chapter 7
-* [Part 1](https://nbviewer.jupyter.org/github/willienicol/Biochemical-engineering-notes/blob/master/Chapter%207/Chapter%207%20Part%201.ipynb)
-* [Part 2](https://nbviewer.jupyter.org/github/willienicol/Biochemical-engineering-notes/blob/master/Chapter%207/Chapter%207%20part%202.ipynb)
-* [Part 3](https://nbviewer.jupyter.org/github/willienicol/Biochemical-engineering-notes/blob/master/Chapter%207/Chapter%207%20part%203.ipynb)
+* [Tutorial 0](https://nbviewer.jupyter.org/github/willienicol/Biochemical-engineering-notes/blob/master/Tutorials/Tut%200.ipynb)
 
 
 You can run the python code remotely by using the binder. This will be much slower than running the notebook server on your computer.
