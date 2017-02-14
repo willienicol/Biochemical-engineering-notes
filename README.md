@@ -10,7 +10,7 @@
 
 ### Chapter 3
 
-* [3.1.Defining rates and yields and balancing equations](https://nbviewer.jupyter.org/github/willienicol/Biochemical-engineering-notes/blob/master/3%20Stoichiometry%20without%20internal%20reactions/Defining%20rates%20and%20yields%20and%20balancing%20equations.ipynb)
+* [3.1 Defining rates and yields and balancing equations](https://nbviewer.jupyter.org/github/willienicol/Biochemical-engineering-notes/blob/master/3%20Stoichiometry%20without%20internal%20reactions/Defining%20rates%20and%20yields%20and%20balancing%20equations.ipynb)
 
 
 
