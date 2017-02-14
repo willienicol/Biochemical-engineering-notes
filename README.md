@@ -21,6 +21,4 @@
 * [Tutorial 0](https://nbviewer.jupyter.org/github/willienicol/Biochemical-engineering-notes/blob/master/Tutorials/Tut%200.ipynb)
 
 
-You can run the python code remotely by using the binder. This will be much slower than running the notebook server on your computer.
 
-[![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/repo/willienicol/Biochemical-engineering-notes)
