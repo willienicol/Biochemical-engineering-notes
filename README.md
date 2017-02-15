@@ -12,7 +12,7 @@
 
 * [3.1 Defining rates and yields and balancing equations](https://nbviewer.jupyter.org/github/willienicol/Biochemical-engineering-notes/blob/master/3%20Stoichiometry%20without%20internal%20reactions/Defining%20rates%20and%20yields%20and%20balancing%20equations.ipynb)
 
-
+* [3.2 The cmol balance and biomass as molecule](https://nbviewer.jupyter.org/github/willienicol/Biochemical-engineering-notes/blob/master/3%20Stoichiometry%20without%20internal%20reactions/The%20cmol%20balance%20and%20biomass%20as%20molecule%20.ipynb)
 
 ### Tutorials
 
