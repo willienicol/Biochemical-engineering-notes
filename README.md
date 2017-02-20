@@ -14,6 +14,8 @@
 
 * [3.2 The cmol balance and biomass as molecule](https://nbviewer.jupyter.org/github/willienicol/Biochemical-engineering-notes/blob/master/3%20Stoichiometry%20without%20internal%20reactions/The%20cmol%20balance%20and%20biomass%20as%20molecule%20.ipynb)
 
+* [3.3 Degree of reduction balances](https://nbviewer.jupyter.org/github/willienicol/Biochemical-engineering-notes/blob/master/3%20Stoichiometry%20without%20internal%20reactions/Degree%20of%20reduction%20balances.ipynb)
+
 ### Tutorials
 
 * [Getting started with Jupyter Notebooks](https://nbviewer.jupyter.org/github/willienicol/Biochemical-engineering-notes/blob/master/Tutorials/Getting%20started%20with%20Jupyter%20Notebooks.ipynb)
