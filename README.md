@@ -16,6 +16,11 @@
 
 * [3.3 Degree of reduction balances](https://nbviewer.jupyter.org/github/willienicol/Biochemical-engineering-notes/blob/master/3%20Stoichiometry%20without%20internal%20reactions/Degree%20of%20reduction%20balances.ipynb)
 
+
+### Chapter 4
+
+* [4.1 Modelling the anabolism](https://nbviewer.jupyter.org/github/willienicol/Biochemical-engineering-notes/blob/master/4%20Stoichiometry%20that%20includes%20internal%20reactions/Modelling%20the%20anabolism.ipynb)
+
 ### Tutorials
 
 * [Getting started with Jupyter Notebooks](https://nbviewer.jupyter.org/github/willienicol/Biochemical-engineering-notes/blob/master/Tutorials/Getting%20started%20with%20Jupyter%20Notebooks.ipynb)
