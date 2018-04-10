@@ -1,0 +1,9 @@
+channels:
+  - defaults
+dependencies:
+  - matplotlib
+  - numpy
+  - ipywidgets
+  - sympy
+  - scipy
+  - pandas
