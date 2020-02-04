@@ -1,0 +1,702 @@
+
+% Default to the notebook output style
+
+    
+
+
+% Inherit from the specified cell style.
+
+
+
+
+    
+\documentclass[11pt]{article}
+
+    
+    
+    \usepackage[T1]{fontenc}
+    % Nicer default font (+ math font) than Computer Modern for most use cases
+    \usepackage{mathpazo}
+
+    % Basic figure setup, for now with no caption control since it's done
+    % automatically by Pandoc (which extracts ![](path) syntax from Markdown).
+    \usepackage{graphicx}
+    % We will generate all images so they have a width \maxwidth. This means
+    % that they will get their normal width if they fit onto the page, but
+    % are scaled down if they would overflow the margins.
+    \makeatletter
+    \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth
+    \else\Gin@nat@width\fi}
+    \makeatother
+    \let\Oldincludegraphics\includegraphics
+    % Set max figure width to be 80% of text width, for now hardcoded.
+    \renewcommand{\includegraphics}[1]{\Oldincludegraphics[width=.8\maxwidth]{#1}}
+    % Ensure that by default, figures have no caption (until we provide a
+    % proper Figure object with a Caption API and a way to capture that
+    % in the conversion process - todo).
+    \usepackage{caption}
+    \DeclareCaptionLabelFormat{nolabel}{}
+    \captionsetup{labelformat=nolabel}
+
+    \usepackage{adjustbox} % Used to constrain images to a maximum size 
+    \usepackage{xcolor} % Allow colors to be defined
+    \usepackage{enumerate} % Needed for markdown enumerations to work
+    \usepackage{geometry} % Used to adjust the document margins
+    \usepackage{amsmath} % Equations
+    \usepackage{amssymb} % Equations
+    \usepackage{textcomp} % defines textquotesingle
+    % Hack from http://tex.stackexchange.com/a/47451/13684:
+    \AtBeginDocument{%
+        \def\PYZsq{\textquotesingle}% Upright quotes in Pygmentized code
+    }
+    \usepackage{upquote} % Upright quotes for verbatim code
+    \usepackage{eurosym} % defines \euro
+    \usepackage[mathletters]{ucs} % Extended unicode (utf-8) support
+    \usepackage[utf8x]{inputenc} % Allow utf-8 characters in the tex document
+    \usepackage{fancyvrb} % verbatim replacement that allows latex
+    \usepackage{grffile} % extends the file name processing of package graphics 
+                         % to support a larger range 
+    % The hyperref package gives us a pdf with properly built
+    % internal navigation ('pdf bookmarks' for the table of contents,
+    % internal cross-reference links, web links for URLs, etc.)
+    \usepackage{hyperref}
+    \usepackage{longtable} % longtable support required by pandoc >1.10
+    \usepackage{booktabs}  % table support for pandoc > 1.12.2
+    \usepackage[inline]{enumitem} % IRkernel/repr support (it uses the enumerate* environment)
+    \usepackage[normalem]{ulem} % ulem is needed to support strikethroughs (\sout)
+                                % normalem makes italics be italics, not underlines
+    
+
+    
+    
+    % Colors for the hyperref package
+    \definecolor{urlcolor}{rgb}{0,.145,.698}
+    \definecolor{linkcolor}{rgb}{.71,0.21,0.01}
+    \definecolor{citecolor}{rgb}{.12,.54,.11}
+
+    % ANSI colors
+    \definecolor{ansi-black}{HTML}{3E424D}
+    \definecolor{ansi-black-intense}{HTML}{282C36}
+    \definecolor{ansi-red}{HTML}{E75C58}
+    \definecolor{ansi-red-intense}{HTML}{B22B31}
+    \definecolor{ansi-green}{HTML}{00A250}
+    \definecolor{ansi-green-intense}{HTML}{007427}
+    \definecolor{ansi-yellow}{HTML}{DDB62B}
+    \definecolor{ansi-yellow-intense}{HTML}{B27D12}
+    \definecolor{ansi-blue}{HTML}{208FFB}
+    \definecolor{ansi-blue-intense}{HTML}{0065CA}
+    \definecolor{ansi-magenta}{HTML}{D160C4}
+    \definecolor{ansi-magenta-intense}{HTML}{A03196}
+    \definecolor{ansi-cyan}{HTML}{60C6C8}
+    \definecolor{ansi-cyan-intense}{HTML}{258F8F}
+    \definecolor{ansi-white}{HTML}{C5C1B4}
+    \definecolor{ansi-white-intense}{HTML}{A1A6B2}
+
+    % commands and environments needed by pandoc snippets
+    % extracted from the output of `pandoc -s`
+    \providecommand{\tightlist}{%
+      \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+    \DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+    % Add ',fontsize=\small' for more characters per line
+    \newenvironment{Shaded}{}{}
+    \newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{{#1}}}
+    \newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{{#1}}}}
+    \newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{{#1}}}
+    \newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{{#1}}}
+    \newcommand{\RegionMarkerTok}[1]{{#1}}
+    \newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\NormalTok}[1]{{#1}}
+    
+    % Additional commands for more recent versions of Pandoc
+    \newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{{#1}}}
+    \newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{{#1}}}
+    \newcommand{\ImportTok}[1]{{#1}}
+    \newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{{#1}}}}
+    \newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{{#1}}}
+    \newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{{#1}}}
+    \newcommand{\BuiltInTok}[1]{{#1}}
+    \newcommand{\ExtensionTok}[1]{{#1}}
+    \newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{{#1}}}
+    \newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{{#1}}}
+    \newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    
+    
+    % Define a nice break command that doesn't care if a line doesn't already
+    % exist.
+    \def\br{\hspace*{\fill} \\* }
+    % Math Jax compatability definitions
+    \def\gt{>}
+    \def\lt{<}
+    % Document parameters
+    \title{Intro and bio background}
+    
+    
+    
+
+    % Pygments definitions
+    
+\makeatletter
+\def\PY@reset{\let\PY@it=\relax \let\PY@bf=\relax%
+    \let\PY@ul=\relax \let\PY@tc=\relax%
+    \let\PY@bc=\relax \let\PY@ff=\relax}
+\def\PY@tok#1{\csname PY@tok@#1\endcsname}
+\def\PY@toks#1+{\ifx\relax#1\empty\else%
+    \PY@tok{#1}\expandafter\PY@toks\fi}
+\def\PY@do#1{\PY@bc{\PY@tc{\PY@ul{%
+    \PY@it{\PY@bf{\PY@ff{#1}}}}}}}
+\def\PY#1#2{\PY@reset\PY@toks#1+\relax+\PY@do{#2}}
+
+\expandafter\def\csname PY@tok@w\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.73,0.73}{##1}}}
+\expandafter\def\csname PY@tok@c\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.74,0.48,0.00}{##1}}}
+\expandafter\def\csname PY@tok@k\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.69,0.00,0.25}{##1}}}
+\expandafter\def\csname PY@tok@o\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@ow\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@ne\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.82,0.25,0.23}{##1}}}
+\expandafter\def\csname PY@tok@nv\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@no\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nl\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@ni\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.60,0.60,0.60}{##1}}}
+\expandafter\def\csname PY@tok@na\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.49,0.56,0.16}{##1}}}
+\expandafter\def\csname PY@tok@nt\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@s\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sd\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@si\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@se\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sr\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@ss\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@sx\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@m\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@gh\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@gu\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.50,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@gd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gr\endcsname{\def\PY@tc##1{\textcolor[rgb]{1.00,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@ge\endcsname{\let\PY@it=\textit}
+\expandafter\def\csname PY@tok@gs\endcsname{\let\PY@bf=\textbf}
+\expandafter\def\csname PY@tok@gp\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@go\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.53,0.53}{##1}}}
+\expandafter\def\csname PY@tok@gt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.27,0.87}{##1}}}
+\expandafter\def\csname PY@tok@err\endcsname{\def\PY@bc##1{\setlength{\fboxsep}{0pt}\fcolorbox[rgb]{1.00,0.00,0.00}{1,1,1}{\strut ##1}}}
+\expandafter\def\csname PY@tok@kc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kd\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kr\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@bp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@fm\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@vc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vg\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vm\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@sa\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@dl\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@s2\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@s1\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@mb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@il\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mo\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@ch\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cm\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cpf\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@c1\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cs\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+
+\def\PYZbs{\char`\\}
+\def\PYZus{\char`\_}
+\def\PYZob{\char`\{}
+\def\PYZcb{\char`\}}
+\def\PYZca{\char`\^}
+\def\PYZam{\char`\&}
+\def\PYZlt{\char`\<}
+\def\PYZgt{\char`\>}
+\def\PYZsh{\char`\#}
+\def\PYZpc{\char`\%}
+\def\PYZdl{\char`\$}
+\def\PYZhy{\char`\-}
+\def\PYZsq{\char`\'}
+\def\PYZdq{\char`\"}
+\def\PYZti{\char`\~}
+% for compatibility with earlier versions
+\def\PYZat{@}
+\def\PYZlb{[}
+\def\PYZrb{]}
+\makeatother
+
+
+    % Exact colors from NB
+    \definecolor{incolor}{rgb}{0.0, 0.0, 0.5}
+    \definecolor{outcolor}{rgb}{0.545, 0.0, 0.0}
+
+
+
+    
+    % Prevent overflowing lines due to hard-to-break entities
+    \sloppy 
+    % Setup hyperref package
+    \hypersetup{
+      breaklinks=true,  % so long urls are correctly broken across lines
+      colorlinks=true,
+      urlcolor=urlcolor,
+      linkcolor=linkcolor,
+      citecolor=citecolor,
+      }
+    % Slightly bigger margins than the latex defaults
+    
+    \geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
+    
+    
+
+    \begin{document}
+    
+    
+    \maketitle
+    
+    
+
+    
+    \subsection{Chapter 1: Intro and
+bio-background}\label{chapter-1-intro-and-bio-background}
+
+\subsubsection{1.1. What is this course
+about?}\label{what-is-this-course-about}
+
+This course is about micro-organisms (or microbes) and how they can be
+used as workhorses to produce useful chemicals. The microbes will be
+placed in bioreactors (or fermenters) where the conversion of cheap
+sugars to expensive chemicals will take place. The video below will give
+you some perspective of where we are going:
+
+\href{http://www.youtube.com/watch?v=Ur6SfJ-u1CU}{Lecture 1 Video: What
+is this course about?}
+
+In order to describe or model the fermenter we need to understand how
+the microbes work. First we'll start with some basic biology principles.
+Thereafter we'll get into biochemistry where we'll study the reaction
+steps required to convert sugar to the various chemicals. Once this is
+under the knee we'll employ linear algebra to describe the overall
+bioreaction that the microbe causes. The word `overall' implies that
+only the molecules that enter (uptake) and exit (excretion) the microbe
+will be considered. We will also use our knowledge of the internal
+bioreaction steps (metabolism) to extend the description of the overall
+bioreaction. In essence we'll reduce the life of the microbe to a single
+reaction, where the rates of this reaction will be referred to as the
+response function. It will become clear that the stoichiometry of the
+response function will vary as conditions in the fermenter change, this
+is unlike a normal chemical reactions where stoichiometry is fixed.
+
+Once comfortable with describing the response function, we'll link the
+response function to the mathematical description of the fermenter. It
+will be shown how differential equations that incorporate the response
+function can be used to realistically model what is happening in the
+fermenter. From a Bioprocess Engineering viewpoint a proper description
+of the fermenter is the ultimate goal since this is required to design,
+operate and optimize the unit that will be producing the commodity
+chemical. From a mathematical perspective this is a beautiful course.
+Have you ever heard the ancient saying?
+
+\emph{Change your environment to change yourself.}
+
+The saying was meant for humans, but it applies perfectly to the
+microbes that we will be describing. The natural response of the
+microbes to the fermenter environment will change the fermenter
+environment and this in turn will change the response of the microbes.
+It is a story of an interactive cycle and it be told in math, where the
+varying concentrations in the fermenter will directly link to changing
+the outcome from the response function. Effectively we'll embed matrices
+(giving the response function) in differential equations (fermenter
+function) towards the end of the course. This might sound daunting at
+this stage, but with the magic of Python you will see that it is not
+that hard. So there you have it, a whole mouthful of what we will be
+doing. Don't worry if some of the sentences above reads like Greek.
+Revisit this introductory section at a later stage to access whether you
+still have an overview of the course. This simplified video might be
+helpful:
+
+\href{http://www.youtube.com/watch?v=OXe2-Q1R-_I}{Lecture 2 Video: A
+bird's eye view on CBI}
+
+\subsubsection{1.1. 2. Why is this course
+important?}\label{why-is-this-course-important}
+
+Biotechnology is about using various life forms to make commercial
+products. Bioprocessing is the chemical engineering discipline of making
+this happen. Micro-organisms (microbes) are the most common life form in
+bioprocessing applications where bacteria, yeasts and fungi are
+exploited as workhorses to facilitate the conversion of a cheap feed
+into a value added products. This course will focus on the synthesis of
+value added products but it should be stated that bioprocessing is not
+restricted to this type of product. Microbes are often use for clean-up
+where the end product is bio-remediated, just think of a sewage plant
+for treating wastewater. Bioprocessing is an ancient discipline and has
+been used for centuries in the production of foods and beverages such as
+yoghurt, bread, vinegar, soy sauce, beer and wine. Today numerous
+commercial bioprocesses are used to produce bulk chemicals (like citric
+acid), proteins (like enzymes), amino acids, vitamins, antibiotics and
+even fuels. You are regularly using products where a microbe was part of
+the production train. Just think of the antibiotic and vitamins that
+helped to cure that terrible cold, the enzymes in your washing power
+giving that shining white, the citric acid keeping your soft drink
+preserved, the ethanol addition to your car fuel and of course the
+ethanol in you party drinks. These little organisms have been working
+for you for a long time!
+
+Our dependency on micro-organisms is likely to grow in the future. The
+world is slowly moving away from fossil reserves like coal, oil and
+natural gas. The reason is twofold: the supplies are limited and the
+environmental consequences of using fossil reserves are severe. One
+might think of the refinery as the supplier of various fuels like
+petrol, diesel and jet fuel but it is important to realise that a major
+fraction of bulk chemicals have their origin in the refinery. Just look
+around you and you will find materials that originated from the refinery
+everywhere. The plastic in your smartphone, the synthetic materials in
+your clothes, all the containers of your food and drinks and the
+non-metal parts of your car. The list goes on to show you how intimately
+you are connected to fossil reserves. How will the dependency be broken?
+We are definitely not ready to part with all the wonderful end-products.
+The solution is to use sustainable feedstock (like plant matter) to
+generate the same materials. This will be performed in the biorefinery,
+where microbes will play an important role. In essence microbes will
+feed on various sugars in plants and excrete useful molecules that can
+be used as chemicals or fuel. More than two thirds of dry plant matter
+consists out of sugars, whether the plant contains edible parts or not.
+So a non-fossil alternative exist but clever chemical engineers will be
+required to make the bioconversion processes economical. This is exactly
+the reason why this course is part of you undergraduate curriculum. See
+this explanation from TU Delft in the Netherlands:
+
+\href{https://www.youtube.com/watch?v=1MXHfZqbrCs}{Video: TU Delft on
+biobased economy}
+
+At the heart of any bioprocess is the bioreactor or fermenter. This is
+the unit in the process where the chemical transformation is taking
+place. It might not always be the most expensive unit in the process,
+but it typically is the most important unit in the sense that all
+development is centred around the bioreactor. The economy of the
+conversion will be highly dependent on speediness (productivity), yield
+and product titre. High yield will imply that most of the carbon in the
+raw feed (sugar) will end up in the targeted product. Titre refers to
+the final product concentration where high titres typically reduce
+downstream separation costs. These economic indicators can easily be
+calculated from the fermenter models given in the course.
+
+    \subsubsection{1.3 Crash course in basic
+biology}\label{crash-course-in-basic-biology}
+
+Before we can model the biochemical behaviour of a microbe we need to
+understand the basics of microbes. We therefore need to understand the
+basics of how life works. The course aims at performing engineering
+calculations and not at memorising microbiology and biochemistry
+textbooks. But the calculations will be based on prerequisite knowledge
+of these disciplines. You need to understand these basics but you don't
+need to remember all the terms. We'll use the internet as an extension
+of our memory given the availability of the internet nowadays. You need
+to be acquainted with the basics so that you can easily Google new
+questions. The background in this and the following section (basic
+biochemistry) is by no means complete, it is only the first few guided
+steps that will enable further and self-development of your
+understanding of microbes. Get used to formulate and answer questions
+with the internet, but be careful for a single answer, rather search for
+different people saying the same thing in different words. Internet
+literature on basic microbiology and biochemistry is mature with
+wonderful pictures and videos available. Use it and enjoy, the magic is
+in the palm of your hand.
+
+\subsubsection{\texorpdfstring{\emph{Classification and the tree of
+life}}{Classification and the tree of life}}\label{classification-and-the-tree-of-life}
+
+Every living thing requires a scientific name. The organisation
+structure for giving names changed throughout the last centuries, but
+let's starts with a primary school lesson on the topic since we are
+beginners.
+
+\href{https://www.youtube.com/watch?v=vqxomJIBGcY}{Video: Classification
+for beginners}
+
+Lots of different subdivisions before you get to the genus and specie
+names. Don't bother trying to remember all the different classes. Let's
+rather think about how one develops a system of classification. Let's
+see what Paul Andersen has to say on the topic:
+
+\href{https://www.youtube.com/watch?v=tYL_8gv7RiE}{Video: Paul Anderson
+on classification}
+
+The important part of this video is that DNA is the key to perform
+proper classification. Prior to the age of understanding DNA,
+classification was based on looks and functionality, but have a look at
+these two bugs, they are completely different by name!
+
+\emph{Glomeris marginata and Armadillidium vulgare (left to right)}
+
+So it has to do with ancestors and the origin of species. Accordingly
+the map of evolution becomes the map of correct classification. All
+living things share a common ancestor and are more similar to you than
+what you think. Check this out:
+
+\href{https://www.youtube.com/watch?v=nvJFI3ChOUU}{Video: Molecules of
+evolution}
+
+We'll discuss these shared molecules in more detail at a later stage.
+For now it is important to understand the tree of life with all its
+branch points. You should realise how the tree of life represents a
+timeline of evolutionary development. The following interactive chart
+will give you an idea, try and develop a feeling for the chart with
+special emphasis on the initial split points between bacteria, archea
+and eukaryotes.
+
+\href{https://www.evogeneao.com/explore/tree-of-life-explorer\#waterbirds}{Interactive
+map: From bacteria to humans}
+
+For more information on archaea, a relative recent discovery check this
+out:
+
+\href{https://www.youtube.com/watch?v=0W-uItr5M4g}{Video: Archaea}
+
+Going back to the microbes that will be our workhorses and finding them
+on the tree of life it is important to realise that although small they
+will be present on all three of the initial branches. Fungi and yeasts
+are eukaryotes (see if you can find them). Some bioprocesses employ
+archaea under harsh conditions, while normal bacteria is a common
+workhorse, especially \emph{Escherichia Coli}. Although all microbes
+share a common ancestor it is important to understand the difference
+between these organisms. Check this clip for basic differences between
+the domain branches:
+
+\href{https://www.youtube.com/watch?v=RQ-SMCmWB1s}{Video: Prokaryotic vs
+eukaryotic cells}
+
+It is important to understand that eukaryotes developed out of
+prokaryotes around 2 billion year ago. The starting point of complex
+(multicellular) life and one of the major leaps in evolution.
+
+\href{https://www.youtube.com/watch?v=q71DWYJD-dI}{Video: The event}
+
+We'll talk a lot about mitochondria at a later stage. Some believe this
+is the remnant of the prokaryote that got consumed! Read more if you are
+interested.
+
+    \subsubsection{\texorpdfstring{\emph{Basic structure of a
+cell}}{Basic structure of a cell}}\label{basic-structure-of-a-cell}
+
+Before we get into the chemicals that make up cells, we need some
+background on the stuff within a cell. The idea is to develop a feel and
+not to remember all the names.
+
+\href{https://www.youtube.com/watch?v=URUJD5NEXC8}{Video: Cell
+structure}
+
+It is important to understand that prokaryotes do not have a nucleus
+like eukaryotes. You should also know the important organelles like
+ribosomes and mitochondria and their specific function. More details on
+the processes occurring in these structures will follow.
+
+\subsubsection{\texorpdfstring{\emph{Biochemical building
+blocks}}{Biochemical building blocks}}\label{biochemical-building-blocks}
+
+It is imperative to understand microbes on a molecular level. This
+entails understanding the chemistry or biochemistry of the building
+blocks. We need to know where the carbon, hydrogen, oxygen, nitrogen and
+other atoms are situated in the biochemicals. Have a look at this 14 min
+crash course and have a close look at the chemical structures.
+
+\href{https://www.youtube.com/watch?v=H8WJ2KENlK0}{Video: Hank Green on
+biological molecules}
+
+\subsubsection{Carbohydrates}\label{carbohydrates}
+
+When looking at the carbohydrates you should see that only carbon,
+oxygen and hydrogen form the sugar molecules. In fact the generic
+molecular formula is \((CH_2O)_n\), so there is effectively a water
+molecule for each carbon and thus the name carbohydrates. Don't confuse
+this with the term hydrocarbons where oxygen is missing from the generic
+molecular formula. Have a look at this clip for more background on
+sugar.
+
+\href{https://www.youtube.com/watch?v=_zm_DyD6FJ0}{Video: Paul Anderson
+on carbohydrates}
+
+Note that all chemical structures of monosaccharides can be obtained as
+images by mere Googling. The structures won't be provided in the notes
+but you should be able to draw the structures with a bit of internet
+help. Important to understand the difference between starch and
+cellulose despite having the same building block (glucose).
+
+\href{http://study.com/academy/lesson/starch-vs-cellulose-structure-function.html}{Video:
+Starch vs cellulose}
+
+The 3D orientation of the monosaccharide bond plays an important role in
+the properties of the polysaccharide. It is much harder to break the
+beta bonds of cellulose and thus it acts as an important structural
+component in plants. In the biorefinery it will be very important to
+release the monosaccharides from cellulose in order to utilise the
+inedible parts of the plant. In this regard 5 carbon sugars (\(C_5\))
+are also a major source of inedible plant carbohydrates. See this
+picture of plant cell walls and identify the xylose monomers in
+hemicellulose:
+
+\subsubsection{Lipids}\label{lipids}
+
+Getting to lipids it is important to understand the ester bond between
+the alcohol groups in glycerol and the carboxylic acid group in the
+fatty acid. Watch this for some more information:
+
+\href{https://www.youtube.com/watch?v=VGHD9e3yRIU}{Video: Paul Anderson
+on lipids}
+
+The term essential (nutrient) came up in the discussion. Make sure you
+understand what this mean via some Googling. You should also understand
+how double bonds in fatty acids produce `kinks' in the linear structure.
+Remember the structure of glycerol, you will see it again when we
+discuss metabolic pathways. Exercise yourself by drawing the molecular
+structures with a pen and paper (and check via using Google images).
+Have a look at how biodiesel is produced via trans esterification of
+triglycerides.
+
+    \subsubsection{Proteins}\label{proteins}
+
+The following Bozemann video is helpful:
+
+\href{https://www.youtube.com/watch?v=2Jgb_DpaQhM}{Video: Paul Anderson
+on proteins}
+
+It is all about the 20 different building blocks (amino acids) and the
+sequence in which they are put together by the ribosome. Note that
+similar to fatty acids, some amino acids are essential for the human
+diet. With regards to the three dimensional structure of proteins we
+won't be going into detail on the folding and shaping, but it is
+important to realise that the specific shape of a protein molecule is
+directly related to its function.
+
+So what does proteins do? The answer is basically everything. In a sense
+these molecules define life. They catalyse biochemical reactions in
+cells (enzymes), they synthesize and repair DNA and RNA, they transport
+materials across the cell membrane, provide structural support, receive
+and send signals and a multitude of other functions.
+
+We will be working a lot with enzymes and some background is required to
+understand how the specific shape of an enzyme acts as a biological
+catalyst. See the following 2 short videos.
+
+\href{https://www.youtube.com/watch?v=aRSfPLp_I10}{Video: Enzyme
+animation 1}
+
+\href{https://www.youtube.com/watch?v=E2UNc5zBejc}{Video: Enzyme
+animation 2}
+
+\subsubsection{Nucleic acids}\label{nucleic-acids}
+
+We also need to look at what genetic material is made of so look at the
+following video on nucleic acids:
+
+\href{https://www.youtube.com/watch?v=NNASRkIU5Fw}{Video: Paul Andersoin
+on nucleic acids}
+
+The next video contains some repetition but is useful in understanding
+how DNA gets replicated as cells multiply. Note that all the molecules
+that end with --ase refers to enzymes like DNA polymerase and RNA
+primase. Also take note of the direction of the DNA half strand.
+
+\href{https://www.youtube.com/watch?v=8kK2zwjRV0M}{Video: Hank Green on
+DNA}
+
+\subsubsection{Vitamins}\label{vitamins}
+
+Lastly we should have a look at vitamins, organic molecules that are
+required in small quantities. Have a look at their molecular structure:
+
+Note that some organisms can synthesise all these molecules (from
+glucose and a nitrogen source) but that other organisms need to obtain
+some vitamins from an external source (essential vitamins similar to
+essential amino acids)
+
+    \subsubsection{\texorpdfstring{\emph{From DNA to
+proteins}}{From DNA to proteins}}\label{from-dna-to-proteins}
+
+Now that we understand the basic molecules of life, we should look at
+how proteins get made. This is a good intro video with beautiful
+animations:
+
+\href{https://www.youtube.com/watch?v=gG7uCskUOrA}{Video: From DNA to
+proteins}
+
+Important to understand the difference between messenger RNA and
+transfer RNA. Watch this amazing real-time animation of the `central
+dogma'
+
+\href{https://www.youtube.com/watch?v=D3fOXt4MrOM}{Video: Central dogma}
+
+The section of DNA that codes for a certain protein is called a gene.
+This video might be helpful for putting some of the concepts together:
+
+\href{https://www.youtube.com/watch?v=5MQdXjRPHmQ}{Video: What is a
+gene?}
+
+You might wonder where the gene starts and where it stops and how the
+RNA polymerase knows where to begin. Special sections of DNA code
+referred to as promotor and terminator sites indicates where
+transcription should begin and end. Look at this:
+
+\href{https://www.youtube.com/watch?v=JtwMBD7tSGg}{Video: Promoters}
+
+You don't need to know the name of all the transcription factors (types
+of proteins) but understand how the promoter site (in this case the TATA
+box) is used to mark where the gene starts. It is also important to
+understand that transcription can be regulated by transcription factors.
+We are not going into detail here but you should understand that the
+type of proteins that a cell requires varies depending on external
+factors and hence gene expression should be regulated and controlled
+according to the cell's requirements. Complex interactions of numerous
+transcription factors make this possible.
+
+As chemical engineers we are interested in speed of transcription and
+translation. \emph{E.coli} can achieve transcription rates of 60
+nucleotides per second with the corresponding translation rate of 20
+amino acids per second. So an average gene on 5000 base pairs will
+produce a full protein in 80 seconds. That is fast!
+
+Lastly genetic modification of microbes should be mentioned given that
+you understand how protein production work. Have a look at this video:
+
+\href{https://www.youtube.com/watch?v=zlqD4UWCuws}{Video: Genetic
+Engineering}
+
+We effectively implant or remove genes in microbes to alter their
+functionality. This is very useful when microbes are used to produce a
+specific substance. In Chapter 5 we'll see how gene knockout, insertion
+and overexpression alters the microbe's metabolism and the products that
+it produce. This is the core of biotechnology.
+
+\href{https://nbviewer.jupyter.org/github/willienicol/Biochemical-engineering-notes/blob/master/List\%20of\%20contents.ipynb}{Back
+to Contents page}
+
+
+    % Add a bibliography block to the postdoc
+    
+    
+    
+    \end{document}
