@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>Basic Biochemistry</title>
+<title>Defining rates and yields and balancing equations</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13082,20 +13082,13 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="2.-Basic-biochemistry-(central-carbon-metabolism)">2. Basic biochemistry (central carbon metabolism)<a class="anchor-link" href="#2.-Basic-biochemistry-(central-carbon-metabolism)">&#182;</a></h1><p>Life is all about obtaining energy. Without energy there is no life. Almost all of the energy on earth originates from the sun, the eternal battery that powers life. In this regard plants play a very important role since they have the ability to capture light energy and store it into chemical energy via the process of photosynthesis. Since this course focus on micro-organisms we won’t go into the details of photosynthesis, we’ll only use the following chemical equation to describe the process:</p>
-$$6H_2O + 6CO_2 + energy \rightleftharpoons C_6 H_{12} O_6+6O_2$$<p>So a plant takes water, carbon dioxide and sunlight to produce glucose and oxygen, a very useful process. Glucose can thus be seen as the chemical that stores the sunlight in a chemical format. Note the reversible arrow in the equation, it is very important. The reverse process is referred to as respiration, where glucose is consumed in combination with oxygen in order to obtain energy. This is exactly what happens in your body, you release the old sunlight energy into your body to perform your daily tasks.</p>
-<p>The above equation also relates to external energy sources that you use on a daily basis. The petrol in your car originated from fossil reserves, decomposed plant material from millions of year ago. The same for electricity that is mainly produced in the RSA by burning coal, another form of fossil reserve. Although a plant does not consist out of only glucose, it can be seen as the most crucial building block for making plants so in a sense the glucose represents plant material. It is all about harvesting old sunlight and this chapter is about the biochemistry of doing exactly this.</p>
-<h2 id="ATP:-the-energy-currency-of-cells">ATP: the energy currency of cells<a class="anchor-link" href="#ATP:-the-energy-currency-of-cells">&#182;</a></h2><p><img src="ATP.png" width="450" /></p>
-<p>Before getting into biochemical reactions we need some background on how a cell stores energy. This clip by Paul Anderson is very helpful:</p>
-<p><a href="https://www.youtube.com/watch?v=5GMLIMIVUvo">Video: Paul Anderson on ATP</a></p>
-<p>We will get to the detail process of respiration (for generating ATP) at a later stage. Don’t worry too much about the photosynthesis terminology. Note how the info in this clip links with the knowledge acquired in chapter 1.</p>
-<h2 id="Oxidation/reduction-and-the-role-of-NADH">Oxidation/reduction and the role of NADH<a class="anchor-link" href="#Oxidation/reduction-and-the-role-of-NADH">&#182;</a></h2><p><img src="NADH.png" width="300" /></p>
-<p>The last step before getting to the essential biochemical reactions in cells is to properly understand oxidation and reduction.</p>
-<p><a href="https://www.youtube.com/watch?v=lQ6FBA1HM3s">Video: Hank Green on redox reactions</a></p>
-<p>Remember the word OILRIG (oxidation is loss, reduction is gain of electrons). Carefully consider the ammonia reaction.
-In biochemical reactions we have the electron carriers NADH and NADPH. The following video gives the basic working of NADH</p>
-<p><a href="https://www.youtube.com/watch?v=Kb-4uuCYLvE">Video: NADH basics</a></p>
-<p>NADPH is very similar to NADH and although mostly used for anabolic reactions we will consider them as the same for the time being. Very important to understand that NAD+ is a cofactor in some biochemical transformations where 2  protons and 2 electrons (2 hydrogen atoms) is taken from the chemical undergoing a conversion. In terms of oxidation/reduction NAD+ gains 2 electron (and a single proton, the other proton remains in suspension) to become NADH and is therefore reduced (reduction is gain). The component from which 2 hydrogens were taken is accordingly oxidised since the electrons are lost (oxidation is lost). Once NADH is formed it can travel to another reaction where the reverse process can take place where NADH can get oxidised.  For more detail visit the <a href="https://en.wikipedia.org/wiki/Nicotinamide_adenine_dinucleotide">wikipedia link</a>.</p>
+<h1 id="3.-Stoichiometry-without-internal-reactions">3. Stoichiometry without internal reactions<a class="anchor-link" href="#3.-Stoichiometry-without-internal-reactions">&#182;</a></h1><p>Hopefully you have gathered from your cell biology crash course in chapters 1-2 that it is all about energy. Microbes need energy to sustain life and to multiply. This principle is exactly the same for a cell suspended in a bioreactor. The cell is unaware that it is working as a ‘catalyst’ in some commercial process, so fortunately there will be no strikes. The cell just require nutrients (food) so that it can live and multiply (grow more of itself). Some of the nutrients are used directly as feedstock for making new amino acids, nucleic acids, lipids and all the other biochemicals that constitute the organism. To perform all these synthesis reactions energy is required and accordingly a significant fraction of the nutrients (mainly the carbon source like glucose) is used exclusively to make energy (or ATP in cellular terms). One can say that a large fraction of the carbon source is used as fuel with only the remainder used to build new cell material. 
+For anaerobic conditions the burning of the ‘fuel’ is incomplete. This implies that $CO_2$ and $H_2O$ are not the sole ‘combustion’ products. Instead the ‘combustion’ products still contain a carbon skeleton with hydrogen and oxygen atoms attached to the skeleton. Have a look at the fermentative pathways in chapter 3 and the principle of substrate level phosphorylation. In glycolysis glucose is broken down to simpler structures in order to generate ATP. Once ATP is generated within the cell the remainder of the carbon structure can be excreted. This excretion product can be very useful from a commercial perspective since numerous anaerobic catabolites can be used as industrial chemicals. Typical examples include organic acids (lactic, succinic, acetic) and alcohols (ethanol, 1,3-propane diol, butanol)</p>
+<p>For aerobic reactions the cell has an effective method of obtaining the maximum energy out of the carbon containing nutrient. The ‘combustion’ products of $CO_2$ and $H_2O$ will have no commercial use. Given the effective use of the fuel (lots of ATP generated per carbon source consumed) a larger fraction of the carbon source can be used for building new biomass. In some cases the biomass itself will be the product like in the production of baker’s yeast. In other cases the cells excretes a large fraction of the original carbon source in the form of an amino acid, protein of organic acid. The reason for the excretion in these scenarios is typically not linked to energy generation but rather that the excretion product has to perform an extracellular (on the outside) function. In some cases it is mere metabolic overflow of a certain product. Examples include the production of citric acid, lysine, insulin and cellulase.</p>
+<p>The chemical engineer has a simplified view on all of this. Sugar that is cheap can be converted to useful chemicals and products. Although the biochemistry is extensive to achieve this (numerous enzymatic reaction steps - just look at glycolysis for starters) it can be approximated as a single reaction step all occurring within the cell. Unfortunately unlike normal chemical reactions some unwanted or by-products need to be made, it won’t be possible to canalise all the carbon in the feed to the desired product. We need to use some of that carbon to make more biomass. But biomass is not exactly a by-product, it is more like catalyst! Catalyst is typically an expensive part of a reactor, but with bioreactors we can grow our catalyst from cheap feed materials. Another massive advantage when thinking like a chemical engineer!</p>
+<p><img src="Cellfactory.jpg" width="450" /></p>
+<p>The picture above might be simplified since a few pre-treating and post processing steps are not indicated, but it gives one idea of what we are doing. In this chapter we’ll be looking at the molecules that enters and exit the cell membrane. Note that <strong>new cells</strong> will also be an exit product. We’ll write the overall reaction down like a chemical reaction and spend some time on determining the stoichiometric coefficients. See the following video for an alternative explanation:</p>
+<p><a href="https://www.youtube.com/watch?v=hgy6vwwXZaE">Video: Lecture 3 The stoichiometry of a cell factory</a></p>
 
 </div>
 </div>
@@ -13103,27 +13096,19 @@ In biochemical reactions we have the electron carriers NADH and NADPH. The follo
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Glycolysis">Glycolysis<a class="anchor-link" href="#Glycolysis">&#182;</a></h2><p>We are now ready to harvest energy (ATP) from sugars like glucose. The process starts with glycolysis. Here is a good intro video:</p>
-<p><a href="https://www.youtube.com/watch?v=8Kn6BVGqKd8">Video: VCELL on glycolysis 1</a></p>
-<p>For a proper diagram of all the molecules, I prefer the following schematic:</p>
-<p><img src="glyc.png" width="1000" /></p>
-<p>The following video is a lovely molecular animation of glycolysis:</p>
-<p><a href="https://www.youtube.com/watch?v=hDq1rhUkV-g">Video:VCELL on glycolysis 2</a></p>
-<p>Take note that these abbreviations are used for the glycolysis intermediates</p>
-<p><img src="Glycnames.png" width="350" /></p>
-<p>It is very important to understand that the net production of energy in glycolysis is 2 ATP molecules per glucose molecule. In addition 2 NADH molecules are also generated due to an oxidation reaction. The exit carbon product namely pyruvate is important and will be used in the rest of the metabolism. Also note that most other sugars will be metabolised via the glycolysis reactions and that glycolysis is not restricted to metabolising glucose. You are not required to memorise the enzyme or component names, but you need to be able to access them rapidly.</p>
-<p>As a side note, look how close glycerol is to Dihydroxyacetone-P. Remember glycerol from the lipid discussion?</p>
-<p><img src="Glycerol.png" width="650" /></p>
-<h2 id="The-TCA-cycle">The TCA cycle<a class="anchor-link" href="#The-TCA-cycle">&#182;</a></h2><p>The citric (or tricarboxylic acid cycle) is the process of fully oxidising pyruvate to $CO_2$ and NADH (and some FADH that is very similar to NADH). It is the internal combustion engine, although some of the intermediates are used for synthesizing amino acids and vitamins. The following video is a good overview:</p>
-<p><a href="https://www.youtube.com/watch?v=F6vQKrRjQcQ">Video: VCELL on TCA 1</a></p>
-<p>The following diagram is also very useful:</p>
-<p><img src="TCA.png" width="800" /></p>
-<hr>
-<p>Note that glycolysis links with the TCA cycle via pyruvate. Pyruvate oxidation generates NADH and acetyl-CoA, an intermediate in the cycle. The cycle can only start to turn if oxaloacetate is initially present. The oxaloacetate can be produced by carboxylation of pyruvate (adding $CO_2$) using the enzyme pyruvate carboxylase that requires ATP. The carboxylation does not have to occur on a continuous basis since oxaloacetate is regenerated via the TCA cycle itself and accordingly the ATP investment to make the first oxaloacetate molecule can be ignored. For a detail animation of the reactions see the following video</p>
-<p><a href="https://www.youtube.com/watch?v=_cXVleFtzeE">Video: VCELL on TCA 2</a></p>
-<p>Familiarise yourself with the molecules and their names. A single turn of the cycle will release 2 $CO_2$ molecules. How many cycles are required to effectively burn a glucose molecule? Don’t forget the pyruvate oxidation step where $CO2$ is also released. Given one glucose molecule that has gone through glycolysis and the TCA cycle you should proof to yourself that 6$ CO_2$, 10 NADH, 2 FADH2 and 4 ATP (assume GTP and ATP are the same) got generated. Even though the glucose got burned we still don’t have a lot of available energy. This will be generated when the NADH and FADH2 are converted to ATP via oxidative phosphorylation. 
-We won’t be going into detail on amino acid synthesis, but take note of the fact that almost all of the amino acids get synthesized from glycolysis or TCA cycle intermediates. See the following diagram:</p>
-<p><img src="am_ac.jpg" width="700" /></p>
+<h3 id="Stoichiometry,-rates-and-yields">Stoichiometry, rates and yields<a class="anchor-link" href="#Stoichiometry,-rates-and-yields">&#182;</a></h3><p>In this subject it is crucial to understand how stoichiometry relates to reaction rates. Let's start by considering a simple chemical reaction:</p>
+$$ A+2B \to 4C+3D$$<p>In essense this reaction states that for each mole of A that reacts, 2 moles of B is consumed, while 4 moles of C is formed and 3 moles of D is formed. In the context of this subject it is the easiest to think of reaction in terms of reaction rates where we relate the conversion process to time. In terms of the reaction rate ($r_i$) we can use the stoichiometric coeffisients to relate the respective reaction rates of the 4 components to one another. It should be clear that:</p>
+$$r_B=2r_A, \,\, r_C=-4r_A, \,\, r_D=-3r_A  $$<p><strong>The standard convention</strong> is to define production rate as positive. This implies that $r_A$ and $r_B$ will be negative since molecules are consumed.</p>
+<p>The reaction above can also be written as follow:</p>
+$$ \frac{1}{2}A+B \to 2C+\frac{3}{2}D$$<p>Here we have chosen to relate the stoichiometry to one mole of B that reacts (instead of one mole of A that reacts in the fisrt expression). It should be clear to you that the following relationships applies for both ways of expressing the reaction:</p>
+$$  \frac{-r_B}{-r_A}=2  \;\; \frac{r_C}{-r_A}=4 \;\; \frac{r_D}{-r_A}=3  $$<p>It is preferable to put minus sings in front of reagent reaction rates in order to work with positive quatities. The relationships above show that stoichiometry is merely the ratio of rates. We can write out the reaction like this:</p>
+$$ A+\left(\frac{-r_B}{-r_A}\right)B \to \left(\frac{r_C}{-r_A}\right)C+\left(\frac{r_D}{-r_A}\right)D$$<p>In the above expression component A was chosen as the basis (by assigning a coeffisient of 1). We can for example opt to have component C as the basis:</p>
+$$ \left(\frac{-r_A}{r_C}\right)A+\left(\frac{-r_B}{r_C}\right)B \to C+\left(\frac{r_D}{r_C}\right)D$$<p>The values of the stoichiometric coeffisients might change, but the ratio between the coeffisients don't. To simplify all the ratios we can merely write:</p>
+$$ (-r_A) A+(-r_B) B \to (r_C) C+(r_D)D$$<p>It might appear that we now need 4 stoichiometric coeffisients to define the reaction. We only need 3 since stoichiometry only defines the ratios in which the components react. For 4 components there is just 3 independant ratios. If the absolute value of one reaction rate is known, the 3 independant stoichiometric coeffisients will allow the calculation of all the rate values.</p>
+<p>In bioprocess nomenclature, stoichiometric coeffisients are referred to as <strong>yield coeffisients ($Y$)</strong>. If component A is chosen as the basis, the above reaction will be represented as:</p>
+$$  A+Y_{AB} B \to Y_{AC} C+Y_{AD}D$$<p>We can also for example use C as the basis:</p>
+$$  Y_{CA}A+Y_{CB} B \to  C+Y_{CD}D$$<p>Note the simple relatioship:</p>
+$$Y_{AC}=\frac{r_C}{-r_A}$$<p>The convention explained above exclusively works with <strong>positive values of rates and yields</strong>. The underlying assumption is that it is known whether a component is a reagent or a product. Negative yield or rate values will imply that a component was incorrectly identified as reagent/product.</p>
 
 </div>
 </div>
@@ -13131,35 +13116,87 @@ We won’t be going into detail on amino acid synthesis, but take note of the fa
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Oxidative-phosphorylation-(electron-transport-chain)">Oxidative phosphorylation (electron transport chain)<a class="anchor-link" href="#Oxidative-phosphorylation-(electron-transport-chain)">&#182;</a></h2><p>The glucose electrons carried by NADH and FADH2 are high energy electrons. The electron transport chain in the mitochondria entails the process of harvesting energy from the NADH bounded electrons to produce ATP. In the end the electrons end up in a water molecule by joining with oxygen to form water. Oxygen is referred to as the final electron acceptor. Have a look at this video.</p>
-<p><a href="https://www.youtube.com/watch?v=xbJ0nbzt5Kw">Video: VCELL on electron transport chain</a></p>
-<p>The high energy electrons are used to generate a proton gradient over the inner mitochondrial membrane. Note how protons (hydrogen ions) move from the matrix upwards in the animation. The proton gradient is the driving force for ATP synthase where a flow of protons (back into the matrix) physically turns this enzyme complex like water turning a mill. The rotational energy is then used to generate ATP, see this video:</p>
-<p><a href="https://www.youtube.com/watch?v=3y1dO4nNaKY">Video: VCELL on ATP synthase</a></p>
-<p>So how much ATP can be generated from NADH (2 electrons)? The theoretical answer is 3 ATPs. For $FADH_2$ the theoretical answer is 2 ATPs since the electrons carried has a lower energy potential and only enters the electron transfer chain midway. In practise less ATP is generated due to losses caused by inefficiencies and the number for NADH is closer to 1.3-2.5 (it is referred to as the P/O number and there is debate on the exact magnitude of this number)</p>
-<p><img src="atpsyn.gif" width="300" /></p>
-<p>Just a note on the types of ATP formation routes. When ATP is generated directly from the metabolic pathway (like in glycolysis) it is referred to as substrate level phosphorylation. This stands in contrast with oxidative phosphorylation where a proton gradient is used to generate ATP.</p>
-<h2 id="Respiration">Respiration<a class="anchor-link" href="#Respiration">&#182;</a></h2><p>We now need to combine the whole process of ‘combusting’ glucose by looking at glycolysis, the TCA cycle and oxidative phosphorylation together. The overall equation for glycolysis and the TCA cycle is as follow:</p>
-$$C_6 H_{12} O_6+6H_2 O \to 6CO_2+10\,NADH+2\,FADH_2+4\, ATP$$<p>Note that NADH and $FADH_2$ both carry two protons, although in NADH one proton is loosely attached. Oxidative phosphorylation can be summarised as follow:</p>
-$$NADH+\frac{1}{2}O_2 \to (P/O)_{NADH}\, ATP+H_2 O$$$$FADH_2+ \frac{1}{2}O_2  \to(P/O)_{FADH_2}\, ATP+H_2 O$$<p>The theoretical values for $(P/O)_{NADH}$ is 3 and $(P/O)_{FADH_2}$ is 2. $(P/O)$ stands for phosphate (added to ADP to form ATP) per atomic oxygen (thus the $\frac{1}{2}O_2$ in the equation). Given the above the whole of respiration (glycolysis, TCA and oxidative phosphorylation) can be written as:</p>
-$$C_6 H_{12} O_6+6O_2 \to 6CO_2+6H_2 O+38\, ATP$$<p>If we use a $(P/O)_{NADH}$ of 1.5 and a $(P/O)_{FADH_2}$ of 1,the overall reaction reduce to:</p>
-$$C_6 H_{12} O_6+6O_2 \to6CO_2+6H_2 O+21\, ATP$$<p>When comparing the ATP generated from glycolysis to the ATP generated via full respiration (21) we see a more than tenfold increase in energy gain. This is a crucial number for higher organisms like eukaryotes where energy efficiency is essential for multicellular life.</p>
-<p>Some prokaryotes also have the ability to perform aerobic respiration eventhough they do not have mitochondria. For these organisms a similar proton gradient to that of the mitochondria is generated over the inner cell membrane (<a href="https://en.wikipedia.org/wiki/Periplasm">see periplasm</a>)</p>
-<p>This Khan Academy video might give you some further assistance:</p>
-<p><a href="https://www.khanacademy.org/science/biology/cellular-respiration-and-fermentation/intro-to-cellular-respiration/v/introduction-to-cellular-respiration">Video: Khan on respiration</a></p>
+<h3 id="Balancing-equations">Balancing equations<a class="anchor-link" href="#Balancing-equations">&#182;</a></h3><p>Take the reaction where glucose ($C_6 H_{12}O_6$)  is converted to succinic acid ($C_4 H_{6}O_4$). The overall chemical reaction will entail the consumption of carbon dioxide and the production of water. The chemical reaction is given by the following:</p>
+$$C_6 H_{12} O_6+Y_{SC}CO_2→Y_{SSA}C_4 H_6 O_4+Y_{SW}H_2 O$$<p>Note the subscripts <strong>S,C,SA,W</strong> for glucose, $CO_2$, succinic acid and water.</p>
+<p>In CBI310 the determination of rates will be more important than the determination of yields. We are thus going to represent the reaction as follows:</p>
+$$C_6 H_{12} O_6+\left( \frac{-r_C}{-r_S} \right)CO_2→\left( \frac{r_{SA}}{-r_S} \right)C_4 H_6 O_4+\left( \frac{r_W}{-r_S} \right)H_2 O$$<p>Multiply with $-r_S$:</p>
+$$(-r_S)C_6 H_{12} O_6+\left( -r_C \right)CO_2→(r_{SA})C_4 H_6 O_4+(r_W)H_2 O$$<p>Let us do the carbon balance:</p>
+$$ 6(-r_S)+(-r_C)=4(r_{SA})$$<p>Make sure you understand the balance. To explain the first term, for each mole of glucose that reacts $(-r_S)$, six moles of carbon will be consumed (left side of the equation is consumption).</p>
+<p>Rewrite the balance so that we have an expression set equal to zero:</p>
+$$6(-r_S)+(-r_C)-4(r_{SA})=0 \qquad [A]$$
+<pre><code> 
 
+</code></pre>
+<p>Similar the hydrogen and oxygen balances can be given as:</p>
+$$12(-r_S)-6(r_{SA})-2(r_W)=0 \qquad [B]$$<p></p>
+$$6(-r_S)+2(-r_C)-4(r_{SA})-r_W=0 \qquad [C]$$<p>For now we will <strong>define the glucose consumption rate ($-r_S$) as 1</strong>, but note that it can be any value:</p>
+$$(-r_S)=1\qquad [D]$$<p>Equations A-D above can be written in matrix format:</p>
+$$\begin{bmatrix}6 &amp; 1 &amp;-4&amp;0 \\12&amp;0&amp;-6&amp;-2\\6&amp;2&amp;-4&amp;-1\\1&amp;0&amp;0&amp;0\end{bmatrix}\times\begin{bmatrix}-r_{S}\\-r_C\\r_{SA}\\r_W\end{bmatrix}=\begin{bmatrix}0\\0\\0\\1\end{bmatrix}$$
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Fermentative-pathways">Fermentative pathways<a class="anchor-link" href="#Fermentative-pathways">&#182;</a></h2><p>Most cells have the ability to survive without oxygen. This is referred to as anaerobic conditions. For this scenario the only energy generation is via glycolysis (2ATP per glucose molecule). Remember that glycolysis also generate 2 molecules of NADH per glucose. All living cells need to maintain their NADH/NAD+ and ATP/ADP ratio, so build-up of NADH and ATP is not possible. ATP will get continuously consumed due to cellular energy demands and thus the ATP/ADP ratio can be maintained (the net production of ATP is effectively zero when considering production minus consumption). The same should apply for NADH so the electrons gained from glycolysis should be used somewhere to stop the build-up of NADH. If oxygen is available the electrons can be dumped onto oxygen to form water (in biochemistry electrons are usually associated with a proton, so when saying oxidation is loss (OIL) we are referring to electrons and protons). So what do we do with the electrons and protons from NADH to stop NADH build-up when oxygen is not available? The answer is to give it back to the carbon product of glycolysis (pyruvate). The most common way of doing this is via lactic acid and ethanol formation. See the following video:</p>
-<p><a href="https://www.youtube.com/watch?v=cDC29iBxb3w">Video: Paul Anderson on fermentative pathways</a></p>
-<p>Although a good video the title of the video is incorrect. Anaerobic respiration is the process where the electron transfer chain is still employed but with an alternative electron acceptor (not oxygen). We won’t be spending time on this but note the incorrect title. The title should rather be: Anaerobic fermentative pathways. Note that lactic acid formation is a single biochemical step from pyruvate where pyruvate is reduced (and NADH oxidised). Make sure you know the molecular structure of lactic acid. Ethanol formation entails more biochemical steps. In eukaryotes acetaldehyde is the only intermediate, while in bacteria acetyl-CoA and acetaldehyde are intermediates. No additional ATP is generated while the NADH from glycolysis is consumed in the process of making ethanol while CO2 is released.</p>
-<p>Although lactic acid and ethanol are the most common anaerobic fermentation products there are also other products like formic acid, acetic acid and succinic acid. Note that the difference between lactate and lactic acid is the acid proton, for lactate the proton is dissociated, while it is undissociated for lactic acid. All these are mere excretion products for an anaerobic cell, like CO2 is for an aerobic cell. However for the chemical engineer these are useful chemicals with a carbon backbone and interesting polar groups (that can be used for polymerisation of other industrially relevant conversions). So anaerobic fermentation might not be very energy efficient, but the breakdown metabolic products (catabolites) are handy molecules.</p>
-<p>The term fermentation was initially used for anaerobic conversion of a carbon substrate, but over time the definition expanded to include aerobic processes, especially when referring to the bioreactor which is commonly referred to as a fermenter.</p>
-<p>Lastly, it is important to understand how microbes interact with oxygen. Some cannot live without oxygen (obligate aerobe), some cannot live with oxygen (obligate anaerobe) while numerous microbes can operate with or without it (<a href="https://en.wikipedia.org/wiki/Facultative_anaerobic_organism">facultative anaerobe</a>).</p>
-<p><a href="../List%20of%20contents.ipynb">Back to Contents page</a></p>
+<p>The generic notation used for the formulation above is as follow:</p>
+$$\mathbf{S\times r=C}$$<p>The solution of $r$ can be obtained by the following:</p>
+$$\mathbf{r=S^{-1} \times C}$$<p>We can start by quickly solving these equations in Excel.The following video gives a step by step instruction:</p>
+<p><a href="https://www.youtube.com/watch?v=vLsouen-G8M">Video: Solving linear equations in Excel</a></p>
+<p>Note that the <strong>SHIFT-CONTROL-ENTER</strong> keystroke applies the formula to the selected cells.</p>
+<p>There are also numerous apps that can perform the calculation. I found that <strong>[M]atrix</strong> works well for formulations up to 10 equations.</p>
+<p>As the course progress we will be solving linear equations within larger mathematical formulations (remember tutorial 0). For these formulations we will be using <strong>Ipython notebooks</strong>. Since these notes are written in <strong>Ipython notebooks</strong> we can quickly solve the equations above:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span>
+<span class="n">S</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">matrix</span><span class="p">([[</span><span class="mi">6</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">4</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span>  
+                  <span class="p">[</span> <span class="mi">12</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">6</span><span class="p">,</span><span class="o">-</span><span class="mi">2</span><span class="p">],</span> 
+                  <span class="p">[</span><span class="mi">6</span><span class="p">,</span>  <span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">4</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span>
+                  <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]])</span>        <span class="c1"># note how the matrix is defined</span>
+
+<span class="n">C</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">matrix</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]])</span><span class="o">.</span><span class="n">T</span>      <span class="c1"># The C-matrix is transposed (T) to perform the calculation</span>
+
+<span class="n">r</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="n">S</span><span class="p">,</span><span class="n">C</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[[ 1.        ]
+ [ 0.85714286]
+ [ 1.71428571]
+ [ 0.85714286]]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>See if you get the same answer from <strong>Excel</strong> or from the app that you prefer. Also make sure that you have a linear equation solver tool avaialble in class!</p>
+<p><a href="https://nbviewer.jupyter.org/github/willienicol/Biochemical-engineering-notes/blob/master/List%20of%20contents.ipynb">Back to Contents page</a></p>
 
 </div>
 </div>

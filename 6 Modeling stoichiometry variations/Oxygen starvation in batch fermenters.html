@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>Basic Biochemistry</title>
+<title>Oxygen starvation in batch fermenters</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13082,20 +13082,9 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="2.-Basic-biochemistry-(central-carbon-metabolism)">2. Basic biochemistry (central carbon metabolism)<a class="anchor-link" href="#2.-Basic-biochemistry-(central-carbon-metabolism)">&#182;</a></h1><p>Life is all about obtaining energy. Without energy there is no life. Almost all of the energy on earth originates from the sun, the eternal battery that powers life. In this regard plants play a very important role since they have the ability to capture light energy and store it into chemical energy via the process of photosynthesis. Since this course focus on micro-organisms we won’t go into the details of photosynthesis, we’ll only use the following chemical equation to describe the process:</p>
-$$6H_2O + 6CO_2 + energy \rightleftharpoons C_6 H_{12} O_6+6O_2$$<p>So a plant takes water, carbon dioxide and sunlight to produce glucose and oxygen, a very useful process. Glucose can thus be seen as the chemical that stores the sunlight in a chemical format. Note the reversible arrow in the equation, it is very important. The reverse process is referred to as respiration, where glucose is consumed in combination with oxygen in order to obtain energy. This is exactly what happens in your body, you release the old sunlight energy into your body to perform your daily tasks.</p>
-<p>The above equation also relates to external energy sources that you use on a daily basis. The petrol in your car originated from fossil reserves, decomposed plant material from millions of year ago. The same for electricity that is mainly produced in the RSA by burning coal, another form of fossil reserve. Although a plant does not consist out of only glucose, it can be seen as the most crucial building block for making plants so in a sense the glucose represents plant material. It is all about harvesting old sunlight and this chapter is about the biochemistry of doing exactly this.</p>
-<h2 id="ATP:-the-energy-currency-of-cells">ATP: the energy currency of cells<a class="anchor-link" href="#ATP:-the-energy-currency-of-cells">&#182;</a></h2><p><img src="ATP.png" width="450" /></p>
-<p>Before getting into biochemical reactions we need some background on how a cell stores energy. This clip by Paul Anderson is very helpful:</p>
-<p><a href="https://www.youtube.com/watch?v=5GMLIMIVUvo">Video: Paul Anderson on ATP</a></p>
-<p>We will get to the detail process of respiration (for generating ATP) at a later stage. Don’t worry too much about the photosynthesis terminology. Note how the info in this clip links with the knowledge acquired in chapter 1.</p>
-<h2 id="Oxidation/reduction-and-the-role-of-NADH">Oxidation/reduction and the role of NADH<a class="anchor-link" href="#Oxidation/reduction-and-the-role-of-NADH">&#182;</a></h2><p><img src="NADH.png" width="300" /></p>
-<p>The last step before getting to the essential biochemical reactions in cells is to properly understand oxidation and reduction.</p>
-<p><a href="https://www.youtube.com/watch?v=lQ6FBA1HM3s">Video: Hank Green on redox reactions</a></p>
-<p>Remember the word OILRIG (oxidation is loss, reduction is gain of electrons). Carefully consider the ammonia reaction.
-In biochemical reactions we have the electron carriers NADH and NADPH. The following video gives the basic working of NADH</p>
-<p><a href="https://www.youtube.com/watch?v=Kb-4uuCYLvE">Video: NADH basics</a></p>
-<p>NADPH is very similar to NADH and although mostly used for anabolic reactions we will consider them as the same for the time being. Very important to understand that NAD+ is a cofactor in some biochemical transformations where 2  protons and 2 electrons (2 hydrogen atoms) is taken from the chemical undergoing a conversion. In terms of oxidation/reduction NAD+ gains 2 electron (and a single proton, the other proton remains in suspension) to become NADH and is therefore reduced (reduction is gain). The component from which 2 hydrogens were taken is accordingly oxidised since the electrons are lost (oxidation is lost). Once NADH is formed it can travel to another reaction where the reverse process can take place where NADH can get oxidised.  For more detail visit the <a href="https://en.wikipedia.org/wiki/Nicotinamide_adenine_dinucleotide">wikipedia link</a>.</p>
+<h2 id="Oxygen-consumption-and-replacement">Oxygen consumption and replacement<a class="anchor-link" href="#Oxygen-consumption-and-replacement">&#182;</a></h2><p>Aerobic organisms use respiration for generating ATP. Accordingly there is a direct link between the oxygen that these organisms consume and the ATP that they generate. In an aerobic fermenter oxygen is supplied to the fermenter via the sparging of air. The organisms can be seen as little 'fish' constantly consuming the dissolved oxygen in the liquid. Constant consumption of oxygen will therefore require the constant supply or addition of oxygen. This process is referred to as gas-liquid mass transfer and we will consider the mathematics of this process in order to understand how the organisms are influenced by the rate of oxygen supply (or mass transfer) to the fermenter.</p>
+<p>You will note in the calculation of this chapter that oxygen supply becomes an issue when the biomass concentration ($C_X$) in the fermenter is high. More oxygen consuming microbes in the fermenter requires a faster supply of oxygen and at a point will be reached where the supply (or mass transfer) is at a maximum. Once this occurs the microbes have to share the limited oxygen and accordingly their oxygen uptake rates (per biomass) will decrease. The implication is that less ATP will be generated per microbe and this will in turn affect the rate at which these organisms can grow.</p>
+<p><img src="sparger.jpg" width="350" /></p>
 
 </div>
 </div>
@@ -13103,27 +13092,9 @@ In biochemical reactions we have the electron carriers NADH and NADPH. The follo
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Glycolysis">Glycolysis<a class="anchor-link" href="#Glycolysis">&#182;</a></h2><p>We are now ready to harvest energy (ATP) from sugars like glucose. The process starts with glycolysis. Here is a good intro video:</p>
-<p><a href="https://www.youtube.com/watch?v=8Kn6BVGqKd8">Video: VCELL on glycolysis 1</a></p>
-<p>For a proper diagram of all the molecules, I prefer the following schematic:</p>
-<p><img src="glyc.png" width="1000" /></p>
-<p>The following video is a lovely molecular animation of glycolysis:</p>
-<p><a href="https://www.youtube.com/watch?v=hDq1rhUkV-g">Video:VCELL on glycolysis 2</a></p>
-<p>Take note that these abbreviations are used for the glycolysis intermediates</p>
-<p><img src="Glycnames.png" width="350" /></p>
-<p>It is very important to understand that the net production of energy in glycolysis is 2 ATP molecules per glucose molecule. In addition 2 NADH molecules are also generated due to an oxidation reaction. The exit carbon product namely pyruvate is important and will be used in the rest of the metabolism. Also note that most other sugars will be metabolised via the glycolysis reactions and that glycolysis is not restricted to metabolising glucose. You are not required to memorise the enzyme or component names, but you need to be able to access them rapidly.</p>
-<p>As a side note, look how close glycerol is to Dihydroxyacetone-P. Remember glycerol from the lipid discussion?</p>
-<p><img src="Glycerol.png" width="650" /></p>
-<h2 id="The-TCA-cycle">The TCA cycle<a class="anchor-link" href="#The-TCA-cycle">&#182;</a></h2><p>The citric (or tricarboxylic acid cycle) is the process of fully oxidising pyruvate to $CO_2$ and NADH (and some FADH that is very similar to NADH). It is the internal combustion engine, although some of the intermediates are used for synthesizing amino acids and vitamins. The following video is a good overview:</p>
-<p><a href="https://www.youtube.com/watch?v=F6vQKrRjQcQ">Video: VCELL on TCA 1</a></p>
-<p>The following diagram is also very useful:</p>
-<p><img src="TCA.png" width="800" /></p>
-<hr>
-<p>Note that glycolysis links with the TCA cycle via pyruvate. Pyruvate oxidation generates NADH and acetyl-CoA, an intermediate in the cycle. The cycle can only start to turn if oxaloacetate is initially present. The oxaloacetate can be produced by carboxylation of pyruvate (adding $CO_2$) using the enzyme pyruvate carboxylase that requires ATP. The carboxylation does not have to occur on a continuous basis since oxaloacetate is regenerated via the TCA cycle itself and accordingly the ATP investment to make the first oxaloacetate molecule can be ignored. For a detail animation of the reactions see the following video</p>
-<p><a href="https://www.youtube.com/watch?v=_cXVleFtzeE">Video: VCELL on TCA 2</a></p>
-<p>Familiarise yourself with the molecules and their names. A single turn of the cycle will release 2 $CO_2$ molecules. How many cycles are required to effectively burn a glucose molecule? Don’t forget the pyruvate oxidation step where $CO2$ is also released. Given one glucose molecule that has gone through glycolysis and the TCA cycle you should proof to yourself that 6$ CO_2$, 10 NADH, 2 FADH2 and 4 ATP (assume GTP and ATP are the same) got generated. Even though the glucose got burned we still don’t have a lot of available energy. This will be generated when the NADH and FADH2 are converted to ATP via oxidative phosphorylation. 
-We won’t be going into detail on amino acid synthesis, but take note of the fact that almost all of the amino acids get synthesized from glycolysis or TCA cycle intermediates. See the following diagram:</p>
-<p><img src="am_ac.jpg" width="700" /></p>
+<p>Before we can perform the abovementioned calculation, let's have a look at describing gas-liquid mass transfer. The mathematical formulation of the volumetric (fermenter based) mass transfer rate is given by:</p>
+$$r_{O_2}^{mt}=k_La \cdot \left(C_{O_2}^{sat}-C_{O_2} \right)$$<hr>
+$$ \left[ \frac{mol\,O_2}{L\cdot h}  \right] = \left[ \frac{1}{h} \cdot \frac{mol\,O_2}{L}  \right]$$<p>Note that $r_{O_2}^{mt}$ is a volume based rate similar to $r_{O_2}^V$. The rate is defined by a mass transfer coefficient ($k_La$) multiplied by a concentration difference between the saturated oxygen concentration ($C_{O_2}^{sat}$) and the oxygen concentration in the fermenter ($C_{O_2}$). The saturated oxygen concentration is dependent on the oxygen partial pressure and typically varies between $6-8 \frac{mg}{L}$ (1.9e-4 to 2.5e-4 $\frac{mol\,O_2}{L}$) at atmospheric air conditions The chemical engineering approach is to assume that all liquid on the gas-liquid interface (edge of bubbles) are saturated (at $C_{O_2}^{sat}$ ) while $C_{O_2}$ will always be less than $C_{O_2}^{sat}$. The mass transfer coefficient (note the units) is determined by the air flowrate, sparger and impeller characteristics but will be supplied in this course.</p>
 
 </div>
 </div>
@@ -13131,21 +13102,13 @@ We won’t be going into detail on amino acid synthesis, but take note of the fa
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Oxidative-phosphorylation-(electron-transport-chain)">Oxidative phosphorylation (electron transport chain)<a class="anchor-link" href="#Oxidative-phosphorylation-(electron-transport-chain)">&#182;</a></h2><p>The glucose electrons carried by NADH and FADH2 are high energy electrons. The electron transport chain in the mitochondria entails the process of harvesting energy from the NADH bounded electrons to produce ATP. In the end the electrons end up in a water molecule by joining with oxygen to form water. Oxygen is referred to as the final electron acceptor. Have a look at this video.</p>
-<p><a href="https://www.youtube.com/watch?v=xbJ0nbzt5Kw">Video: VCELL on electron transport chain</a></p>
-<p>The high energy electrons are used to generate a proton gradient over the inner mitochondrial membrane. Note how protons (hydrogen ions) move from the matrix upwards in the animation. The proton gradient is the driving force for ATP synthase where a flow of protons (back into the matrix) physically turns this enzyme complex like water turning a mill. The rotational energy is then used to generate ATP, see this video:</p>
-<p><a href="https://www.youtube.com/watch?v=3y1dO4nNaKY">Video: VCELL on ATP synthase</a></p>
-<p>So how much ATP can be generated from NADH (2 electrons)? The theoretical answer is 3 ATPs. For $FADH_2$ the theoretical answer is 2 ATPs since the electrons carried has a lower energy potential and only enters the electron transfer chain midway. In practise less ATP is generated due to losses caused by inefficiencies and the number for NADH is closer to 1.3-2.5 (it is referred to as the P/O number and there is debate on the exact magnitude of this number)</p>
-<p><img src="atpsyn.gif" width="300" /></p>
-<p>Just a note on the types of ATP formation routes. When ATP is generated directly from the metabolic pathway (like in glycolysis) it is referred to as substrate level phosphorylation. This stands in contrast with oxidative phosphorylation where a proton gradient is used to generate ATP.</p>
-<h2 id="Respiration">Respiration<a class="anchor-link" href="#Respiration">&#182;</a></h2><p>We now need to combine the whole process of ‘combusting’ glucose by looking at glycolysis, the TCA cycle and oxidative phosphorylation together. The overall equation for glycolysis and the TCA cycle is as follow:</p>
-$$C_6 H_{12} O_6+6H_2 O \to 6CO_2+10\,NADH+2\,FADH_2+4\, ATP$$<p>Note that NADH and $FADH_2$ both carry two protons, although in NADH one proton is loosely attached. Oxidative phosphorylation can be summarised as follow:</p>
-$$NADH+\frac{1}{2}O_2 \to (P/O)_{NADH}\, ATP+H_2 O$$$$FADH_2+ \frac{1}{2}O_2  \to(P/O)_{FADH_2}\, ATP+H_2 O$$<p>The theoretical values for $(P/O)_{NADH}$ is 3 and $(P/O)_{FADH_2}$ is 2. $(P/O)$ stands for phosphate (added to ADP to form ATP) per atomic oxygen (thus the $\frac{1}{2}O_2$ in the equation). Given the above the whole of respiration (glycolysis, TCA and oxidative phosphorylation) can be written as:</p>
-$$C_6 H_{12} O_6+6O_2 \to 6CO_2+6H_2 O+38\, ATP$$<p>If we use a $(P/O)_{NADH}$ of 1.5 and a $(P/O)_{FADH_2}$ of 1,the overall reaction reduce to:</p>
-$$C_6 H_{12} O_6+6O_2 \to6CO_2+6H_2 O+21\, ATP$$<p>When comparing the ATP generated from glycolysis to the ATP generated via full respiration (21) we see a more than tenfold increase in energy gain. This is a crucial number for higher organisms like eukaryotes where energy efficiency is essential for multicellular life.</p>
-<p>Some prokaryotes also have the ability to perform aerobic respiration eventhough they do not have mitochondria. For these organisms a similar proton gradient to that of the mitochondria is generated over the inner cell membrane (<a href="https://en.wikipedia.org/wiki/Periplasm">see periplasm</a>)</p>
-<p>This Khan Academy video might give you some further assistance:</p>
-<p><a href="https://www.khanacademy.org/science/biology/cellular-respiration-and-fermentation/intro-to-cellular-respiration/v/introduction-to-cellular-respiration">Video: Khan on respiration</a></p>
+<p>We will use a pseudo steady state assumption where we assume that the volumetric consumption rate of oxygen by the organisms ($r_{O_2}^V$) is equal to the rate at which oxygen is transferred into the medium ($r_{O_2}^{mt}$). Accordingly there will be no accumulation of oxygen in the liquid.</p>
+$$r_{O_2}^{mt}=r_{O_2}^V=r_{O_2}C_X$$<hr>
+<p>The maximum possible transfer rate of oxygen will be given by:</p>
+$$r_{O_2}^{mt_{max}}=k_La \cdot C_{O_2}^{sat}$$<hr>
+<p>When the maximum transfer rate is achieved the oxygen concentration in the broth $C_{O_2}$ is very low. This will happen when the oxygen supply limits the oxygen uptake by the microbes. A condition will develop where the cell based oxygen consumption $r_{O_2}$ is dictated by the maximum mass transfer via the following relationship:</p>
+$$r_{O_2}=\frac{r_{O_2}^{mt_{max}}}{C_X}$$<hr>
+<p>You will note in the example below, that the specifications in the stoichiometric matrix (response function) changes when the limited oxygen condition is achieved. Before the oxygen limitation the oxygen uptake rate ($r_{O_2}$) was calculated based on the $\mu$ specification. Once the limitation kicks in, the $\mu$ specification is replaced by a $r_{O_2}$ specification. The rate of ATP production will now drop since less oxygen is consumed per microbe. How will this affect the growth rate?</p>
 
 </div>
 </div>
@@ -13153,13 +13116,1022 @@ $$C_6 H_{12} O_6+6O_2 \to6CO_2+6H_2 O+21\, ATP$$<p>When comparing the ATP genera
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Fermentative-pathways">Fermentative pathways<a class="anchor-link" href="#Fermentative-pathways">&#182;</a></h2><p>Most cells have the ability to survive without oxygen. This is referred to as anaerobic conditions. For this scenario the only energy generation is via glycolysis (2ATP per glucose molecule). Remember that glycolysis also generate 2 molecules of NADH per glucose. All living cells need to maintain their NADH/NAD+ and ATP/ADP ratio, so build-up of NADH and ATP is not possible. ATP will get continuously consumed due to cellular energy demands and thus the ATP/ADP ratio can be maintained (the net production of ATP is effectively zero when considering production minus consumption). The same should apply for NADH so the electrons gained from glycolysis should be used somewhere to stop the build-up of NADH. If oxygen is available the electrons can be dumped onto oxygen to form water (in biochemistry electrons are usually associated with a proton, so when saying oxidation is loss (OIL) we are referring to electrons and protons). So what do we do with the electrons and protons from NADH to stop NADH build-up when oxygen is not available? The answer is to give it back to the carbon product of glycolysis (pyruvate). The most common way of doing this is via lactic acid and ethanol formation. See the following video:</p>
-<p><a href="https://www.youtube.com/watch?v=cDC29iBxb3w">Video: Paul Anderson on fermentative pathways</a></p>
-<p>Although a good video the title of the video is incorrect. Anaerobic respiration is the process where the electron transfer chain is still employed but with an alternative electron acceptor (not oxygen). We won’t be spending time on this but note the incorrect title. The title should rather be: Anaerobic fermentative pathways. Note that lactic acid formation is a single biochemical step from pyruvate where pyruvate is reduced (and NADH oxidised). Make sure you know the molecular structure of lactic acid. Ethanol formation entails more biochemical steps. In eukaryotes acetaldehyde is the only intermediate, while in bacteria acetyl-CoA and acetaldehyde are intermediates. No additional ATP is generated while the NADH from glycolysis is consumed in the process of making ethanol while CO2 is released.</p>
-<p>Although lactic acid and ethanol are the most common anaerobic fermentation products there are also other products like formic acid, acetic acid and succinic acid. Note that the difference between lactate and lactic acid is the acid proton, for lactate the proton is dissociated, while it is undissociated for lactic acid. All these are mere excretion products for an anaerobic cell, like CO2 is for an aerobic cell. However for the chemical engineer these are useful chemicals with a carbon backbone and interesting polar groups (that can be used for polymerisation of other industrially relevant conversions). So anaerobic fermentation might not be very energy efficient, but the breakdown metabolic products (catabolites) are handy molecules.</p>
-<p>The term fermentation was initially used for anaerobic conversion of a carbon substrate, but over time the definition expanded to include aerobic processes, especially when referring to the bioreactor which is commonly referred to as a fermenter.</p>
-<p>Lastly, it is important to understand how microbes interact with oxygen. Some cannot live without oxygen (obligate aerobe), some cannot live with oxygen (obligate anaerobe) while numerous microbes can operate with or without it (<a href="https://en.wikipedia.org/wiki/Facultative_anaerobic_organism">facultative anaerobe</a>).</p>
-<p><a href="../List%20of%20contents.ipynb">Back to Contents page</a></p>
+<h3 id="Example">Example<a class="anchor-link" href="#Example">&#182;</a></h3><p>In this example we'll look at aerobic growth on glucose in a batch fermenter We'll start by defining the physiological properties of the microbe:</p>
+<table>
+<thead><tr>
+<th>$\alpha \qquad \qquad$</th>
+<th>$\gamma \qquad \qquad $</th>
+<th>$\mu_{max} \qquad$</th>
+<th>$\theta_{max}\qquad$</th>
+<th>$(P/O)$ $\qquad \qquad$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\frac{cmol\,CO_2}{cmol \, X}$</td>
+<td>$\frac{mol \, ATP}{Cmol \, X}$</td>
+<td>$\frac{1}{h}$</td>
+<td>$\frac{mol \, ATP}{cmol\,X\cdot h}$</td>
+<td>$\frac{mol\,ATP}{mol\, O}$</td>
+</tr>
+<tr>
+<td>0.1</td>
+<td>2.5</td>
+<td>0.3</td>
+<td>0.1</td>
+<td>1.5</td>
+</tr>
+</tbody>
+</table>
+<p>The biomass formula is given by $CH_{1.8}O_{0.5}N_{0.2}$</p>
+<p>The following Monod characteristics are known:</p>
+<table>
+<thead><tr>
+<th></th>
+<th>$K_M\left[\frac{mg}{L} \right] \qquad$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <strong>Growth</strong></td>
+<td>30 </td>
+</tr>
+<tr>
+<td><strong>Maintenance</strong></td>
+<td>5 </td>
+</tr>
+</tbody>
+</table>
+<p>Since only $CO_2$ will be formed as product, zero product inhibition is present. The following conditions are specified for the batch fermenter:</p>
+<table>
+<thead><tr>
+<th>V [$L$]</th>
+<th>$C_X^o \left[ \frac{g}{L}\right]$</th>
+<th>$C_S^o \left[ \frac{g}{L}\right]$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2000</td>
+<td>0.025 $\qquad$</td>
+<td>150 $\qquad$</td>
+</tr>
+</tbody>
+</table>
+<p>We can now define the parameters:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="o">%</span><span class="k">matplotlib</span> notebook 
+<span class="kn">from</span> <span class="nn">scipy.integrate</span> <span class="kn">import</span> <span class="n">odeint</span>
+<span class="n">alpha</span><span class="p">,</span> <span class="n">gamma</span><span class="p">,</span> <span class="n">mu_max</span><span class="p">,</span> <span class="n">theta_max</span><span class="p">,</span> <span class="n">PO</span> <span class="o">=</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">1.5</span>
+<span class="n">Km_mu</span><span class="p">,</span> <span class="n">Km_theta</span> <span class="o">=</span> <span class="mi">30</span><span class="o">/</span><span class="mi">1000</span><span class="o">/</span><span class="mi">30</span><span class="p">,</span> <span class="mi">5</span><span class="o">/</span><span class="mi">1000</span><span class="o">/</span><span class="mi">30</span>
+<span class="n">Mx</span><span class="o">=</span><span class="mi">12</span><span class="o">+</span><span class="mf">1.8</span><span class="o">+</span><span class="mf">0.5</span><span class="o">*</span><span class="mi">16</span><span class="o">+</span><span class="mf">0.2</span><span class="o">*</span><span class="mi">14</span>
+<span class="n">V</span><span class="p">,</span> <span class="n">Cxo</span><span class="p">,</span> <span class="n">Cso</span> <span class="o">=</span> <span class="mi">200</span><span class="p">,</span> <span class="mf">0.025</span><span class="o">/</span><span class="n">Mx</span><span class="p">,</span> <span class="mi">150</span><span class="o">/</span><span class="mi">30</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We can also define $k_La$ and $C_{O_2}^{sat}$ as 200$\frac{1}{h}$ and 7$\frac{mg}{L}$:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">kla</span><span class="o">=</span><span class="mi">200</span>
+<span class="n">Co_s_max</span><span class="o">=</span><span class="mi">7</span><span class="o">/</span><span class="mi">1000</span><span class="o">/</span><span class="mi">32</span>  <span class="c1">#mol/l</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The flux model is given below. Note that carbon splits between biomass and respiration.</p>
+<p><img src="respv2.png" width="700" /></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">response_fun</span><span class="p">(</span><span class="n">C</span><span class="p">):</span>
+    
+    <span class="n">Cx</span><span class="p">,</span> <span class="n">Cs</span> <span class="o">=</span> <span class="n">C</span>          
+    <span class="n">mu</span><span class="o">=</span><span class="n">mu_max</span><span class="o">*</span><span class="n">Cs</span><span class="o">/</span><span class="p">(</span><span class="n">Km_mu</span><span class="o">+</span><span class="n">Cs</span><span class="p">)</span>
+    <span class="n">theta</span><span class="o">=</span><span class="n">theta_max</span><span class="o">*</span><span class="n">Cs</span><span class="o">/</span><span class="p">(</span><span class="n">Km_theta</span><span class="o">+</span><span class="n">Cs</span><span class="p">)</span>
+    
+    <span class="n">ro_mt</span><span class="o">=</span><span class="n">kla</span><span class="o">*</span><span class="n">Co_s_max</span>
+    
+    <span class="n">Sbase</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">matrix</span><span class="p">([[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mf">1.1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span>   <span class="c1">#Stoichiometric matrix without specification (4x5)</span>
+                         <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span>
+                         <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span>
+                         <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mf">2.5</span><span class="p">,</span><span class="mi">2</span><span class="o">/</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">]])</span>
+    
+    <span class="n">S1</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">vstack</span><span class="p">([</span><span class="n">Sbase</span><span class="p">,[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]])</span>  <span class="c1">#Stoich matrix with growth spec</span>
+      
+    <span class="n">C</span><span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">matrix</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="n">theta</span><span class="p">,</span> <span class="n">mu</span><span class="p">]])</span><span class="o">.</span><span class="n">T</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="n">S1</span><span class="p">,</span><span class="n">C</span><span class="p">)</span>            <span class="c1">#rates for regime where no oxygen limitation exist</span>
+    
+        
+    <span class="k">if</span> <span class="n">ro_mt</span> <span class="o">&gt;</span> <span class="n">r</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="n">Cx</span><span class="p">:</span>     <span class="c1">#no oxygen limitation</span>
+        
+        <span class="k">return</span> <span class="p">[</span><span class="n">r</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span>      <span class="c1">#biomass </span>
+                <span class="o">-</span><span class="n">r</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span>
+                <span class="n">r</span><span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span>      <span class="c1"># CO2 formation</span>
+                <span class="n">r</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">]]</span>      <span class="c1"># O2 consumption                                                 </span>
+     
+    <span class="k">else</span><span class="p">:</span>
+        
+        <span class="n">S2</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">vstack</span><span class="p">([</span><span class="n">Sbase</span><span class="p">,[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]])</span>          <span class="c1">#Stoich matrix with oxygen spec</span>
+
+        <span class="n">C2</span><span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">matrix</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="n">theta</span><span class="p">,</span><span class="n">ro_mt</span><span class="o">/</span><span class="n">Cx</span><span class="p">]])</span><span class="o">.</span><span class="n">T</span>   <span class="c1"># Note the ro specification!!</span>
+        <span class="n">r2</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="n">S2</span><span class="p">,</span><span class="n">C2</span><span class="p">)</span>                 <span class="c1"># rates for regime where oxygen limitation exist</span>
+        
+        
+        <span class="k">return</span> <span class="p">[</span><span class="n">r2</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span>
+                <span class="o">-</span><span class="n">r2</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span>
+                <span class="n">r2</span><span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span>    <span class="c1">#CO2 formation</span>
+                <span class="n">r2</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">]]</span>    <span class="c1">#O2 consumption  </span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">ferm_eq</span><span class="p">(</span><span class="n">C</span><span class="p">,</span><span class="n">t</span><span class="p">):</span>
+    <span class="n">Cx</span><span class="p">,</span> <span class="n">Cs</span> <span class="o">=</span> <span class="n">C</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">C</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="n">r</span><span class="o">=</span><span class="n">response_fun</span><span class="p">([</span><span class="n">Cx</span><span class="p">,</span> <span class="n">Cs</span><span class="p">])</span>     
+    
+    <span class="k">return</span> <span class="p">[</span><span class="n">r</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="n">Cx</span><span class="p">,</span>
+            <span class="n">r</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="n">Cx</span><span class="p">]</span>    
+            
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Co</span><span class="o">=</span><span class="p">[</span><span class="n">Cxo</span><span class="p">,</span> <span class="n">Cso</span><span class="p">]</span>                     <span class="c1"># [Cxo, Cso, Cgo, Ceo] in cmol/L</span>
+<span class="n">tmax</span><span class="o">=</span><span class="mi">120</span>                                   <span class="c1"># Integrate for 20 hours  </span>
+<span class="n">tspan</span><span class="o">=</span><span class="n">numpy</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">tmax</span><span class="p">,</span><span class="mi">200</span><span class="p">)</span>           <span class="c1"># define the timespan of the integration</span>
+<span class="n">Ci</span> <span class="o">=</span> <span class="n">odeint</span><span class="p">(</span><span class="n">ferm_eq</span><span class="p">,</span> <span class="n">Co</span><span class="p">,</span> <span class="n">tspan</span><span class="p">)</span>             <span class="c1"># integration via odeint that calls apon ferm_eq</span>
+
+<span class="n">Cx</span><span class="p">,</span> <span class="n">Cs</span> <span class="o">=</span> <span class="n">Ci</span><span class="o">.</span><span class="n">T</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">tspan</span><span class="p">,</span> <span class="n">Cx</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Cx&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">tspan</span><span class="p">,</span> <span class="n">Cs</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Cs&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s1">&#39;best&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Concentration cmol/L&#39;</span><span class="p">)</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;time (h)&#39;</span><span class="p">)</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+
+
+<div id="560616ee-8c46-4a83-b92a-c851b4090a6e"></div>
+<div class="output_subarea output_javascript ">
+<script type="text/javascript">
+var element = $('#560616ee-8c46-4a83-b92a-c851b4090a6e');
+/* Put everything inside the global mpl namespace */
+window.mpl = {};
+
+mpl.get_websocket_type = function() {
+    if (typeof(WebSocket) !== 'undefined') {
+        return WebSocket;
+    } else if (typeof(MozWebSocket) !== 'undefined') {
+        return MozWebSocket;
+    } else {
+        alert('Your browser does not have WebSocket support.' +
+              'Please try Chrome, Safari or Firefox ≥ 6. ' +
+              'Firefox 4 and 5 are also supported but you ' +
+              'have to enable WebSockets in about:config.');
+    };
+}
+
+mpl.figure = function(figure_id, websocket, ondownload, parent_element) {
+    this.id = figure_id;
+
+    this.ws = websocket;
+
+    this.supports_binary = (this.ws.binaryType != undefined);
+
+    if (!this.supports_binary) {
+        var warnings = document.getElementById("mpl-warnings");
+        if (warnings) {
+            warnings.style.display = 'block';
+            warnings.textContent = (
+                "This browser does not support binary websocket messages. " +
+                    "Performance may be slow.");
+        }
+    }
+
+    this.imageObj = new Image();
+
+    this.context = undefined;
+    this.message = undefined;
+    this.canvas = undefined;
+    this.rubberband_canvas = undefined;
+    this.rubberband_context = undefined;
+    this.format_dropdown = undefined;
+
+    this.image_mode = 'full';
+
+    this.root = $('<div/>');
+    this._root_extra_style(this.root)
+    this.root.attr('style', 'display: inline-block');
+
+    $(parent_element).append(this.root);
+
+    this._init_header(this);
+    this._init_canvas(this);
+    this._init_toolbar(this);
+
+    var fig = this;
+
+    this.waiting = false;
+
+    this.ws.onopen =  function () {
+            fig.send_message("supports_binary", {value: fig.supports_binary});
+            fig.send_message("send_image_mode", {});
+            fig.send_message("refresh", {});
+        }
+
+    this.imageObj.onload = function() {
+            if (fig.image_mode == 'full') {
+                // Full images could contain transparency (where diff images
+                // almost always do), so we need to clear the canvas so that
+                // there is no ghosting.
+                fig.context.clearRect(0, 0, fig.canvas.width, fig.canvas.height);
+            }
+            fig.context.drawImage(fig.imageObj, 0, 0);
+        };
+
+    this.imageObj.onunload = function() {
+        this.ws.close();
+    }
+
+    this.ws.onmessage = this._make_on_message_function(this);
+
+    this.ondownload = ondownload;
+}
+
+mpl.figure.prototype._init_header = function() {
+    var titlebar = $(
+        '<div class="ui-dialog-titlebar ui-widget-header ui-corner-all ' +
+        'ui-helper-clearfix"/>');
+    var titletext = $(
+        '<div class="ui-dialog-title" style="width: 100%; ' +
+        'text-align: center; padding: 3px;"/>');
+    titlebar.append(titletext)
+    this.root.append(titlebar);
+    this.header = titletext[0];
+}
+
+
+
+mpl.figure.prototype._canvas_extra_style = function(canvas_div) {
+
+}
+
+
+mpl.figure.prototype._root_extra_style = function(canvas_div) {
+
+}
+
+mpl.figure.prototype._init_canvas = function() {
+    var fig = this;
+
+    var canvas_div = $('<div/>');
+
+    canvas_div.attr('style', 'position: relative; clear: both; outline: 0');
+
+    function canvas_keyboard_event(event) {
+        return fig.key_event(event, event['data']);
+    }
+
+    canvas_div.keydown('key_press', canvas_keyboard_event);
+    canvas_div.keyup('key_release', canvas_keyboard_event);
+    this.canvas_div = canvas_div
+    this._canvas_extra_style(canvas_div)
+    this.root.append(canvas_div);
+
+    var canvas = $('<canvas/>');
+    canvas.addClass('mpl-canvas');
+    canvas.attr('style', "left: 0; top: 0; z-index: 0; outline: 0")
+
+    this.canvas = canvas[0];
+    this.context = canvas[0].getContext("2d");
+
+    var rubberband = $('<canvas/>');
+    rubberband.attr('style', "position: absolute; left: 0; top: 0; z-index: 1;")
+
+    var pass_mouse_events = true;
+
+    canvas_div.resizable({
+        start: function(event, ui) {
+            pass_mouse_events = false;
+        },
+        resize: function(event, ui) {
+            fig.request_resize(ui.size.width, ui.size.height);
+        },
+        stop: function(event, ui) {
+            pass_mouse_events = true;
+            fig.request_resize(ui.size.width, ui.size.height);
+        },
+    });
+
+    function mouse_event_fn(event) {
+        if (pass_mouse_events)
+            return fig.mouse_event(event, event['data']);
+    }
+
+    rubberband.mousedown('button_press', mouse_event_fn);
+    rubberband.mouseup('button_release', mouse_event_fn);
+    // Throttle sequential mouse events to 1 every 20ms.
+    rubberband.mousemove('motion_notify', mouse_event_fn);
+
+    rubberband.mouseenter('figure_enter', mouse_event_fn);
+    rubberband.mouseleave('figure_leave', mouse_event_fn);
+
+    canvas_div.on("wheel", function (event) {
+        event = event.originalEvent;
+        event['data'] = 'scroll'
+        if (event.deltaY < 0) {
+            event.step = 1;
+        } else {
+            event.step = -1;
+        }
+        mouse_event_fn(event);
+    });
+
+    canvas_div.append(canvas);
+    canvas_div.append(rubberband);
+
+    this.rubberband = rubberband;
+    this.rubberband_canvas = rubberband[0];
+    this.rubberband_context = rubberband[0].getContext("2d");
+    this.rubberband_context.strokeStyle = "#000000";
+
+    this._resize_canvas = function(width, height) {
+        // Keep the size of the canvas, canvas container, and rubber band
+        // canvas in synch.
+        canvas_div.css('width', width)
+        canvas_div.css('height', height)
+
+        canvas.attr('width', width);
+        canvas.attr('height', height);
+
+        rubberband.attr('width', width);
+        rubberband.attr('height', height);
+    }
+
+    // Set the figure to an initial 600x600px, this will subsequently be updated
+    // upon first draw.
+    this._resize_canvas(600, 600);
+
+    // Disable right mouse context menu.
+    $(this.rubberband_canvas).bind("contextmenu",function(e){
+        return false;
+    });
+
+    function set_focus () {
+        canvas.focus();
+        canvas_div.focus();
+    }
+
+    window.setTimeout(set_focus, 100);
+}
+
+mpl.figure.prototype._init_toolbar = function() {
+    var fig = this;
+
+    var nav_element = $('<div/>')
+    nav_element.attr('style', 'width: 100%');
+    this.root.append(nav_element);
+
+    // Define a callback function for later on.
+    function toolbar_event(event) {
+        return fig.toolbar_button_onclick(event['data']);
+    }
+    function toolbar_mouse_event(event) {
+        return fig.toolbar_button_onmouseover(event['data']);
+    }
+
+    for(var toolbar_ind in mpl.toolbar_items) {
+        var name = mpl.toolbar_items[toolbar_ind][0];
+        var tooltip = mpl.toolbar_items[toolbar_ind][1];
+        var image = mpl.toolbar_items[toolbar_ind][2];
+        var method_name = mpl.toolbar_items[toolbar_ind][3];
+
+        if (!name) {
+            // put a spacer in here.
+            continue;
+        }
+        var button = $('<button/>');
+        button.addClass('ui-button ui-widget ui-state-default ui-corner-all ' +
+                        'ui-button-icon-only');
+        button.attr('role', 'button');
+        button.attr('aria-disabled', 'false');
+        button.click(method_name, toolbar_event);
+        button.mouseover(tooltip, toolbar_mouse_event);
+
+        var icon_img = $('<span/>');
+        icon_img.addClass('ui-button-icon-primary ui-icon');
+        icon_img.addClass(image);
+        icon_img.addClass('ui-corner-all');
+
+        var tooltip_span = $('<span/>');
+        tooltip_span.addClass('ui-button-text');
+        tooltip_span.html(tooltip);
+
+        button.append(icon_img);
+        button.append(tooltip_span);
+
+        nav_element.append(button);
+    }
+
+    var fmt_picker_span = $('<span/>');
+
+    var fmt_picker = $('<select/>');
+    fmt_picker.addClass('mpl-toolbar-option ui-widget ui-widget-content');
+    fmt_picker_span.append(fmt_picker);
+    nav_element.append(fmt_picker_span);
+    this.format_dropdown = fmt_picker[0];
+
+    for (var ind in mpl.extensions) {
+        var fmt = mpl.extensions[ind];
+        var option = $(
+            '<option/>', {selected: fmt === mpl.default_extension}).html(fmt);
+        fmt_picker.append(option)
+    }
+
+    // Add hover states to the ui-buttons
+    $( ".ui-button" ).hover(
+        function() { $(this).addClass("ui-state-hover");},
+        function() { $(this).removeClass("ui-state-hover");}
+    );
+
+    var status_bar = $('<span class="mpl-message"/>');
+    nav_element.append(status_bar);
+    this.message = status_bar[0];
+}
+
+mpl.figure.prototype.request_resize = function(x_pixels, y_pixels) {
+    // Request matplotlib to resize the figure. Matplotlib will then trigger a resize in the client,
+    // which will in turn request a refresh of the image.
+    this.send_message('resize', {'width': x_pixels, 'height': y_pixels});
+}
+
+mpl.figure.prototype.send_message = function(type, properties) {
+    properties['type'] = type;
+    properties['figure_id'] = this.id;
+    this.ws.send(JSON.stringify(properties));
+}
+
+mpl.figure.prototype.send_draw_message = function() {
+    if (!this.waiting) {
+        this.waiting = true;
+        this.ws.send(JSON.stringify({type: "draw", figure_id: this.id}));
+    }
+}
+
+
+mpl.figure.prototype.handle_save = function(fig, msg) {
+    var format_dropdown = fig.format_dropdown;
+    var format = format_dropdown.options[format_dropdown.selectedIndex].value;
+    fig.ondownload(fig, format);
+}
+
+
+mpl.figure.prototype.handle_resize = function(fig, msg) {
+    var size = msg['size'];
+    if (size[0] != fig.canvas.width || size[1] != fig.canvas.height) {
+        fig._resize_canvas(size[0], size[1]);
+        fig.send_message("refresh", {});
+    };
+}
+
+mpl.figure.prototype.handle_rubberband = function(fig, msg) {
+    var x0 = msg['x0'];
+    var y0 = fig.canvas.height - msg['y0'];
+    var x1 = msg['x1'];
+    var y1 = fig.canvas.height - msg['y1'];
+    x0 = Math.floor(x0) + 0.5;
+    y0 = Math.floor(y0) + 0.5;
+    x1 = Math.floor(x1) + 0.5;
+    y1 = Math.floor(y1) + 0.5;
+    var min_x = Math.min(x0, x1);
+    var min_y = Math.min(y0, y1);
+    var width = Math.abs(x1 - x0);
+    var height = Math.abs(y1 - y0);
+
+    fig.rubberband_context.clearRect(
+        0, 0, fig.canvas.width, fig.canvas.height);
+
+    fig.rubberband_context.strokeRect(min_x, min_y, width, height);
+}
+
+mpl.figure.prototype.handle_figure_label = function(fig, msg) {
+    // Updates the figure title.
+    fig.header.textContent = msg['label'];
+}
+
+mpl.figure.prototype.handle_cursor = function(fig, msg) {
+    var cursor = msg['cursor'];
+    switch(cursor)
+    {
+    case 0:
+        cursor = 'pointer';
+        break;
+    case 1:
+        cursor = 'default';
+        break;
+    case 2:
+        cursor = 'crosshair';
+        break;
+    case 3:
+        cursor = 'move';
+        break;
+    }
+    fig.rubberband_canvas.style.cursor = cursor;
+}
+
+mpl.figure.prototype.handle_message = function(fig, msg) {
+    fig.message.textContent = msg['message'];
+}
+
+mpl.figure.prototype.handle_draw = function(fig, msg) {
+    // Request the server to send over a new figure.
+    fig.send_draw_message();
+}
+
+mpl.figure.prototype.handle_image_mode = function(fig, msg) {
+    fig.image_mode = msg['mode'];
+}
+
+mpl.figure.prototype.updated_canvas_event = function() {
+    // Called whenever the canvas gets updated.
+    this.send_message("ack", {});
+}
+
+// A function to construct a web socket function for onmessage handling.
+// Called in the figure constructor.
+mpl.figure.prototype._make_on_message_function = function(fig) {
+    return function socket_on_message(evt) {
+        if (evt.data instanceof Blob) {
+            /* FIXME: We get "Resource interpreted as Image but
+             * transferred with MIME type text/plain:" errors on
+             * Chrome.  But how to set the MIME type?  It doesn't seem
+             * to be part of the websocket stream */
+            evt.data.type = "image/png";
+
+            /* Free the memory for the previous frames */
+            if (fig.imageObj.src) {
+                (window.URL || window.webkitURL).revokeObjectURL(
+                    fig.imageObj.src);
+            }
+
+            fig.imageObj.src = (window.URL || window.webkitURL).createObjectURL(
+                evt.data);
+            fig.updated_canvas_event();
+            fig.waiting = false;
+            return;
+        }
+        else if (typeof evt.data === 'string' && evt.data.slice(0, 21) == "data:image/png;base64") {
+            fig.imageObj.src = evt.data;
+            fig.updated_canvas_event();
+            fig.waiting = false;
+            return;
+        }
+
+        var msg = JSON.parse(evt.data);
+        var msg_type = msg['type'];
+
+        // Call the  "handle_{type}" callback, which takes
+        // the figure and JSON message as its only arguments.
+        try {
+            var callback = fig["handle_" + msg_type];
+        } catch (e) {
+            console.log("No handler for the '" + msg_type + "' message type: ", msg);
+            return;
+        }
+
+        if (callback) {
+            try {
+                // console.log("Handling '" + msg_type + "' message: ", msg);
+                callback(fig, msg);
+            } catch (e) {
+                console.log("Exception inside the 'handler_" + msg_type + "' callback:", e, e.stack, msg);
+            }
+        }
+    };
+}
+
+// from http://stackoverflow.com/questions/1114465/getting-mouse-location-in-canvas
+mpl.findpos = function(e) {
+    //this section is from http://www.quirksmode.org/js/events_properties.html
+    var targ;
+    if (!e)
+        e = window.event;
+    if (e.target)
+        targ = e.target;
+    else if (e.srcElement)
+        targ = e.srcElement;
+    if (targ.nodeType == 3) // defeat Safari bug
+        targ = targ.parentNode;
+
+    // jQuery normalizes the pageX and pageY
+    // pageX,Y are the mouse positions relative to the document
+    // offset() returns the position of the element relative to the document
+    var x = e.pageX - $(targ).offset().left;
+    var y = e.pageY - $(targ).offset().top;
+
+    return {"x": x, "y": y};
+};
+
+/*
+ * return a copy of an object with only non-object keys
+ * we need this to avoid circular references
+ * http://stackoverflow.com/a/24161582/3208463
+ */
+function simpleKeys (original) {
+  return Object.keys(original).reduce(function (obj, key) {
+    if (typeof original[key] !== 'object')
+        obj[key] = original[key]
+    return obj;
+  }, {});
+}
+
+mpl.figure.prototype.mouse_event = function(event, name) {
+    var canvas_pos = mpl.findpos(event)
+
+    if (name === 'button_press')
+    {
+        this.canvas.focus();
+        this.canvas_div.focus();
+    }
+
+    var x = canvas_pos.x;
+    var y = canvas_pos.y;
+
+    this.send_message(name, {x: x, y: y, button: event.button,
+                             step: event.step,
+                             guiEvent: simpleKeys(event)});
+
+    /* This prevents the web browser from automatically changing to
+     * the text insertion cursor when the button is pressed.  We want
+     * to control all of the cursor setting manually through the
+     * 'cursor' event from matplotlib */
+    event.preventDefault();
+    return false;
+}
+
+mpl.figure.prototype._key_event_extra = function(event, name) {
+    // Handle any extra behaviour associated with a key event
+}
+
+mpl.figure.prototype.key_event = function(event, name) {
+
+    // Prevent repeat events
+    if (name == 'key_press')
+    {
+        if (event.which === this._key)
+            return;
+        else
+            this._key = event.which;
+    }
+    if (name == 'key_release')
+        this._key = null;
+
+    var value = '';
+    if (event.ctrlKey && event.which != 17)
+        value += "ctrl+";
+    if (event.altKey && event.which != 18)
+        value += "alt+";
+    if (event.shiftKey && event.which != 16)
+        value += "shift+";
+
+    value += 'k';
+    value += event.which.toString();
+
+    this._key_event_extra(event, name);
+
+    this.send_message(name, {key: value,
+                             guiEvent: simpleKeys(event)});
+    return false;
+}
+
+mpl.figure.prototype.toolbar_button_onclick = function(name) {
+    if (name == 'download') {
+        this.handle_save(this, null);
+    } else {
+        this.send_message("toolbar_button", {name: name});
+    }
+};
+
+mpl.figure.prototype.toolbar_button_onmouseover = function(tooltip) {
+    this.message.textContent = tooltip;
+};
+mpl.toolbar_items = [["Home", "Reset original view", "fa fa-home icon-home", "home"], ["Back", "Back to  previous view", "fa fa-arrow-left icon-arrow-left", "back"], ["Forward", "Forward to next view", "fa fa-arrow-right icon-arrow-right", "forward"], ["", "", "", ""], ["Pan", "Pan axes with left mouse, zoom with right", "fa fa-arrows icon-move", "pan"], ["Zoom", "Zoom to rectangle", "fa fa-square-o icon-check-empty", "zoom"], ["", "", "", ""], ["Download", "Download plot", "fa fa-floppy-o icon-save", "download"]];
+
+mpl.extensions = ["eps", "jpeg", "pdf", "png", "ps", "raw", "svg", "tif"];
+
+mpl.default_extension = "png";var comm_websocket_adapter = function(comm) {
+    // Create a "websocket"-like object which calls the given IPython comm
+    // object with the appropriate methods. Currently this is a non binary
+    // socket, so there is still some room for performance tuning.
+    var ws = {};
+
+    ws.close = function() {
+        comm.close()
+    };
+    ws.send = function(m) {
+        //console.log('sending', m);
+        comm.send(m);
+    };
+    // Register the callback with on_msg.
+    comm.on_msg(function(msg) {
+        //console.log('receiving', msg['content']['data'], msg);
+        // Pass the mpl event to the overriden (by mpl) onmessage function.
+        ws.onmessage(msg['content']['data'])
+    });
+    return ws;
+}
+
+mpl.mpl_figure_comm = function(comm, msg) {
+    // This is the function which gets called when the mpl process
+    // starts-up an IPython Comm through the "matplotlib" channel.
+
+    var id = msg.content.data.id;
+    // Get hold of the div created by the display call when the Comm
+    // socket was opened in Python.
+    var element = $("#" + id);
+    var ws_proxy = comm_websocket_adapter(comm)
+
+    function ondownload(figure, format) {
+        window.open(figure.imageObj.src);
+    }
+
+    var fig = new mpl.figure(id, ws_proxy,
+                           ondownload,
+                           element.get(0));
+
+    // Call onopen now - mpl needs it, as it is assuming we've passed it a real
+    // web socket which is closed, not our websocket->open comm proxy.
+    ws_proxy.onopen();
+
+    fig.parent_element = element.get(0);
+    fig.cell_info = mpl.find_output_cell("<div id='" + id + "'></div>");
+    if (!fig.cell_info) {
+        console.error("Failed to find cell for figure", id, fig);
+        return;
+    }
+
+    var output_index = fig.cell_info[2]
+    var cell = fig.cell_info[0];
+
+};
+
+mpl.figure.prototype.handle_close = function(fig, msg) {
+    fig.root.unbind('remove')
+
+    // Update the output cell to use the data from the current canvas.
+    fig.push_to_output();
+    var dataURL = fig.canvas.toDataURL();
+    // Re-enable the keyboard manager in IPython - without this line, in FF,
+    // the notebook keyboard shortcuts fail.
+    IPython.keyboard_manager.enable()
+    $(fig.parent_element).html('<img src="' + dataURL + '">');
+    fig.close_ws(fig, msg);
+}
+
+mpl.figure.prototype.close_ws = function(fig, msg){
+    fig.send_message('closing', msg);
+    // fig.ws.close()
+}
+
+mpl.figure.prototype.push_to_output = function(remove_interactive) {
+    // Turn the data on the canvas into data in the output cell.
+    var dataURL = this.canvas.toDataURL();
+    this.cell_info[1]['text/html'] = '<img src="' + dataURL + '">';
+}
+
+mpl.figure.prototype.updated_canvas_event = function() {
+    // Tell IPython that the notebook contents must change.
+    IPython.notebook.set_dirty(true);
+    this.send_message("ack", {});
+    var fig = this;
+    // Wait a second, then push the new image to the DOM so
+    // that it is saved nicely (might be nice to debounce this).
+    setTimeout(function () { fig.push_to_output() }, 1000);
+}
+
+mpl.figure.prototype._init_toolbar = function() {
+    var fig = this;
+
+    var nav_element = $('<div/>')
+    nav_element.attr('style', 'width: 100%');
+    this.root.append(nav_element);
+
+    // Define a callback function for later on.
+    function toolbar_event(event) {
+        return fig.toolbar_button_onclick(event['data']);
+    }
+    function toolbar_mouse_event(event) {
+        return fig.toolbar_button_onmouseover(event['data']);
+    }
+
+    for(var toolbar_ind in mpl.toolbar_items){
+        var name = mpl.toolbar_items[toolbar_ind][0];
+        var tooltip = mpl.toolbar_items[toolbar_ind][1];
+        var image = mpl.toolbar_items[toolbar_ind][2];
+        var method_name = mpl.toolbar_items[toolbar_ind][3];
+
+        if (!name) { continue; };
+
+        var button = $('<button class="btn btn-default" href="#" title="' + name + '"><i class="fa ' + image + ' fa-lg"></i></button>');
+        button.click(method_name, toolbar_event);
+        button.mouseover(tooltip, toolbar_mouse_event);
+        nav_element.append(button);
+    }
+
+    // Add the status bar.
+    var status_bar = $('<span class="mpl-message" style="text-align:right; float: right;"/>');
+    nav_element.append(status_bar);
+    this.message = status_bar[0];
+
+    // Add the close button to the window.
+    var buttongrp = $('<div class="btn-group inline pull-right"></div>');
+    var button = $('<button class="btn btn-mini btn-primary" href="#" title="Stop Interaction"><i class="fa fa-power-off icon-remove icon-large"></i></button>');
+    button.click(function (evt) { fig.handle_close(fig, {}); } );
+    button.mouseover('Stop Interaction', toolbar_mouse_event);
+    buttongrp.append(button);
+    var titlebar = this.root.find($('.ui-dialog-titlebar'));
+    titlebar.prepend(buttongrp);
+}
+
+mpl.figure.prototype._root_extra_style = function(el){
+    var fig = this
+    el.on("remove", function(){
+	fig.close_ws(fig, {});
+    });
+}
+
+mpl.figure.prototype._canvas_extra_style = function(el){
+    // this is important to make the div 'focusable
+    el.attr('tabindex', 0)
+    // reach out to IPython and tell the keyboard manager to turn it's self
+    // off when our div gets focus
+
+    // location in version 3
+    if (IPython.notebook.keyboard_manager) {
+        IPython.notebook.keyboard_manager.register_events(el);
+    }
+    else {
+        // location in version 2
+        IPython.keyboard_manager.register_events(el);
+    }
+
+}
+
+mpl.figure.prototype._key_event_extra = function(event, name) {
+    var manager = IPython.notebook.keyboard_manager;
+    if (!manager)
+        manager = IPython.keyboard_manager;
+
+    // Check for shift+enter
+    if (event.shiftKey && event.which == 13) {
+        this.canvas_div.blur();
+        event.shiftKey = false;
+        // Send a "J" for go to next cell
+        event.which = 74;
+        event.keyCode = 74;
+        manager.command_mode();
+        manager.handle_keydown(event);
+    }
+}
+
+mpl.figure.prototype.handle_save = function(fig, msg) {
+    fig.ondownload(fig, null);
+}
+
+
+mpl.find_output_cell = function(html_output) {
+    // Return the cell and output element which can be found *uniquely* in the notebook.
+    // Note - this is a bit hacky, but it is done because the "notebook_saving.Notebook"
+    // IPython event is triggered only after the cells have been serialised, which for
+    // our purposes (turning an active figure into a static one), is too late.
+    var cells = IPython.notebook.get_cells();
+    var ncells = cells.length;
+    for (var i=0; i<ncells; i++) {
+        var cell = cells[i];
+        if (cell.cell_type === 'code'){
+            for (var j=0; j<cell.output_area.outputs.length; j++) {
+                var data = cell.output_area.outputs[j];
+                if (data.data) {
+                    // IPython >= 3 moved mimebundle to data attribute of output
+                    data = data.data;
+                }
+                if (data['text/html'] == html_output) {
+                    return [cell, data, j];
+                }
+            }
+        }
+    }
+}
+
+// Register the function which deals with the matplotlib target/channel.
+// The kernel may be null if the page has been refreshed.
+if (IPython.notebook.kernel != null) {
+    IPython.notebook.kernel.comm_manager.register_target('matplotlib', mpl.mpl_figure_comm);
+}
+
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<img src="data:image/png;base64,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">
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We will further analyse the problem in <a href="https://nbviewer.jupyter.org/github/willienicol/Biochemical-engineering-notes/blob/master/Tutorials/Tut%2010.ipynb">Tutorial 10</a>. Watch the following lecture before starting with the tutorial:</p>
+<p><a href="https://youtu.be/SStthNl-0dU">Video: Lecture 16 Using the response function without integrating</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="https://nbviewer.jupyter.org/github/willienicol/Biochemical-engineering-notes/blob/master/List%20of%20contents.ipynb">Back to Contents page</a></p>
 
 </div>
 </div>

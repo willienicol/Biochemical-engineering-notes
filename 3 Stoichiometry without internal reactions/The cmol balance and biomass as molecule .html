@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>Basic Biochemistry</title>
+<title>The cmol balance and biomass as molecule </title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13082,20 +13082,12 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="2.-Basic-biochemistry-(central-carbon-metabolism)">2. Basic biochemistry (central carbon metabolism)<a class="anchor-link" href="#2.-Basic-biochemistry-(central-carbon-metabolism)">&#182;</a></h1><p>Life is all about obtaining energy. Without energy there is no life. Almost all of the energy on earth originates from the sun, the eternal battery that powers life. In this regard plants play a very important role since they have the ability to capture light energy and store it into chemical energy via the process of photosynthesis. Since this course focus on micro-organisms we won’t go into the details of photosynthesis, we’ll only use the following chemical equation to describe the process:</p>
-$$6H_2O + 6CO_2 + energy \rightleftharpoons C_6 H_{12} O_6+6O_2$$<p>So a plant takes water, carbon dioxide and sunlight to produce glucose and oxygen, a very useful process. Glucose can thus be seen as the chemical that stores the sunlight in a chemical format. Note the reversible arrow in the equation, it is very important. The reverse process is referred to as respiration, where glucose is consumed in combination with oxygen in order to obtain energy. This is exactly what happens in your body, you release the old sunlight energy into your body to perform your daily tasks.</p>
-<p>The above equation also relates to external energy sources that you use on a daily basis. The petrol in your car originated from fossil reserves, decomposed plant material from millions of year ago. The same for electricity that is mainly produced in the RSA by burning coal, another form of fossil reserve. Although a plant does not consist out of only glucose, it can be seen as the most crucial building block for making plants so in a sense the glucose represents plant material. It is all about harvesting old sunlight and this chapter is about the biochemistry of doing exactly this.</p>
-<h2 id="ATP:-the-energy-currency-of-cells">ATP: the energy currency of cells<a class="anchor-link" href="#ATP:-the-energy-currency-of-cells">&#182;</a></h2><p><img src="ATP.png" width="450" /></p>
-<p>Before getting into biochemical reactions we need some background on how a cell stores energy. This clip by Paul Anderson is very helpful:</p>
-<p><a href="https://www.youtube.com/watch?v=5GMLIMIVUvo">Video: Paul Anderson on ATP</a></p>
-<p>We will get to the detail process of respiration (for generating ATP) at a later stage. Don’t worry too much about the photosynthesis terminology. Note how the info in this clip links with the knowledge acquired in chapter 1.</p>
-<h2 id="Oxidation/reduction-and-the-role-of-NADH">Oxidation/reduction and the role of NADH<a class="anchor-link" href="#Oxidation/reduction-and-the-role-of-NADH">&#182;</a></h2><p><img src="NADH.png" width="300" /></p>
-<p>The last step before getting to the essential biochemical reactions in cells is to properly understand oxidation and reduction.</p>
-<p><a href="https://www.youtube.com/watch?v=lQ6FBA1HM3s">Video: Hank Green on redox reactions</a></p>
-<p>Remember the word OILRIG (oxidation is loss, reduction is gain of electrons). Carefully consider the ammonia reaction.
-In biochemical reactions we have the electron carriers NADH and NADPH. The following video gives the basic working of NADH</p>
-<p><a href="https://www.youtube.com/watch?v=Kb-4uuCYLvE">Video: NADH basics</a></p>
-<p>NADPH is very similar to NADH and although mostly used for anabolic reactions we will consider them as the same for the time being. Very important to understand that NAD+ is a cofactor in some biochemical transformations where 2  protons and 2 electrons (2 hydrogen atoms) is taken from the chemical undergoing a conversion. In terms of oxidation/reduction NAD+ gains 2 electron (and a single proton, the other proton remains in suspension) to become NADH and is therefore reduced (reduction is gain). The component from which 2 hydrogens were taken is accordingly oxidised since the electrons are lost (oxidation is lost). Once NADH is formed it can travel to another reaction where the reverse process can take place where NADH can get oxidised.  For more detail visit the <a href="https://en.wikipedia.org/wiki/Nicotinamide_adenine_dinucleotide">wikipedia link</a>.</p>
+<h3 id="Making-biomass">Making biomass<a class="anchor-link" href="#Making-biomass">&#182;</a></h3><p>In this course microbial growth will be central to all of the calculations we perform. The overall reaction that a cell drives can be written as follow:</p>
+$$\mathbf {carbon\ source + nitrogen\ source + micro\ nutrients + oxygen\ (if \ aerobic)+cells \; (biomass)  \to} $$$$\mathbf {more\ cells\; (biomass) + excretion \, products}$$<p><img src="421a.jpg" width="350" /></p>
+<center>The colonies (circles) on this plate all originated from a single cell</center><p>When considering the elemental composition of biomass it is important to realise that the elements of carbon, hydrogen, oxygen and nitrogen are the main constituents. A typical <em>E. coli</em> cell has the following mass based distribution of the main building blocks: proteins (55%), RNA (20%), Lipids (10%) and DNA (4%). From chapter 1 the chemical composition of these building blocks are well established and by merely looking at the structures of these chemicals it should be evident that carbon, hydrogen, oxygen and nitrogen are the main atoms in these molecules. Elements like phosphor and sulphur will also feature but to an lesser extent. In addition numerous other elements are present in minute quantities and although the amounts are small they are all essential to life.</p>
+<p>The chemical engineer has a mass balance orientated approach and accordingly only the major elemental constituents (C H O and N) will be considered. We will effectively add all the building blocks together and only concern ourselves with an overall elemental analysis of biomass. For microbial biomass the following formula is used as the average:</p>
+$$\mathbf {biomass = X=CH_{1.8}O_{0.5}N_{0.2}}$$<p><img src="421.jpg" width="350" /></p>
+<p>Although major variations exist this chemical composition can be used as estimate for microbial biomass where an elemental analysis is not available. Note that there is <strong>1.8 hydrogen atoms, 0.5 oxygen atoms and 0.2 nitrogen atoms for each carbon atom.</strong></p>
 
 </div>
 </div>
@@ -13103,27 +13095,9 @@ In biochemical reactions we have the electron carriers NADH and NADPH. The follo
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Glycolysis">Glycolysis<a class="anchor-link" href="#Glycolysis">&#182;</a></h2><p>We are now ready to harvest energy (ATP) from sugars like glucose. The process starts with glycolysis. Here is a good intro video:</p>
-<p><a href="https://www.youtube.com/watch?v=8Kn6BVGqKd8">Video: VCELL on glycolysis 1</a></p>
-<p>For a proper diagram of all the molecules, I prefer the following schematic:</p>
-<p><img src="glyc.png" width="1000" /></p>
-<p>The following video is a lovely molecular animation of glycolysis:</p>
-<p><a href="https://www.youtube.com/watch?v=hDq1rhUkV-g">Video:VCELL on glycolysis 2</a></p>
-<p>Take note that these abbreviations are used for the glycolysis intermediates</p>
-<p><img src="Glycnames.png" width="350" /></p>
-<p>It is very important to understand that the net production of energy in glycolysis is 2 ATP molecules per glucose molecule. In addition 2 NADH molecules are also generated due to an oxidation reaction. The exit carbon product namely pyruvate is important and will be used in the rest of the metabolism. Also note that most other sugars will be metabolised via the glycolysis reactions and that glycolysis is not restricted to metabolising glucose. You are not required to memorise the enzyme or component names, but you need to be able to access them rapidly.</p>
-<p>As a side note, look how close glycerol is to Dihydroxyacetone-P. Remember glycerol from the lipid discussion?</p>
-<p><img src="Glycerol.png" width="650" /></p>
-<h2 id="The-TCA-cycle">The TCA cycle<a class="anchor-link" href="#The-TCA-cycle">&#182;</a></h2><p>The citric (or tricarboxylic acid cycle) is the process of fully oxidising pyruvate to $CO_2$ and NADH (and some FADH that is very similar to NADH). It is the internal combustion engine, although some of the intermediates are used for synthesizing amino acids and vitamins. The following video is a good overview:</p>
-<p><a href="https://www.youtube.com/watch?v=F6vQKrRjQcQ">Video: VCELL on TCA 1</a></p>
-<p>The following diagram is also very useful:</p>
-<p><img src="TCA.png" width="800" /></p>
-<hr>
-<p>Note that glycolysis links with the TCA cycle via pyruvate. Pyruvate oxidation generates NADH and acetyl-CoA, an intermediate in the cycle. The cycle can only start to turn if oxaloacetate is initially present. The oxaloacetate can be produced by carboxylation of pyruvate (adding $CO_2$) using the enzyme pyruvate carboxylase that requires ATP. The carboxylation does not have to occur on a continuous basis since oxaloacetate is regenerated via the TCA cycle itself and accordingly the ATP investment to make the first oxaloacetate molecule can be ignored. For a detail animation of the reactions see the following video</p>
-<p><a href="https://www.youtube.com/watch?v=_cXVleFtzeE">Video: VCELL on TCA 2</a></p>
-<p>Familiarise yourself with the molecules and their names. A single turn of the cycle will release 2 $CO_2$ molecules. How many cycles are required to effectively burn a glucose molecule? Don’t forget the pyruvate oxidation step where $CO2$ is also released. Given one glucose molecule that has gone through glycolysis and the TCA cycle you should proof to yourself that 6$ CO_2$, 10 NADH, 2 FADH2 and 4 ATP (assume GTP and ATP are the same) got generated. Even though the glucose got burned we still don’t have a lot of available energy. This will be generated when the NADH and FADH2 are converted to ATP via oxidative phosphorylation. 
-We won’t be going into detail on amino acid synthesis, but take note of the fact that almost all of the amino acids get synthesized from glycolysis or TCA cycle intermediates. See the following diagram:</p>
-<p><img src="am_ac.jpg" width="700" /></p>
+<p>The written balance for the anaerobic fermentation above can now be simplified to:</p>
+$$\mathbf {carbon\ source + nitrogen\ source +oxygen \ (if \ aerobic) \to  cells \; (biomass) + excretion \ products}$$<p>We will assume that all the micro nutrients are present in the liquid medium. Note that biomass is an net product but that nothing will be possible if biomass does not act as reagent. One requires biomass to make more biomass. The carbon source will contain the majority of the carbon that will end up as either biomass or catabolites. The carbon source will also contain the required oxygen and hydrogen atoms, just think of the chemical formula for glucose ($C_6H_{12}O_6$). The nitrogen source can either be defined or complex. A defined nitrogen source will be something like ammonia or urea where the chemical composition is known. We’ll mostly use these nitrogen sources in our calculations. Complex nitrogen sources entails the use of cell building blocks like amino acids or peptides that originated from a growing organism. An example is yeast extract where dissolvable parts of disrupted (opened) yeast cells are used as nitrogen feed in a fermentation. Some organisms cannot synthesise all their required amino acids from inorganic nitrogen (see auxotrophy) and requires a complex nitrogen feed.</p>
+<p>The intention is to write the balance above as a chemical formulation, similar to that of the previous section. The only problem is that biomass cannot be represented as a single molecule although the elemental ratios are known. We will address this by performing a per carbon stoichiometric formulation.</p>
 
 </div>
 </div>
@@ -13131,21 +13105,126 @@ We won’t be going into detail on amino acid synthesis, but take note of the fa
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Oxidative-phosphorylation-(electron-transport-chain)">Oxidative phosphorylation (electron transport chain)<a class="anchor-link" href="#Oxidative-phosphorylation-(electron-transport-chain)">&#182;</a></h2><p>The glucose electrons carried by NADH and FADH2 are high energy electrons. The electron transport chain in the mitochondria entails the process of harvesting energy from the NADH bounded electrons to produce ATP. In the end the electrons end up in a water molecule by joining with oxygen to form water. Oxygen is referred to as the final electron acceptor. Have a look at this video.</p>
-<p><a href="https://www.youtube.com/watch?v=xbJ0nbzt5Kw">Video: VCELL on electron transport chain</a></p>
-<p>The high energy electrons are used to generate a proton gradient over the inner mitochondrial membrane. Note how protons (hydrogen ions) move from the matrix upwards in the animation. The proton gradient is the driving force for ATP synthase where a flow of protons (back into the matrix) physically turns this enzyme complex like water turning a mill. The rotational energy is then used to generate ATP, see this video:</p>
-<p><a href="https://www.youtube.com/watch?v=3y1dO4nNaKY">Video: VCELL on ATP synthase</a></p>
-<p>So how much ATP can be generated from NADH (2 electrons)? The theoretical answer is 3 ATPs. For $FADH_2$ the theoretical answer is 2 ATPs since the electrons carried has a lower energy potential and only enters the electron transfer chain midway. In practise less ATP is generated due to losses caused by inefficiencies and the number for NADH is closer to 1.3-2.5 (it is referred to as the P/O number and there is debate on the exact magnitude of this number)</p>
-<p><img src="atpsyn.gif" width="300" /></p>
-<p>Just a note on the types of ATP formation routes. When ATP is generated directly from the metabolic pathway (like in glycolysis) it is referred to as substrate level phosphorylation. This stands in contrast with oxidative phosphorylation where a proton gradient is used to generate ATP.</p>
-<h2 id="Respiration">Respiration<a class="anchor-link" href="#Respiration">&#182;</a></h2><p>We now need to combine the whole process of ‘combusting’ glucose by looking at glycolysis, the TCA cycle and oxidative phosphorylation together. The overall equation for glycolysis and the TCA cycle is as follow:</p>
-$$C_6 H_{12} O_6+6H_2 O \to 6CO_2+10\,NADH+2\,FADH_2+4\, ATP$$<p>Note that NADH and $FADH_2$ both carry two protons, although in NADH one proton is loosely attached. Oxidative phosphorylation can be summarised as follow:</p>
-$$NADH+\frac{1}{2}O_2 \to (P/O)_{NADH}\, ATP+H_2 O$$$$FADH_2+ \frac{1}{2}O_2  \to(P/O)_{FADH_2}\, ATP+H_2 O$$<p>The theoretical values for $(P/O)_{NADH}$ is 3 and $(P/O)_{FADH_2}$ is 2. $(P/O)$ stands for phosphate (added to ADP to form ATP) per atomic oxygen (thus the $\frac{1}{2}O_2$ in the equation). Given the above the whole of respiration (glycolysis, TCA and oxidative phosphorylation) can be written as:</p>
-$$C_6 H_{12} O_6+6O_2 \to 6CO_2+6H_2 O+38\, ATP$$<p>If we use a $(P/O)_{NADH}$ of 1.5 and a $(P/O)_{FADH_2}$ of 1,the overall reaction reduce to:</p>
-$$C_6 H_{12} O_6+6O_2 \to6CO_2+6H_2 O+21\, ATP$$<p>When comparing the ATP generated from glycolysis to the ATP generated via full respiration (21) we see a more than tenfold increase in energy gain. This is a crucial number for higher organisms like eukaryotes where energy efficiency is essential for multicellular life.</p>
-<p>Some prokaryotes also have the ability to perform aerobic respiration eventhough they do not have mitochondria. For these organisms a similar proton gradient to that of the mitochondria is generated over the inner cell membrane (<a href="https://en.wikipedia.org/wiki/Periplasm">see periplasm</a>)</p>
-<p>This Khan Academy video might give you some further assistance:</p>
-<p><a href="https://www.khanacademy.org/science/biology/cellular-respiration-and-fermentation/intro-to-cellular-respiration/v/introduction-to-cellular-respiration">Video: Khan on respiration</a></p>
+<h3 id="The-cmol-(per-carbon)-stoichiometric-formulation">The cmol (per carbon) stoichiometric formulation<a class="anchor-link" href="#The-cmol-(per-carbon)-stoichiometric-formulation">&#182;</a></h3><p>To include biomass (or $CH_{1.8}O_{0.5}N_{0.2}$) into the overall reaction over the cell we need to consider all the carbon containing molecules on a cmol basis. We will effectively reduce all carbon containing molecules to only having a single carbon atom. To understand the cmol method of performing elemental balances we’ll start by redoing the succinic acid example of the previous section. Thereafter we’ll include biomass growth into the overall stoichiometry. The molecular stoichiometry was determined as follow in the previous section:</p>
+$$C_6 H_{12} O_6+\frac{6}{7} CO_2 \to \frac{12}{7} C_4 H_6 O_4+\frac{6}{7} H_2 O$$<p>We will redefine using a per carbon basis:</p>
+$$CH_2 O+Y_{SC}\ CO_2 \to Y_{SSA}\ CH_{1.5} O+Y_{SW}\ H_2 O$$<p>Note that the yield coefficients ($Y_1,Y_2$ and $Y_3$) are not the same as before due to the alternative formulation. The rates will be defined by cmols and not mols changing per time. The difference between cmols and mols will be the number of carbon atoms in the carbon containing molecule. In this formulation the molecules are redefined as single carbon molecules containing the averaged oxygen and hydrogen counterparts. Like before we can rewrite the stoichiometry in terms of cmol rates:</p>
+$$(-r_S)\ CH_2 O+(-r_C)\ CO_2 \to (r_{SA})\ CH_{1.5} O+(r_W)\ H_2 O$$<p>For now we will choose an arbitrary glucose consumption rate ($-r_S$) of 1. We can proceed by solving the carbon, hydrogen and oxygen balances in a similar manner as before. Prove to yourself that the following matrix formulation incorporates the three elemental balances and $-r_S$ specification:</p>
+$$\begin{bmatrix}-1&amp;-1 &amp; 1 &amp; 0\\-2&amp;0&amp;1.5&amp;2\\-1&amp;-2&amp;1&amp;1\\1&amp;0&amp;0&amp;0\end{bmatrix}\times\begin{bmatrix}-r_s\\-r_C\\r_{SA}\\r_W\end{bmatrix}=\begin{bmatrix}0\\0\\0\\1\end{bmatrix}$$<p>You should be able to solve this in <strong>Excel</strong> or on your preferred app. We can also calculate with <strong>Python</strong>:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span>
+<span class="n">S</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">matrix</span><span class="p">([[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span>   <span class="mi">0</span><span class="p">,],</span>  
+                  <span class="p">[</span><span class="o">-</span><span class="mi">2</span> <span class="p">,</span><span class="mi">0</span><span class="p">,</span>  <span class="mf">1.5</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> 
+                  <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span>  <span class="mi">1</span><span class="p">,</span>  <span class="mi">1</span><span class="p">],</span>
+                  <span class="p">[</span><span class="mi">1</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>   <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]])</span>
+
+<span class="n">C</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">matrix</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]])</span><span class="o">.</span><span class="n">T</span>
+<span class="n">Y</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="n">S</span><span class="p">,</span><span class="n">C</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Y</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[[ 1.        ]
+ [ 0.14285714]
+ [ 1.14285714]
+ [ 0.14285714]]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Maybe fractions for answers will be more elegant, so let's use sympy:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sympy</span>
+<span class="n">sympy</span><span class="o">.</span><span class="n">init_printing</span><span class="p">(</span><span class="n">use_latex</span><span class="o">=</span><span class="s1">&#39;mathjax&#39;</span><span class="p">)</span>
+
+<span class="n">S</span> <span class="o">=</span> <span class="n">sympy</span><span class="o">.</span><span class="n">Matrix</span><span class="p">([[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,],</span>  
+                  <span class="p">[</span><span class="o">-</span><span class="mi">4</span> <span class="p">,</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span>   <span class="mi">4</span><span class="p">],</span> <span class="c1">#note that we multiply the oxygen balance with 2, to have whole numbers in the matrix.</span>
+                  <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span>  <span class="mi">1</span><span class="p">,</span>  <span class="mi">1</span><span class="p">],</span>
+                  <span class="p">[</span><span class="mi">1</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>   <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]])</span>
+
+<span class="n">C</span> <span class="o">=</span> <span class="n">sympy</span><span class="o">.</span><span class="n">Matrix</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]])</span><span class="o">.</span><span class="n">T</span>     
+
+<span class="n">Y</span> <span class="o">=</span> <span class="n">S</span><span class="o">.</span><span class="n">inv</span><span class="p">()</span><span class="o">*</span><span class="n">C</span>
+<span class="n">Y</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[16]:</div>
+
+
+
+
+<div class="output_latex output_subarea output_execute_result">
+$$\left[\begin{matrix}1\\\frac{1}{7}\\\frac{8}{7}\\\frac{1}{7}\end{matrix}\right]$$
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We therefore have the overall stoichiometry expressed as:</p>
+$$CH_2 O+\frac{1}{7} CO_2 \to \frac{8}{7} CH_{1.5} O+\frac{1}{7} H_2 O$$<p>Note the difference between yield coefficients of the cmol (per carbon) and molecular formulations. The yield coefficient for succinic acid ($Y_2$) will have the following units</p>
+$$Y_{SSA}=\frac{8}{7}\quad \left(\frac{cmol\ SA}{cmol\ Gluc}\right)$$<p>The cmol to mol conversion is easy, because it is known that there is 6 cmol of glucose per mol of glucose and 4 cmol of SA per mol of SA. We can thus determine the molar yield by a simple conversion:</p>
+$$Y_{SSA} (molar)=\frac{8}{7}\times\frac{6}{4}\quad
+\left(
+\frac{cmol\ SA}{cmol\ Gluc}\times\frac{6\ cmol\ Gluc}{mol\ Gluc}\times\frac{mol\ SA}{4\ cmol\ SA}
+\right)
+=\frac{12}{7}\quad\left(\frac{mol\ SA}{mol\ Gluc}\right)$$<p>Apart from molar and cmol based yields, mass based yields are often employed in fermentation literature. Conversion to mass based yields are simple provided that the molecular weight of the components are known. The SA mass based yield can easily be calculated as follow:</p>
+$$Y_{SSA} (mass)=\frac{8}{7}\times\frac{29.5}{30}\quad
+\left(
+\frac{cmol\ SA}{cmol\ Gluc}\times\frac{cmol\ Gluc}{30 \ g \ Gluc}\times\frac{29.5\ g \ SA}{cmol\ SA}
+\right)
+=1.124\quad\left(\frac{g\ SA}{g \ Gluc}\right)$$<p>Note that the 29.5 is derived from the molecular mass of SA of 118 g/mol (divided by 4 to obtain cmol) and that the 30 is derived from the molecular mass of glucose of 180 g/mol (divided by 6 to obtain cmol).</p>
+<p>The yield conversions are relatively straightforward but it is easy to swop numerators with denominators, so make sure that you develop your own method that is fool proof.</p>
 
 </div>
 </div>
@@ -13153,13 +13232,170 @@ $$C_6 H_{12} O_6+6O_2 \to6CO_2+6H_2 O+21\, ATP$$<p>When comparing the ATP genera
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Fermentative-pathways">Fermentative pathways<a class="anchor-link" href="#Fermentative-pathways">&#182;</a></h2><p>Most cells have the ability to survive without oxygen. This is referred to as anaerobic conditions. For this scenario the only energy generation is via glycolysis (2ATP per glucose molecule). Remember that glycolysis also generate 2 molecules of NADH per glucose. All living cells need to maintain their NADH/NAD+ and ATP/ADP ratio, so build-up of NADH and ATP is not possible. ATP will get continuously consumed due to cellular energy demands and thus the ATP/ADP ratio can be maintained (the net production of ATP is effectively zero when considering production minus consumption). The same should apply for NADH so the electrons gained from glycolysis should be used somewhere to stop the build-up of NADH. If oxygen is available the electrons can be dumped onto oxygen to form water (in biochemistry electrons are usually associated with a proton, so when saying oxidation is loss (OIL) we are referring to electrons and protons). So what do we do with the electrons and protons from NADH to stop NADH build-up when oxygen is not available? The answer is to give it back to the carbon product of glycolysis (pyruvate). The most common way of doing this is via lactic acid and ethanol formation. See the following video:</p>
-<p><a href="https://www.youtube.com/watch?v=cDC29iBxb3w">Video: Paul Anderson on fermentative pathways</a></p>
-<p>Although a good video the title of the video is incorrect. Anaerobic respiration is the process where the electron transfer chain is still employed but with an alternative electron acceptor (not oxygen). We won’t be spending time on this but note the incorrect title. The title should rather be: Anaerobic fermentative pathways. Note that lactic acid formation is a single biochemical step from pyruvate where pyruvate is reduced (and NADH oxidised). Make sure you know the molecular structure of lactic acid. Ethanol formation entails more biochemical steps. In eukaryotes acetaldehyde is the only intermediate, while in bacteria acetyl-CoA and acetaldehyde are intermediates. No additional ATP is generated while the NADH from glycolysis is consumed in the process of making ethanol while CO2 is released.</p>
-<p>Although lactic acid and ethanol are the most common anaerobic fermentation products there are also other products like formic acid, acetic acid and succinic acid. Note that the difference between lactate and lactic acid is the acid proton, for lactate the proton is dissociated, while it is undissociated for lactic acid. All these are mere excretion products for an anaerobic cell, like CO2 is for an aerobic cell. However for the chemical engineer these are useful chemicals with a carbon backbone and interesting polar groups (that can be used for polymerisation of other industrially relevant conversions). So anaerobic fermentation might not be very energy efficient, but the breakdown metabolic products (catabolites) are handy molecules.</p>
-<p>The term fermentation was initially used for anaerobic conversion of a carbon substrate, but over time the definition expanded to include aerobic processes, especially when referring to the bioreactor which is commonly referred to as a fermenter.</p>
-<p>Lastly, it is important to understand how microbes interact with oxygen. Some cannot live without oxygen (obligate aerobe), some cannot live with oxygen (obligate anaerobe) while numerous microbes can operate with or without it (<a href="https://en.wikipedia.org/wiki/Facultative_anaerobic_organism">facultative anaerobe</a>).</p>
-<p><a href="../List%20of%20contents.ipynb">Back to Contents page</a></p>
+<h3 id="Overall-reaction-with-biomass-(X)-included,-MSG-Example.">Overall reaction with biomass (X) included, MSG Example.<a class="anchor-link" href="#Overall-reaction-with-biomass-(X)-included,-MSG-Example.">&#182;</a></h3><p>We are now ready to tackle problems where biomass is included in the formulation given our understanding of the per carbon (or cmol) or stoichiometric formulation. We’ll tackle an aerobic fermentation with <em>Corynebacterium glutamicum</em> to make glutamate (one of the 20 amino acids).</p>
+<p><img src="msg.jpg" width="350" /></p>
+<p>You might have heard about MSG or mono-sodium glutamate, the flavour enhancer that triggers the <a href="https://en.wikipedia.org/wiki/Umami">umami</a> taste sensors in your mouth (apart from sweet, sour, bitter and salt, umami is the fifth basic taste). Maybe you are acquainted with MSG via your mother telling you not to through too much Aromat on your eggs. There is the common perception that originated in the sixties that <a href="http://authoritynutrition.com/msg-good-or-bad/">MSG is unhealthy</a>. Today, most health regulatory institutions agree that small amounts of consumed MSG holds no health risk. Glutamate is after all one of the 20 amino acids, while MSG is just the sodium salt of the amino acid.
+Due to extensive usage of MSG in the East, the annual global production of glutamate exceeds two million tonnes. Most of this is produced via fermentation. Glutamate is directly synthesized from the TCA intermediate &#945;-ketoglutarate (or 2-oxoglutarate) where a mol of $NH_3$ and $NADPH$ is required for the enzymatic step. The overall stoichiometry from glucose to glutamic acid can be written as follow:</p>
+$$CH_2 O+Y_{SN} NH_3+Y_{SO} O_2 \to Y_{SX} CH_{1.8} O_{0.5} N_{0.2}+Y_{SG} CH_{1.8} O_{0.8} N_{0.2}+Y_{SC} CO_2+Y_{SW} H_2 O$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>This 7 component reaction can be described by the following matrix formulation:</p>
+$$\begin{bmatrix}
+ &amp;Gluc&amp;NH_3&amp;O_2&amp;X&amp;Glut&amp;CO_2&amp;H_2O\\
+C&amp; -1&amp;  0&amp;  0&amp;  1&amp;  1&amp;  1&amp;  0\\
+H&amp; -2&amp;  -3&amp; 0&amp;  1.8&amp;    1.8&amp;    0&amp;  2\\
+O&amp; -1&amp;  0&amp;  -2&amp; 0.5&amp;    0.8&amp;    2&amp;  1\\
+N&amp; 0&amp;   -1&amp; 0&amp;  0.2&amp;    0.2&amp;    0&amp;  0\\
+S_1&amp;1&amp;  0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;\\
+S_2&amp;0&amp;0&amp;1&amp;0&amp;0&amp;0&amp;0\\
+S_3&amp;0&amp;0&amp;0&amp;1&amp;0&amp;0&amp;0\end{bmatrix}
+\times\begin{bmatrix}
+-r_{S}\\-r_{N}\\-r_{O}\\r_{X}\\r_{G}\\r_{C}\\r_{W}\end{bmatrix}
+=\begin{bmatrix}0\\0\\0\\0\\-r_{s}\\r_{O \ value}\\r_{X \ value}\end{bmatrix}$$<p>Note that there is 7 rates and 4 elemental balances. Given the arbitrary assignment of $-r_S=1$ in the fifth matrix row we need to specify two additional rates to have 7 equations and 7 unknowns. Given the fact that $-r_S=1$ the rates calculated in the above matrix will be the same as the yield coefficients ($Y_{Si}$). <strong>Make sure you understand this.</strong> Also make sure that you can deduct the formula for <a href="https://en.wikipedia.org/wiki/Glutamic_acid">glutamate</a>, Wikipedia pages will normally give you the molecular formula. Let's get it solved by assigning values of $-r_{O}=0.2$ and $r_{X}=0.1$:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span>
+<span class="n">S</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">matrix</span><span class="p">([[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span>
+                  <span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mf">1.8</span><span class="p">,</span><span class="mf">1.8</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">],</span>
+                  <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">0.8</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span>                  
+                  <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.2</span><span class="p">,</span><span class="mf">0.2</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span>
+                  <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span>
+                  <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span>
+                  <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]])</span>  
+
+<span class="n">S</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[17]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>matrix([[-1. ,  0. ,  0. ,  1. ,  1. ,  1. ,  0. ],
+        [-2. , -3. ,  0. ,  1.8,  1.8,  0. ,  2. ],
+        [-1. ,  0. , -2. ,  0.5,  0.8,  2. ,  1. ],
+        [ 0. , -1. ,  0. ,  0.2,  0.2,  0. ,  0. ],
+        [ 1. ,  0. ,  0. ,  0. ,  0. ,  0. ,  0. ],
+        [ 0. ,  0. ,  1. ,  0. ,  0. ,  0. ,  0. ],
+        [ 0. ,  0. ,  0. ,  1. ,  0. ,  0. ,  0. ]])</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">C</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">matrix</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mf">0.2</span><span class="p">,</span><span class="mf">0.1</span><span class="p">]])</span><span class="o">.</span><span class="n">T</span>
+<span class="n">Y</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="n">S</span><span class="p">,</span><span class="n">C</span><span class="p">)</span>
+<span class="n">Y</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[18]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>matrix([[ 1.        ],
+        [ 0.17444444],
+        [ 0.2       ],
+        [ 0.1       ],
+        [ 0.77222222],
+        [ 0.12777778],
+        [ 0.47666667]])</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Let’s define the mass based yield of glutamate on glucose:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">YSG_mass</span><span class="o">=</span><span class="n">Y</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span><span class="o">*</span><span class="p">(</span><span class="mi">12</span><span class="o">+</span><span class="mf">1.8</span><span class="o">+</span><span class="mf">0.8</span><span class="o">*</span><span class="mi">16</span><span class="o">+</span><span class="mf">0.2</span><span class="o">*</span><span class="mi">14</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">12</span><span class="o">+</span><span class="mi">2</span><span class="o">+</span><span class="mi">16</span><span class="p">)</span>  <span class="c1">#remember fith element is index 4</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">YSG_mass</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[[ 0.75677778]]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>So 0.757 gram of glucumate per gram of glucose used. Make sure you understand the above conversion.</p>
+<p>It is all very easy! Just ensure your stoichiometric matrix is correct.</p>
+<p><img src="424.jpg" width="350" /></p>
+<h3 id="Now-we-are-ready-for-some-problems!">Now we are ready for some problems!<a class="anchor-link" href="#Now-we-are-ready-for-some-problems!">&#182;</a></h3><p><a href="https://nbviewer.jupyter.org/github/willienicol/Biochemical-engineering-notes/blob/master/List%20of%20contents.ipynb">Back to Contents page</a></p>
 
 </div>
 </div>
