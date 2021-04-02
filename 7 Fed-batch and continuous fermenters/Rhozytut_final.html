@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>Basic Biochemistry</title>
+<title>Rhozytut_final</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13082,20 +13082,9 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="2.-Basic-biochemistry-(central-carbon-metabolism)">2. Basic biochemistry (central carbon metabolism)<a class="anchor-link" href="#2.-Basic-biochemistry-(central-carbon-metabolism)">&#182;</a></h1><p>Life is all about obtaining energy. Without energy there is no life. Almost all of the energy on earth originates from the sun, the eternal battery that powers life. In this regard plants play a very important role since they have the ability to capture light energy and store it into chemical energy via the process of photosynthesis. Since this course focus on micro-organisms we won’t go into the details of photosynthesis, we’ll only use the following chemical equation to describe the process:</p>
-$$6H_2O + 6CO_2 + energy \rightleftharpoons C_6 H_{12} O_6+6O_2$$<p>So a plant takes water, carbon dioxide and sunlight to produce glucose and oxygen, a very useful process. Glucose can thus be seen as the chemical that stores the sunlight in a chemical format. Note the reversible arrow in the equation, it is very important. The reverse process is referred to as respiration, where glucose is consumed in combination with oxygen in order to obtain energy. This is exactly what happens in your body, you release the old sunlight energy into your body to perform your daily tasks.</p>
-<p>The above equation also relates to external energy sources that you use on a daily basis. The petrol in your car originated from fossil reserves, decomposed plant material from millions of year ago. The same for electricity that is mainly produced in the RSA by burning coal, another form of fossil reserve. Although a plant does not consist out of only glucose, it can be seen as the most crucial building block for making plants so in a sense the glucose represents plant material. It is all about harvesting old sunlight and this chapter is about the biochemistry of doing exactly this.</p>
-<h2 id="ATP:-the-energy-currency-of-cells">ATP: the energy currency of cells<a class="anchor-link" href="#ATP:-the-energy-currency-of-cells">&#182;</a></h2><p><img src="ATP.png" width="450" /></p>
-<p>Before getting into biochemical reactions we need some background on how a cell stores energy. This clip by Paul Anderson is very helpful:</p>
-<p><a href="https://www.youtube.com/watch?v=5GMLIMIVUvo">Video: Paul Anderson on ATP</a></p>
-<p>We will get to the detail process of respiration (for generating ATP) at a later stage. Don’t worry too much about the photosynthesis terminology. Note how the info in this clip links with the knowledge acquired in chapter 1.</p>
-<h2 id="Oxidation/reduction-and-the-role-of-NADH">Oxidation/reduction and the role of NADH<a class="anchor-link" href="#Oxidation/reduction-and-the-role-of-NADH">&#182;</a></h2><p><img src="NADH.png" width="300" /></p>
-<p>The last step before getting to the essential biochemical reactions in cells is to properly understand oxidation and reduction.</p>
-<p><a href="https://www.youtube.com/watch?v=lQ6FBA1HM3s">Video: Hank Green on redox reactions</a></p>
-<p>Remember the word OILRIG (oxidation is loss, reduction is gain of electrons). Carefully consider the ammonia reaction.
-In biochemical reactions we have the electron carriers NADH and NADPH. The following video gives the basic working of NADH</p>
-<p><a href="https://www.youtube.com/watch?v=Kb-4uuCYLvE">Video: NADH basics</a></p>
-<p>NADPH is very similar to NADH and although mostly used for anabolic reactions we will consider them as the same for the time being. Very important to understand that NAD+ is a cofactor in some biochemical transformations where 2  protons and 2 electrons (2 hydrogen atoms) is taken from the chemical undergoing a conversion. In terms of oxidation/reduction NAD+ gains 2 electron (and a single proton, the other proton remains in suspension) to become NADH and is therefore reduced (reduction is gain). The component from which 2 hydrogens were taken is accordingly oxidised since the electrons are lost (oxidation is lost). Once NADH is formed it can travel to another reaction where the reverse process can take place where NADH can get oxidised.  For more detail visit the <a href="https://en.wikipedia.org/wiki/Nicotinamide_adenine_dinucleotide">wikipedia link</a>.</p>
+<h2 id="Sugar-addicted-Rhizopus-oryzae">Sugar addicted <em>Rhizopus oryzae</em><a class="anchor-link" href="#Sugar-addicted-Rhizopus-oryzae">&#182;</a></h2><h3 id="by-Eleanor-Reynecke">by Eleanor Reynecke<a class="anchor-link" href="#by-Eleanor-Reynecke">&#182;</a></h3><p><em>Rhizopus oryzae</em>, referred to as <em>Rhozy</em> in our lab is an interesting soil fungus that produces fumaric acid under the correct conditions. <em>Rhozy</em> consumes glucose at a fixed maximum rate independent of the conditions in the fermenter. When <em>Rhozy</em> runs out of a nitrogen source biomass production is not possible, but this does not not stop the fungus from consuming glucose at the maximum possible uptake rate. In this tut we will be looking at the mechanisms that this clever organism uses to process all the consumed glucose. We will look at special transporter proteins in the cell membrane that excretes fumaric acid by using some of the internally generated ATP. You will be expected to set up the flux model by yourself and also incorporate the nitrogen source as an additional substrate. The metabolic flux diagram is given below:</p>
+<p><img src="RhozyMap.png" width="500" /></p>
+<p>We have recently established in our own lab that <em>Rhozy</em> is Crabtree positive, just like <em>Saccharomyces cerevisiae</em>. You have to accordingly take note of the maximum allowable flux to $r_5$.</p>
 
 </div>
 </div>
@@ -13103,27 +13092,82 @@ In biochemical reactions we have the electron carriers NADH and NADPH. The follo
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Glycolysis">Glycolysis<a class="anchor-link" href="#Glycolysis">&#182;</a></h2><p>We are now ready to harvest energy (ATP) from sugars like glucose. The process starts with glycolysis. Here is a good intro video:</p>
-<p><a href="https://www.youtube.com/watch?v=8Kn6BVGqKd8">Video: VCELL on glycolysis 1</a></p>
-<p>For a proper diagram of all the molecules, I prefer the following schematic:</p>
-<p><img src="glyc.png" width="1000" /></p>
-<p>The following video is a lovely molecular animation of glycolysis:</p>
-<p><a href="https://www.youtube.com/watch?v=hDq1rhUkV-g">Video:VCELL on glycolysis 2</a></p>
-<p>Take note that these abbreviations are used for the glycolysis intermediates</p>
-<p><img src="Glycnames.png" width="350" /></p>
-<p>It is very important to understand that the net production of energy in glycolysis is 2 ATP molecules per glucose molecule. In addition 2 NADH molecules are also generated due to an oxidation reaction. The exit carbon product namely pyruvate is important and will be used in the rest of the metabolism. Also note that most other sugars will be metabolised via the glycolysis reactions and that glycolysis is not restricted to metabolising glucose. You are not required to memorise the enzyme or component names, but you need to be able to access them rapidly.</p>
-<p>As a side note, look how close glycerol is to Dihydroxyacetone-P. Remember glycerol from the lipid discussion?</p>
-<p><img src="Glycerol.png" width="650" /></p>
-<h2 id="The-TCA-cycle">The TCA cycle<a class="anchor-link" href="#The-TCA-cycle">&#182;</a></h2><p>The citric (or tricarboxylic acid cycle) is the process of fully oxidising pyruvate to $CO_2$ and NADH (and some FADH that is very similar to NADH). It is the internal combustion engine, although some of the intermediates are used for synthesizing amino acids and vitamins. The following video is a good overview:</p>
-<p><a href="https://www.youtube.com/watch?v=F6vQKrRjQcQ">Video: VCELL on TCA 1</a></p>
-<p>The following diagram is also very useful:</p>
-<p><img src="TCA.png" width="800" /></p>
-<hr>
-<p>Note that glycolysis links with the TCA cycle via pyruvate. Pyruvate oxidation generates NADH and acetyl-CoA, an intermediate in the cycle. The cycle can only start to turn if oxaloacetate is initially present. The oxaloacetate can be produced by carboxylation of pyruvate (adding $CO_2$) using the enzyme pyruvate carboxylase that requires ATP. The carboxylation does not have to occur on a continuous basis since oxaloacetate is regenerated via the TCA cycle itself and accordingly the ATP investment to make the first oxaloacetate molecule can be ignored. For a detail animation of the reactions see the following video</p>
-<p><a href="https://www.youtube.com/watch?v=_cXVleFtzeE">Video: VCELL on TCA 2</a></p>
-<p>Familiarise yourself with the molecules and their names. A single turn of the cycle will release 2 $CO_2$ molecules. How many cycles are required to effectively burn a glucose molecule? Don’t forget the pyruvate oxidation step where $CO2$ is also released. Given one glucose molecule that has gone through glycolysis and the TCA cycle you should proof to yourself that 6$ CO_2$, 10 NADH, 2 FADH2 and 4 ATP (assume GTP and ATP are the same) got generated. Even though the glucose got burned we still don’t have a lot of available energy. This will be generated when the NADH and FADH2 are converted to ATP via oxidative phosphorylation. 
-We won’t be going into detail on amino acid synthesis, but take note of the fact that almost all of the amino acids get synthesized from glycolysis or TCA cycle intermediates. See the following diagram:</p>
-<p><img src="am_ac.jpg" width="700" /></p>
+<p>The following physiological parameters are known:</p>
+<table>
+<thead><tr>
+<th>$\alpha \qquad \qquad$</th>
+<th>$\gamma \qquad \qquad $</th>
+<th>$\mu_{max} \qquad$</th>
+<th>$\theta_{max} \qquad$</th>
+<th>$P/O$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\frac{\text{cmol $CO_2$}}{\text{cmol X}}$</td>
+<td>$\frac{\text{mol ATP}}{\text{cmol X}}$</td>
+<td>$\frac{1}{\text{h}}$</td>
+<td>$\frac{\text{mol ATP}}{\text{cmol X}\cdot \text{h}}$</td>
+<td>$\frac{\text {mol ATP}}{\text {mol NADH} }$</td>
+</tr>
+<tr>
+<td>0.1</td>
+<td>2.5</td>
+<td>0.1</td>
+<td>0</td>
+<td>1.5</td>
+</tr>
+</tbody>
+</table>
+<p>The biomass formula is given by $CH_{1.8}O_{0.5}N_{0.2}$</p>
+<p>The growth rate is given by the following equation:</p>
+$$\mu(C_S,C_N)= \mu_{max} \left[\frac{Cs}{K_{M1}+Cs} \right] \left[\frac{C_N}{K_{M2}+C_N} \right] $$<p>$C_N$ is the concentration of $NH_3$ in the liquid. $K_{M1}$ is 0.0002 $\frac{cmol}{L}$ and $K_{M2}$ is 0.0003 $\frac{mol}{L}$.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span>
+<span class="kn">from</span> <span class="nn">numpy.linalg</span> <span class="kn">import</span> <span class="n">solve</span>
+<span class="kn">from</span> <span class="nn">scipy.optimize</span> <span class="kn">import</span> <span class="n">fsolve</span><span class="p">,</span> <span class="n">minimize</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">scipy.integrate</span> <span class="kn">import</span> <span class="n">odeint</span>
+<span class="kn">import</span> <span class="nn">pandas</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">division</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[71]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">β</span> <span class="o">=</span> <span class="mf">0.1</span>
+<span class="n">α</span><span class="p">,</span> <span class="n">γ</span><span class="p">,</span> <span class="n">μ_max</span><span class="p">,</span> <span class="n">θ</span><span class="p">,</span> <span class="n">P_O</span> <span class="o">=</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">1.5</span>
+<span class="n">Kms</span><span class="p">,</span> <span class="n">Kmn</span> <span class="o">=</span> <span class="mf">0.0002</span><span class="p">,</span> <span class="mf">0.0003</span>
+<span class="n">r_gluc</span> <span class="o">=</span> <span class="mf">0.25</span>
+<span class="n">r5_max</span> <span class="o">=</span> <span class="mf">0.055</span> 
+<span class="n">Cso</span><span class="p">,</span><span class="n">Cxo</span><span class="p">,</span><span class="n">Cno</span> <span class="o">=</span>  <span class="mf">2.5</span><span class="p">,</span> <span class="mf">0.05</span><span class="p">,</span> <span class="mf">0.05</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>a) Determine the yield of ammonia on biomass. Will this relationship change? Why/why not? [$Y_{XU} = 0.2 \frac{cmolU}{cmolX}$]</p>
 
 </div>
 </div>
@@ -13131,21 +13175,15 @@ We won’t be going into detail on amino acid synthesis, but take note of the fa
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Oxidative-phosphorylation-(electron-transport-chain)">Oxidative phosphorylation (electron transport chain)<a class="anchor-link" href="#Oxidative-phosphorylation-(electron-transport-chain)">&#182;</a></h2><p>The glucose electrons carried by NADH and FADH2 are high energy electrons. The electron transport chain in the mitochondria entails the process of harvesting energy from the NADH bounded electrons to produce ATP. In the end the electrons end up in a water molecule by joining with oxygen to form water. Oxygen is referred to as the final electron acceptor. Have a look at this video.</p>
-<p><a href="https://www.youtube.com/watch?v=xbJ0nbzt5Kw">Video: VCELL on electron transport chain</a></p>
-<p>The high energy electrons are used to generate a proton gradient over the inner mitochondrial membrane. Note how protons (hydrogen ions) move from the matrix upwards in the animation. The proton gradient is the driving force for ATP synthase where a flow of protons (back into the matrix) physically turns this enzyme complex like water turning a mill. The rotational energy is then used to generate ATP, see this video:</p>
-<p><a href="https://www.youtube.com/watch?v=3y1dO4nNaKY">Video: VCELL on ATP synthase</a></p>
-<p>So how much ATP can be generated from NADH (2 electrons)? The theoretical answer is 3 ATPs. For $FADH_2$ the theoretical answer is 2 ATPs since the electrons carried has a lower energy potential and only enters the electron transfer chain midway. In practise less ATP is generated due to losses caused by inefficiencies and the number for NADH is closer to 1.3-2.5 (it is referred to as the P/O number and there is debate on the exact magnitude of this number)</p>
-<p><img src="atpsyn.gif" width="300" /></p>
-<p>Just a note on the types of ATP formation routes. When ATP is generated directly from the metabolic pathway (like in glycolysis) it is referred to as substrate level phosphorylation. This stands in contrast with oxidative phosphorylation where a proton gradient is used to generate ATP.</p>
-<h2 id="Respiration">Respiration<a class="anchor-link" href="#Respiration">&#182;</a></h2><p>We now need to combine the whole process of ‘combusting’ glucose by looking at glycolysis, the TCA cycle and oxidative phosphorylation together. The overall equation for glycolysis and the TCA cycle is as follow:</p>
-$$C_6 H_{12} O_6+6H_2 O \to 6CO_2+10\,NADH+2\,FADH_2+4\, ATP$$<p>Note that NADH and $FADH_2$ both carry two protons, although in NADH one proton is loosely attached. Oxidative phosphorylation can be summarised as follow:</p>
-$$NADH+\frac{1}{2}O_2 \to (P/O)_{NADH}\, ATP+H_2 O$$$$FADH_2+ \frac{1}{2}O_2  \to(P/O)_{FADH_2}\, ATP+H_2 O$$<p>The theoretical values for $(P/O)_{NADH}$ is 3 and $(P/O)_{FADH_2}$ is 2. $(P/O)$ stands for phosphate (added to ADP to form ATP) per atomic oxygen (thus the $\frac{1}{2}O_2$ in the equation). Given the above the whole of respiration (glycolysis, TCA and oxidative phosphorylation) can be written as:</p>
-$$C_6 H_{12} O_6+6O_2 \to 6CO_2+6H_2 O+38\, ATP$$<p>If we use a $(P/O)_{NADH}$ of 1.5 and a $(P/O)_{FADH_2}$ of 1,the overall reaction reduce to:</p>
-$$C_6 H_{12} O_6+6O_2 \to6CO_2+6H_2 O+21\, ATP$$<p>When comparing the ATP generated from glycolysis to the ATP generated via full respiration (21) we see a more than tenfold increase in energy gain. This is a crucial number for higher organisms like eukaryotes where energy efficiency is essential for multicellular life.</p>
-<p>Some prokaryotes also have the ability to perform aerobic respiration eventhough they do not have mitochondria. For these organisms a similar proton gradient to that of the mitochondria is generated over the inner cell membrane (<a href="https://en.wikipedia.org/wiki/Periplasm">see periplasm</a>)</p>
-<p>This Khan Academy video might give you some further assistance:</p>
-<p><a href="https://www.khanacademy.org/science/biology/cellular-respiration-and-fermentation/intro-to-cellular-respiration/v/introduction-to-cellular-respiration">Video: Khan on respiration</a></p>
+<p>b) To excrete fumaric acid <em>Rhozy</em> has to use a special transporter protein that uses 3 ATPs for each molecule of fumaric acid excreted. This implies that there is energy usage associated with the $r_3$ flux in a similar manner the energy usage of $\gamma$ is associated with the $r_1$ flux. Perform the ATP balance and prove to yourself that you can obtain the following:</p>
+$$-\gamma r_1+ \frac{1}{3} r_2 + \frac{1}{3} r_5 – r_3 + 2(\frac{P}{O})r_6 = \theta$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>c) Set up your own flux model for <em>Rhozy</em>. The maximum glucose uptake rate is 0.25 $\frac{cmol}{cmolX \cdot h}$. The Crabtree effect is defined by a maximum rate in $r_5$ of 0.055 $\frac{cmol}{cmolX \cdot h}$. What is the rate of ethanol excretion when the growth rate is not inhibited (at $\mu_{max}$)? [0.045 $\frac{cmol}{cmolX \cdot h}$]</p>
 
 </div>
 </div>
@@ -13153,13 +13191,44 @@ $$C_6 H_{12} O_6+6O_2 \to6CO_2+6H_2 O+21\, ATP$$<p>When comparing the ATP genera
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Fermentative-pathways">Fermentative pathways<a class="anchor-link" href="#Fermentative-pathways">&#182;</a></h2><p>Most cells have the ability to survive without oxygen. This is referred to as anaerobic conditions. For this scenario the only energy generation is via glycolysis (2ATP per glucose molecule). Remember that glycolysis also generate 2 molecules of NADH per glucose. All living cells need to maintain their NADH/NAD+ and ATP/ADP ratio, so build-up of NADH and ATP is not possible. ATP will get continuously consumed due to cellular energy demands and thus the ATP/ADP ratio can be maintained (the net production of ATP is effectively zero when considering production minus consumption). The same should apply for NADH so the electrons gained from glycolysis should be used somewhere to stop the build-up of NADH. If oxygen is available the electrons can be dumped onto oxygen to form water (in biochemistry electrons are usually associated with a proton, so when saying oxidation is loss (OIL) we are referring to electrons and protons). So what do we do with the electrons and protons from NADH to stop NADH build-up when oxygen is not available? The answer is to give it back to the carbon product of glycolysis (pyruvate). The most common way of doing this is via lactic acid and ethanol formation. See the following video:</p>
-<p><a href="https://www.youtube.com/watch?v=cDC29iBxb3w">Video: Paul Anderson on fermentative pathways</a></p>
-<p>Although a good video the title of the video is incorrect. Anaerobic respiration is the process where the electron transfer chain is still employed but with an alternative electron acceptor (not oxygen). We won’t be spending time on this but note the incorrect title. The title should rather be: Anaerobic fermentative pathways. Note that lactic acid formation is a single biochemical step from pyruvate where pyruvate is reduced (and NADH oxidised). Make sure you know the molecular structure of lactic acid. Ethanol formation entails more biochemical steps. In eukaryotes acetaldehyde is the only intermediate, while in bacteria acetyl-CoA and acetaldehyde are intermediates. No additional ATP is generated while the NADH from glycolysis is consumed in the process of making ethanol while CO2 is released.</p>
-<p>Although lactic acid and ethanol are the most common anaerobic fermentation products there are also other products like formic acid, acetic acid and succinic acid. Note that the difference between lactate and lactic acid is the acid proton, for lactate the proton is dissociated, while it is undissociated for lactic acid. All these are mere excretion products for an anaerobic cell, like CO2 is for an aerobic cell. However for the chemical engineer these are useful chemicals with a carbon backbone and interesting polar groups (that can be used for polymerisation of other industrially relevant conversions). So anaerobic fermentation might not be very energy efficient, but the breakdown metabolic products (catabolites) are handy molecules.</p>
-<p>The term fermentation was initially used for anaerobic conversion of a carbon substrate, but over time the definition expanded to include aerobic processes, especially when referring to the bioreactor which is commonly referred to as a fermenter.</p>
-<p>Lastly, it is important to understand how microbes interact with oxygen. Some cannot live without oxygen (obligate aerobe), some cannot live with oxygen (obligate anaerobe) while numerous microbes can operate with or without it (<a href="https://en.wikipedia.org/wiki/Facultative_anaerobic_organism">facultative anaerobe</a>).</p>
-<p><a href="../List%20of%20contents.ipynb">Back to Contents page</a></p>
+<p>d) Model the fermentation by incorporating the $NH_3$ concentration. Add the rate of ammonia in your response function using the yield of ammonia on biomass. Assume there are no oxygen limitations. Remember that because of <em>Rhozy's</em> sugar addiction, glucose will be consumed at a constant rate at all times. You should get the following:</p>
+<p><img src="Rhozy_pic1.png" width="500" /></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>e) Plot the rates of the liquid phase components and explain the response obtained in (d). Have a close look at the ethanol rates.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>g)Repeat question (d) in an anaerobic fermenter. What do you observe?</p>
+<p>h) What will be the maximum growth rate of <em>Rhozy</em> if fumerate uptake is not possible? Obtain the value and show that the following fermenter profile will be obtained if 3.5 $\frac{cmol}{L}$ of glucose is fed:</p>
+<p><img src="Rhozy_pic2.png" width="500" /></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>i) Return to question (d). What happens to the yield of fumarate on glucose when the initial amount of nitrogen is reduced? How does this effect the productivity?</p>
+<p>In fermentation engineering there is typically a trade-off between yield and productivity. By increasing one parameter we decrease the other. The optimum process will thus be determined by the profit objective function (POF). Let's assume that the profitability of the fermenter is determined by the following function:</p>
+$$POF=P + 0.2 \cdot APY$$<p>Where $P$ is fumaric acid productivity in $\frac{g}{L \cdot h}$ and $APY$ is accumalative fumeraric acid yield in $\frac{g}{g}$.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>j) Determine the optimum intial concentration of ammonia. Generate a range of P and APY values as a function of the initial ammonia amount to start the calculation.</p>
 
 </div>
 </div>

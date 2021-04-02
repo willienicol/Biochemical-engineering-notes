@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>Basic Biochemistry</title>
+<title>TCA cycle and oxidative phosphorylation</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13082,48 +13082,38 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="2.-Basic-biochemistry-(central-carbon-metabolism)">2. Basic biochemistry (central carbon metabolism)<a class="anchor-link" href="#2.-Basic-biochemistry-(central-carbon-metabolism)">&#182;</a></h1><p>Life is all about obtaining energy. Without energy there is no life. Almost all of the energy on earth originates from the sun, the eternal battery that powers life. In this regard plants play a very important role since they have the ability to capture light energy and store it into chemical energy via the process of photosynthesis. Since this course focus on micro-organisms we won’t go into the details of photosynthesis, we’ll only use the following chemical equation to describe the process:</p>
-$$6H_2O + 6CO_2 + energy \rightleftharpoons C_6 H_{12} O_6+6O_2$$<p>So a plant takes water, carbon dioxide and sunlight to produce glucose and oxygen, a very useful process. Glucose can thus be seen as the chemical that stores the sunlight in a chemical format. Note the reversible arrow in the equation, it is very important. The reverse process is referred to as respiration, where glucose is consumed in combination with oxygen in order to obtain energy. This is exactly what happens in your body, you release the old sunlight energy into your body to perform your daily tasks.</p>
-<p>The above equation also relates to external energy sources that you use on a daily basis. The petrol in your car originated from fossil reserves, decomposed plant material from millions of year ago. The same for electricity that is mainly produced in the RSA by burning coal, another form of fossil reserve. Although a plant does not consist out of only glucose, it can be seen as the most crucial building block for making plants so in a sense the glucose represents plant material. It is all about harvesting old sunlight and this chapter is about the biochemistry of doing exactly this.</p>
-<h2 id="ATP:-the-energy-currency-of-cells">ATP: the energy currency of cells<a class="anchor-link" href="#ATP:-the-energy-currency-of-cells">&#182;</a></h2><p><img src="ATP.png" width="450" /></p>
-<p>Before getting into biochemical reactions we need some background on how a cell stores energy. This clip by Paul Anderson is very helpful:</p>
-<p><a href="https://www.youtube.com/watch?v=5GMLIMIVUvo">Video: Paul Anderson on ATP</a></p>
-<p>We will get to the detail process of respiration (for generating ATP) at a later stage. Don’t worry too much about the photosynthesis terminology. Note how the info in this clip links with the knowledge acquired in chapter 1.</p>
-<h2 id="Oxidation/reduction-and-the-role-of-NADH">Oxidation/reduction and the role of NADH<a class="anchor-link" href="#Oxidation/reduction-and-the-role-of-NADH">&#182;</a></h2><p><img src="NADH.png" width="300" /></p>
-<p>The last step before getting to the essential biochemical reactions in cells is to properly understand oxidation and reduction.</p>
-<p><a href="https://www.youtube.com/watch?v=lQ6FBA1HM3s">Video: Hank Green on redox reactions</a></p>
-<p>Remember the word OILRIG (oxidation is loss, reduction is gain of electrons). Carefully consider the ammonia reaction.
-In biochemical reactions we have the electron carriers NADH and NADPH. The following video gives the basic working of NADH</p>
-<p><a href="https://www.youtube.com/watch?v=Kb-4uuCYLvE">Video: NADH basics</a></p>
-<p>NADPH is very similar to NADH and although mostly used for anabolic reactions we will consider them as the same for the time being. Very important to understand that NAD+ is a cofactor in some biochemical transformations where 2  protons and 2 electrons (2 hydrogen atoms) is taken from the chemical undergoing a conversion. In terms of oxidation/reduction NAD+ gains 2 electron (and a single proton, the other proton remains in suspension) to become NADH and is therefore reduced (reduction is gain). The component from which 2 hydrogens were taken is accordingly oxidised since the electrons are lost (oxidation is lost). Once NADH is formed it can travel to another reaction where the reverse process can take place where NADH can get oxidised.  For more detail visit the <a href="https://en.wikipedia.org/wiki/Nicotinamide_adenine_dinucleotide">wikipedia link</a>.</p>
-
+<h2 id="Aerobic-systems">Aerobic systems<a class="anchor-link" href="#Aerobic-systems">&#182;</a></h2><p>When oxygen is available energy is in abundance. A mole of glucose can result in more than 20 mols of ATP (depending on the $P/O$ ratios) through respiration, while the standard anaerobic catabolism of lactic acid and ethanol formation only gives one 2 moles of ATP per mole of glucose. During respiration the carbon backbone of glucose is destroyed since the only $CO_2$ and $H_2O$ forms. This stands in contrast with anaerobic systems where sections of the carbon backbone is excreted from the cell and regularly used as commercial chemicals (ethanol, lactic acid, succinic acid, acetic acid etc.). For some aerobic processes biomass itself is the product like the <em>Saccharomyces cerevisiae</em> example of <a href="https://nbviewer.jupyter.org/github/willienicol/Biochemical-engineering-notes/blob/master/Tutorials/Tut%203.2.ipynb">tutorial 3.2</a>. But apart from making biomass, is it possible to make other molecules when the catabolism only results in the formation of $CO_2$ and $H_2O$?</p>
+<p>The answer is a definite yes. Most commercial fermentation processes employ aerobes where oxygen is sparged through the bioreactor. In all of these systems a major part of the carbon flux is directed to molecules with a carbon skeleton. Examples of these include organic acids like citric, fumaric and malic acid, alcohols like propane diol, amino acids like glutamate and lysine, proteins like insulin and cellulase and various other commercial chemicals. These biochemicals cannot be seen as ‘true’ catabolites, since their production is typically not associated with ATP production. We will however consider the metabolic pathways for producing these chemicals as part of the catabolism that we model. Some reactions might require ATP and will be directly considered in the ATP balance. For these scenarios respiration will fuel the ATP requirements of the anabolism and the energy hungry catabolic reactions. The principles of metabolic flux modelling discussed in <a href="https://nbviewer.jupyter.org/github/willienicol/Biochemical-engineering-notes/blob/master/4%20Stoichiometry%20that%20includes%20internal%20reactions/Main%20fermentative%20pathways.ipynb">section 4.2</a> will apply directly.</p>
+<p>But why does these molecules get produced if ATP generation is not the objective. The answer to this question lies in the organism’s interaction with its environment and fellow competitors. In most scenarios the excreted product performs an extracellular function that favours the survival of the organism. For example, extracellular fungal enzymes or exoenzymes are used to break complex macromolecules like cellulose into digestible glucose units. The enzymes are thus used to prepare the food to the organism on the outside. Another example is the excretion of organic acids by some fungi. This creates a low pH environment that the organism is more adapted to and hence it has a growth advantage over other competing organisms.</p>
+<p>Whatever the metabolism of these organism entail, oxygen is used to generate ATP in an efficient manner. It also ‘digest’ excess NADH formed in some of these processes. In order to model the metabolic flux distributions of these systems, oxidative phosphorylation need to be included into the flux model. This can be done by defining a molar oxygen rate within the flux model:</p>
+<p><img src="OP1.png" width="400" /></p>
+<p>This is merely the representation of the equation we had in <a href="https://nbviewer.jupyter.org/github/willienicol/Biochemical-engineering-notes/blob/master/2%20Basic%20biochemistry/Basic%20Biochemistry.ipynb">chapter 2</a>:</p>
+$$2NADH+O_2→2(P⁄O)_{NADH} ATP+2H_2 O$$
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Glycolysis">Glycolysis<a class="anchor-link" href="#Glycolysis">&#182;</a></h2><p>We are now ready to harvest energy (ATP) from sugars like glucose. The process starts with glycolysis. Here is a good intro video:</p>
-<p><a href="https://www.youtube.com/watch?v=8Kn6BVGqKd8">Video: VCELL on glycolysis 1</a></p>
-<p>For a proper diagram of all the molecules, I prefer the following schematic:</p>
-<p><img src="glyc.png" width="1000" /></p>
-<p>The following video is a lovely molecular animation of glycolysis:</p>
-<p><a href="https://www.youtube.com/watch?v=hDq1rhUkV-g">Video:VCELL on glycolysis 2</a></p>
-<p>Take note that these abbreviations are used for the glycolysis intermediates</p>
-<p><img src="Glycnames.png" width="350" /></p>
-<p>It is very important to understand that the net production of energy in glycolysis is 2 ATP molecules per glucose molecule. In addition 2 NADH molecules are also generated due to an oxidation reaction. The exit carbon product namely pyruvate is important and will be used in the rest of the metabolism. Also note that most other sugars will be metabolised via the glycolysis reactions and that glycolysis is not restricted to metabolising glucose. You are not required to memorise the enzyme or component names, but you need to be able to access them rapidly.</p>
-<p>As a side note, look how close glycerol is to Dihydroxyacetone-P. Remember glycerol from the lipid discussion?</p>
-<p><img src="Glycerol.png" width="650" /></p>
-<h2 id="The-TCA-cycle">The TCA cycle<a class="anchor-link" href="#The-TCA-cycle">&#182;</a></h2><p>The citric (or tricarboxylic acid cycle) is the process of fully oxidising pyruvate to $CO_2$ and NADH (and some FADH that is very similar to NADH). It is the internal combustion engine, although some of the intermediates are used for synthesizing amino acids and vitamins. The following video is a good overview:</p>
-<p><a href="https://www.youtube.com/watch?v=F6vQKrRjQcQ">Video: VCELL on TCA 1</a></p>
-<p>The following diagram is also very useful:</p>
+<p>We will now return to the <em>Saccharomyces cerevisiae</em> example (<a href="https://nbviewer.jupyter.org/github/willienicol/Biochemical-engineering-notes/blob/master/Tutorials/Tut%203.2.ipynb">tutorial 3.2</a>) where biomass production is considered. The full TCA model will be performed for this example. After the example it will be shown that respiration can be reduced to a much simpler flux model. The reason for the detail modelling of the TCA cycle is to provide a tool for handling scenarios where TCA intermediates (or metabolites a few enzymatic steps away from a TCA intermediate) are considered as excretion products. Numerous commercial fermentation products originates from TCA cycle intermediates.</p>
+<p>The cmol flux diagram of are given by the following:</p>
 <p><img src="TCA.png" width="800" /></p>
-<hr>
-<p>Note that glycolysis links with the TCA cycle via pyruvate. Pyruvate oxidation generates NADH and acetyl-CoA, an intermediate in the cycle. The cycle can only start to turn if oxaloacetate is initially present. The oxaloacetate can be produced by carboxylation of pyruvate (adding $CO_2$) using the enzyme pyruvate carboxylase that requires ATP. The carboxylation does not have to occur on a continuous basis since oxaloacetate is regenerated via the TCA cycle itself and accordingly the ATP investment to make the first oxaloacetate molecule can be ignored. For a detail animation of the reactions see the following video</p>
-<p><a href="https://www.youtube.com/watch?v=_cXVleFtzeE">Video: VCELL on TCA 2</a></p>
-<p>Familiarise yourself with the molecules and their names. A single turn of the cycle will release 2 $CO_2$ molecules. How many cycles are required to effectively burn a glucose molecule? Don’t forget the pyruvate oxidation step where $CO2$ is also released. Given one glucose molecule that has gone through glycolysis and the TCA cycle you should proof to yourself that 6$ CO_2$, 10 NADH, 2 FADH2 and 4 ATP (assume GTP and ATP are the same) got generated. Even though the glucose got burned we still don’t have a lot of available energy. This will be generated when the NADH and FADH2 are converted to ATP via oxidative phosphorylation. 
-We won’t be going into detail on amino acid synthesis, but take note of the fact that almost all of the amino acids get synthesized from glycolysis or TCA cycle intermediates. See the following diagram:</p>
-<p><img src="am_ac.jpg" width="700" /></p>
+<p><strong><em>Flux model of the TCA cycle in conjunction with cell growth</em></strong> <em>Glu - glucose, X - biomass, Pyr - pyruvate, AcCoA - acetyl-CoA, Cit  -citrate, $\alpha$-Ket - $\alpha$-ketoglutarate, Su-CoA - succinyl-CoA, OXA - oxaloacetate</em></p>
+<p>Take note of the following:</p>
+<ul>
+<li>Blue nodes giving stoichiometric nodes</li>
+<li>All rates have units of $\frac{\text{cmol/mol i}}{\text{cmol X}\cdot\text{h}}$</li>
+<li>Pyruvate oxidation occurs via pyruvate dehydrogenase (PDH)</li>
+<li>$r_6$ represents a four carbon molecule joining up with a two carbon molecule ($r_3$) to result in a six carbon molecule ($r_4$) and thus equation 4.</li>
+<li>Equation 5a substituted into equation 5b results in equation 4. Accordingly either 5a or 5b should be specified to have a linear independent set of equations.</li>
+<li>The transition in the cycle from $C_6$ to $C_5$ to $C_4$, where carbon is lost via $CO_2$ formation. The last stoichiometric balances reflect these transitions.</li>
+<li>The $\frac{1}{2}$ NADH on $v_6$ is two separate oxidation steps ($2\times\frac{1}{4}$) in the cycle where FADH is considered as NADH.</li>
+<li>The GTP formed in the cycle is considered as ATP.</li>
+<li>Oxidative phosphorylation is reflected in the ATP and NADH balance by using the oxygen flux as reference. The $(P/O)$ is specified as 1.5.</li>
+<li>The growth rate ($\mu$) as basis specification. </li>
+</ul>
+<p>The flux model does not solve for the total $CO_2$ produced. We can include an additional rate ($r_{CO_2}$) and an additional equation to address the issue. The equation will be as follow:</p>
+$$r_{CO_2}=r_8=\alpha r_1+\frac{1}{2}r_3+\frac{1}{5}r_5+\frac{1}{4}r_6$$<p>Given 9 equations for 9 rates ($CO_2$ included) the system is fully specified. The formulation can easily be solved by the matrix method. Like before we'll choose $\alpha=0.1 \frac{\text{mol}\,CO_2}{\text{cmol X}}$ and work out $\beta=0.1\frac{\text{mol NADH}}{\text{cmol X}}$ given that biomass is given as $CH_{1.8}O_{0.5}N_{0.2}$. We'll further define $\gamma=2.5\frac{\text{mol ATP}}{\text{cmol X}}$, $\theta=0.1 \frac{\text{mol ATP}}{\text{mol X}\cdot \text{h}}$ and $\mu =0.25 \frac{1}{\text{h}}$. Since this is a big matrix let's opt for Excel to define the define the stoichiometric matrix. It is much easier when columns are clearly defined:</p>
 
 </div>
 </div>
@@ -13131,21 +13121,288 @@ We won’t be going into detail on amino acid synthesis, but take note of the fa
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Oxidative-phosphorylation-(electron-transport-chain)">Oxidative phosphorylation (electron transport chain)<a class="anchor-link" href="#Oxidative-phosphorylation-(electron-transport-chain)">&#182;</a></h2><p>The glucose electrons carried by NADH and FADH2 are high energy electrons. The electron transport chain in the mitochondria entails the process of harvesting energy from the NADH bounded electrons to produce ATP. In the end the electrons end up in a water molecule by joining with oxygen to form water. Oxygen is referred to as the final electron acceptor. Have a look at this video.</p>
-<p><a href="https://www.youtube.com/watch?v=xbJ0nbzt5Kw">Video: VCELL on electron transport chain</a></p>
-<p>The high energy electrons are used to generate a proton gradient over the inner mitochondrial membrane. Note how protons (hydrogen ions) move from the matrix upwards in the animation. The proton gradient is the driving force for ATP synthase where a flow of protons (back into the matrix) physically turns this enzyme complex like water turning a mill. The rotational energy is then used to generate ATP, see this video:</p>
-<p><a href="https://www.youtube.com/watch?v=3y1dO4nNaKY">Video: VCELL on ATP synthase</a></p>
-<p>So how much ATP can be generated from NADH (2 electrons)? The theoretical answer is 3 ATPs. For $FADH_2$ the theoretical answer is 2 ATPs since the electrons carried has a lower energy potential and only enters the electron transfer chain midway. In practise less ATP is generated due to losses caused by inefficiencies and the number for NADH is closer to 1.3-2.5 (it is referred to as the P/O number and there is debate on the exact magnitude of this number)</p>
-<p><img src="atpsyn.gif" width="300" /></p>
-<p>Just a note on the types of ATP formation routes. When ATP is generated directly from the metabolic pathway (like in glycolysis) it is referred to as substrate level phosphorylation. This stands in contrast with oxidative phosphorylation where a proton gradient is used to generate ATP.</p>
-<h2 id="Respiration">Respiration<a class="anchor-link" href="#Respiration">&#182;</a></h2><p>We now need to combine the whole process of ‘combusting’ glucose by looking at glycolysis, the TCA cycle and oxidative phosphorylation together. The overall equation for glycolysis and the TCA cycle is as follow:</p>
-$$C_6 H_{12} O_6+6H_2 O \to 6CO_2+10\,NADH+2\,FADH_2+4\, ATP$$<p>Note that NADH and $FADH_2$ both carry two protons, although in NADH one proton is loosely attached. Oxidative phosphorylation can be summarised as follow:</p>
-$$NADH+\frac{1}{2}O_2 \to (P/O)_{NADH}\, ATP+H_2 O$$$$FADH_2+ \frac{1}{2}O_2  \to(P/O)_{FADH_2}\, ATP+H_2 O$$<p>The theoretical values for $(P/O)_{NADH}$ is 3 and $(P/O)_{FADH_2}$ is 2. $(P/O)$ stands for phosphate (added to ADP to form ATP) per atomic oxygen (thus the $\frac{1}{2}O_2$ in the equation). Given the above the whole of respiration (glycolysis, TCA and oxidative phosphorylation) can be written as:</p>
-$$C_6 H_{12} O_6+6O_2 \to 6CO_2+6H_2 O+38\, ATP$$<p>If we use a $(P/O)_{NADH}$ of 1.5 and a $(P/O)_{FADH_2}$ of 1,the overall reaction reduce to:</p>
-$$C_6 H_{12} O_6+6O_2 \to6CO_2+6H_2 O+21\, ATP$$<p>When comparing the ATP generated from glycolysis to the ATP generated via full respiration (21) we see a more than tenfold increase in energy gain. This is a crucial number for higher organisms like eukaryotes where energy efficiency is essential for multicellular life.</p>
-<p>Some prokaryotes also have the ability to perform aerobic respiration eventhough they do not have mitochondria. For these organisms a similar proton gradient to that of the mitochondria is generated over the inner cell membrane (<a href="https://en.wikipedia.org/wiki/Periplasm">see periplasm</a>)</p>
-<p>This Khan Academy video might give you some further assistance:</p>
-<p><a href="https://www.khanacademy.org/science/biology/cellular-respiration-and-fermentation/intro-to-cellular-respiration/v/introduction-to-cellular-respiration">Video: Khan on respiration</a></p>
+<p>The stoichiometric matrix in Excel will look like this:</p>
+<p><img src="TCA_excel.png" width="700" /></p>
+<p>We can easily solve for the formulation in Excel. <a href="https://www.youtube.com/watch?v=vLsouen-G8M">This video will show you how</a></p>
+<p>Alternatively, we can import the Excel formulation into Python. Note that the <strong>pandas</strong> tool will import from the first sheet in the specified Excel file.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span><span class="o">,</span> <span class="nn">numpy</span>
+<span class="n">pandas</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s1">&#39;TCA_example.xlsx&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[39]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+      <th>6</th>
+      <th>7</th>
+      <th>8</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>-1</td>
+      <td>1.1</td>
+      <td>1.000000</td>
+      <td>0.0</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0</td>
+      <td>0.0</td>
+      <td>0.000000</td>
+      <td>1.0</td>
+      <td>-1.000000</td>
+      <td>0.0</td>
+      <td>1.00</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0</td>
+      <td>0.0</td>
+      <td>-0.666667</td>
+      <td>1.0</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0</td>
+      <td>0.0</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>-0.666667</td>
+      <td>0.0</td>
+      <td>1.00</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0</td>
+      <td>0.0</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>-0.833333</td>
+      <td>1.0</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>0</td>
+      <td>0.1</td>
+      <td>0.333333</td>
+      <td>0.5</td>
+      <td>0.000000</td>
+      <td>0.2</td>
+      <td>0.75</td>
+      <td>-2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>0</td>
+      <td>-2.5</td>
+      <td>0.333333</td>
+      <td>0.0</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.25</td>
+      <td>3</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>0</td>
+      <td>1.0</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>0</td>
+      <td>0.1</td>
+      <td>0.000000</td>
+      <td>0.5</td>
+      <td>0.000000</td>
+      <td>0.2</td>
+      <td>0.25</td>
+      <td>0</td>
+      <td>-1</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>It is possible to define a matrix in Python from the Excel file. Note that the first row and column defined in Excel (in colour peach) will not form part of the imported matrix. Let's import and solve the formulation:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">M</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">matrix</span><span class="p">(</span><span class="n">pandas</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s1">&#39;TCA_example.xlsx&#39;</span><span class="p">))</span>
+<span class="n">mu</span><span class="p">,</span><span class="n">theta</span><span class="o">=</span><span class="mf">0.25</span><span class="p">,</span><span class="mf">0.1</span>
+<span class="n">C</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">matrix</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="n">theta</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="mi">0</span><span class="p">]])</span><span class="o">.</span><span class="n">T</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="n">M</span><span class="p">,</span><span class="n">C</span><span class="p">)</span>
+<span class="n">r</span>   
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[40]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>matrix([[ 0.4625],
+        [ 0.25  ],
+        [ 0.1875],
+        [ 0.125 ],
+        [ 0.375 ],
+        [ 0.3125],
+        [ 0.25  ],
+        [ 0.2   ],
+        [ 0.2125]])</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Let's immediately check for mass balance consistency by performing the overall balance of tutorial 3.2. Note the inclusion of $NH_3$ and the oxygen rate specification from the previous answer.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">rO2</span><span class="o">=</span><span class="n">r</span><span class="p">[</span><span class="mi">7</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>  <span class="c1">#oxygen rate</span>
+<span class="n">S</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">matrix</span><span class="p">([[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span>
+                  <span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mf">1.8</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">],</span>
+                  <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span>
+                  <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.2</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span>
+                  <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span>
+                  <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]])</span>
+        
+<span class="n">C2</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">matrix</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">rO2</span><span class="p">]])</span><span class="o">.</span><span class="n">T</span>
+<span class="n">r2</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="n">S</span><span class="p">,</span><span class="n">C2</span><span class="p">)</span>
+<span class="n">r2</span>      
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[42]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>matrix([[ 0.4625],
+        [ 0.05  ],
+        [ 0.2   ],
+        [ 0.25  ],
+        [ 0.2125],
+        [ 0.3125]])</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The uptake and excretion rates are exactly the same. <strong>Make sure you agree with this statement!</strong> We have taken a long route to include the additional equation given by the ATP balance. This is why one specification was required when solving for the elemental balances. See the following video for an alternative view of what the previous calculation was about:</p>
+<p><a href="https://youtu.be/OdbcdI1lUhI">Video: Lecture 8 Extra equations</a></p>
 
 </div>
 </div>
@@ -13153,13 +13410,68 @@ $$C_6 H_{12} O_6+6O_2 \to6CO_2+6H_2 O+21\, ATP$$<p>When comparing the ATP genera
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Fermentative-pathways">Fermentative pathways<a class="anchor-link" href="#Fermentative-pathways">&#182;</a></h2><p>Most cells have the ability to survive without oxygen. This is referred to as anaerobic conditions. For this scenario the only energy generation is via glycolysis (2ATP per glucose molecule). Remember that glycolysis also generate 2 molecules of NADH per glucose. All living cells need to maintain their NADH/NAD+ and ATP/ADP ratio, so build-up of NADH and ATP is not possible. ATP will get continuously consumed due to cellular energy demands and thus the ATP/ADP ratio can be maintained (the net production of ATP is effectively zero when considering production minus consumption). The same should apply for NADH so the electrons gained from glycolysis should be used somewhere to stop the build-up of NADH. If oxygen is available the electrons can be dumped onto oxygen to form water (in biochemistry electrons are usually associated with a proton, so when saying oxidation is loss (OIL) we are referring to electrons and protons). So what do we do with the electrons and protons from NADH to stop NADH build-up when oxygen is not available? The answer is to give it back to the carbon product of glycolysis (pyruvate). The most common way of doing this is via lactic acid and ethanol formation. See the following video:</p>
-<p><a href="https://www.youtube.com/watch?v=cDC29iBxb3w">Video: Paul Anderson on fermentative pathways</a></p>
-<p>Although a good video the title of the video is incorrect. Anaerobic respiration is the process where the electron transfer chain is still employed but with an alternative electron acceptor (not oxygen). We won’t be spending time on this but note the incorrect title. The title should rather be: Anaerobic fermentative pathways. Note that lactic acid formation is a single biochemical step from pyruvate where pyruvate is reduced (and NADH oxidised). Make sure you know the molecular structure of lactic acid. Ethanol formation entails more biochemical steps. In eukaryotes acetaldehyde is the only intermediate, while in bacteria acetyl-CoA and acetaldehyde are intermediates. No additional ATP is generated while the NADH from glycolysis is consumed in the process of making ethanol while CO2 is released.</p>
-<p>Although lactic acid and ethanol are the most common anaerobic fermentation products there are also other products like formic acid, acetic acid and succinic acid. Note that the difference between lactate and lactic acid is the acid proton, for lactate the proton is dissociated, while it is undissociated for lactic acid. All these are mere excretion products for an anaerobic cell, like CO2 is for an aerobic cell. However for the chemical engineer these are useful chemicals with a carbon backbone and interesting polar groups (that can be used for polymerisation of other industrially relevant conversions). So anaerobic fermentation might not be very energy efficient, but the breakdown metabolic products (catabolites) are handy molecules.</p>
-<p>The term fermentation was initially used for anaerobic conversion of a carbon substrate, but over time the definition expanded to include aerobic processes, especially when referring to the bioreactor which is commonly referred to as a fermenter.</p>
-<p>Lastly, it is important to understand how microbes interact with oxygen. Some cannot live without oxygen (obligate aerobe), some cannot live with oxygen (obligate anaerobe) while numerous microbes can operate with or without it (<a href="https://en.wikipedia.org/wiki/Facultative_anaerobic_organism">facultative anaerobe</a>).</p>
-<p><a href="../List%20of%20contents.ipynb">Back to Contents page</a></p>
+<h3 id="Simplification-of-respiration">Simplification of respiration<a class="anchor-link" href="#Simplification-of-respiration">&#182;</a></h3><p>The full TCA model is useful since the steady state internal rates (not excreted) are quantified. When TCA cycle intermediates are excreted the full TCA cycle model needs to be used. However, if the sole purpose of the TCA cycle is to provide NADH for oxidative phosphorylation, the flux model can be significantly reduced. The following simplified model should give the same as the model above:</p>
+<p><img src="TCA2.png" width="650" /></p>
+<p>Note that the $\frac{2}{3}$ATP in the respiration flux ($r_2$) is $\frac{2}{3}$ATP from glycolysis and $\frac{2}{3}$ATP from pyruvate oxidation via pyruvate dehydrogenase. The $(P/O)$ value remains at 1.5.</p>
+<p>Let’s confirm if we get the same answer:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">alpha</span><span class="o">=</span><span class="mf">0.1</span>
+<span class="n">beta</span><span class="o">=</span><span class="mf">0.1</span>   <span class="c1"># Can be calculated - see section 4.1</span>
+<span class="n">gamma</span><span class="o">=</span><span class="mf">2.5</span>
+<span class="n">mu</span><span class="p">,</span><span class="n">theta</span> <span class="o">=</span> <span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.1</span>
+
+<span class="n">S</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">matrix</span><span class="p">([[</span><span class="o">-</span><span class="mi">1</span><span class="p">,(</span><span class="mi">1</span><span class="o">+</span><span class="n">alpha</span><span class="p">),</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span>
+<span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="n">beta</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">2</span><span class="p">],</span>
+<span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="n">gamma</span><span class="p">,</span> <span class="mi">2</span><span class="o">/</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span>                  
+<span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]])</span>
+        
+<span class="n">C</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">matrix</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="n">theta</span><span class="p">,</span><span class="n">mu</span><span class="p">]])</span><span class="o">.</span><span class="n">T</span>
+<span class="n">Y</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="n">S</span><span class="p">,</span><span class="n">C</span><span class="p">)</span>
+<span class="n">Y</span>      
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[43]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>matrix([[ 0.4625],
+        [ 0.25  ],
+        [ 0.1875],
+        [ 0.2   ]])</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Exactly the same. Definitely the simplest solution to aerobic growth of <em>S. cerevisiae</em>.</p>
+<p><img src="simplify.jpg" width="450" /></p>
+<p><a href="https://nbviewer.jupyter.org/github/willienicol/Biochemical-engineering-notes/blob/master/List%20of%20contents.ipynb">Back to Contents page</a></p>
 
 </div>
 </div>
